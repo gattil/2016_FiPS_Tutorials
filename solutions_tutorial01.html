@@ -64,14 +64,32 @@
 <ol>
 <li><strong>Do you see much difference in the tree?</strong> <br>
      The topology does not change, however we can observe a change in the computed branch lengths. </li>
-<li><p><strong>In the likelihood value (stat file)?</strong> <br>
- The likelihood value of the tree inferred using the nucleotide frequencies estimated empirically from the dataset is lower than the likelihood value of the tree inferred using the nucleotide frequencies estimated via ML. This is due to dataset dimensions (the number of the sequences used). </p>
+</ol>
 
-<pre><code>run 1: -6172.58045
-run 2: -6173.49655
-</code></pre></li>
-<li><p><strong>Which option is best and why do you think so?</strong> <br>
-    The best option in this case is to use the ML approach since the ML optimisation technique provides better estimates for the nucleotide frequencies, which, in turn, affect the likelihood of the inferred tree. This is due to the nucleotide frequencies which are used in the calculation of the likelihood of each site of the alignment (<script type="math/tex" id="MathJax-Element-563">\pi Q = 0</script>, where <script type="math/tex" id="MathJax-Element-564">\pi</script> is the vector of the nucleotide frequencies and <script type="math/tex" id="MathJax-Element-565">Q</script> the rate matrix). </p></li>
+<table>
+<thead>
+<tr>
+  <th align="center">Nt-frequencies optimised</th>
+  <th align="center">Nt-frequencies estimated</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><img src="./images/ex1_tree1.png" alt="" title=""></td>
+  <td align="center"><img src="./images/ex1_tree2.png" alt="" title=""></td>
+</tr>
+</tbody></table>
+
+
+<p>2. <strong>In the likelihood value (stat file)?</strong> <br>
+     The likelihood value of the tree inferred using the nucleotide frequencies estimated empirically from the dataset is lower than the likelihood value of the tree inferred using the nucleotide frequencies estimated via ML. This is due to dataset dimensions (the number of the sequences used). </p>
+
+<pre><code>    run 1: -6172.58045
+    run 2: -6173.49655
+</code></pre>
+
+<ol>
+<li><strong>Which option is best and why do you think so?</strong> <br>
+    The best option in this case is to use the ML approach since the ML optimisation technique provides better estimates for the nucleotide frequencies, which, in turn, affect the likelihood of the inferred tree. This is due to the nucleotide frequencies which are used in the calculation of the likelihood of each site of the alignment (<script type="math/tex" id="MathJax-Element-658">\pi Q = 0</script>, where <script type="math/tex" id="MathJax-Element-659">\pi</script> is the vector of the nucleotide frequencies and <script type="math/tex" id="MathJax-Element-660">Q</script> the rate matrix). </li>
 </ol>
 
 <h4 id="exercise-2">Exercise 2</h4>
