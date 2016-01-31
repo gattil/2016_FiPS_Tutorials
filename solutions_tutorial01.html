@@ -26,10 +26,37 @@
 <h4 id="exercise-1">Exercise 1</h4>
 
 <p>In this exercise you are asked to run PhyML <strong>twice</strong> with the following configurations: <br>
-1. First run <br>
-    a. Substitution model: HKY85 + Gamma <br>
-    b. Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-26">\kappa</script> parameter of HKY85 model) <br>
-    c. Estimating <em>alpha parameter</em> (remember <script type="math/tex" id="MathJax-Element-27">\alpha = \beta </script> for gamma distributions used in phylogenetics)</p>
+ <strong>1. First run</strong> <br>
+        - Nucleotide substitution model =  <em>HKY85 + Gamma</em> <br>
+        - Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-333">\kappa</script> parameter of HKY85 model) <br>
+        - Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-334">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
+        - Estimating <em>nucleotide frequencies</em> with ML</p>
+
+<p>Here is the list of the parameters to change from the PhyML menu:</p>
+
+<pre><code>[M] ................. Model of nucleotide substitution  HKY85
+[F] ................. Optimise equilibrium frequencies  yes
+[T] .................... Ts/tv ratio (fixed/estimated)  estimated
+[C] ........... Number of substitution rate categories  4
+[G] ............. Gamma distributed rates across sites  yes
+[A] ... Gamma distribution parameter (fixed/estimated)  estimated
+</code></pre>
+
+<p><strong>2. Second run</strong> <br>
+        - Nucleotide substitution model =  <em>HKY85 + Gamma</em> <br>
+        - Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-335">\kappa</script> parameter of HKY85 model) <br>
+        - Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-336">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
+        - Estimating <em>nucleotide frequencies</em> empirically from the data</p>
+
+<p>Here is the list of the parameters to change from the PhyML menu:</p>
+
+<pre><code>[M] ................. Model of nucleotide substitution  HKY85
+[F] ................. Optimise equilibrium frequencies  no
+[T] .................... Ts/tv ratio (fixed/estimated)  estimated
+[C] ........... Number of substitution rate categories  4
+[G] ............. Gamma distributed rates across sites  yes
+[A] ... Gamma distribution parameter (fixed/estimated)  estimated
+</code></pre>
 
 <h4 id="exercise-2">Exercise 2</h4>
 
