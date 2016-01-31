@@ -120,7 +120,7 @@
 
 <ol>
 <li><strong>Compare the trees obtained with and without tree-search. What do you observe and why?</strong> <br>
-The topology inferred without tree search presents </li>
+The topology inferred without tree search presents a variation in the internal node attribution for the clades (DLangur, Colobus) and (Saki, Titi). </li>
 </ol>
 
 <table>
@@ -138,8 +138,14 @@ The topology inferred without tree search presents </li>
 
 
 <ol>
-<li><strong>Compare the model estimates with and without tree-search. What do you observe and why?</strong></li>
-<li><strong>Compare the likelihood of the ML and NJ trees. What do you observe and why?</strong></li>
+<li><p><strong>Compare the model estimates with and without tree-search. What do you observe and why?</strong> <br>
+The transition/transversion ratio differs slightly between the two runs. As the matter of fact, <script type="math/tex" id="MathJax-Element-674"> k </script> parameter appears to have a higher value when tree-search is not performed. </p></li>
+<li><p><strong>Compare the likelihood of the ML and NJ trees. What do you observe and why?</strong> <br>
+The likelihood value obtained without tree-search is lower than the value obtain performing the topology optimisation. This value is expected since the substitution parameters are optimised over the first inferred tree topology which did not undergo any refinement. </p>
+
+<pre><code>with tree-search: -6172.58045
+without tree-search: -6173.00555
+</code></pre></li>
 </ol>
 
 <h4 id="exercise-3">Exercise 3</h4>
