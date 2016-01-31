@@ -65,7 +65,7 @@
 
 <ol>
 <li><strong>Do you see much difference in the tree?</strong> <br>
-     The topology does not change, however we can observe a change in the computed branch length. </li>
+     The topology does not change, however we can observe a change in the computed branch lengths. </li>
 <li><p><strong>In the likelihood value (stat file)?</strong> <br>
  The likelihood value of the tree inferred using the nucleotide frequencies estimated empirically from the dataset is lower than the likelihood value of the tree inferred using the nucleotide frequencies estimated via ML. This is due to dataset dimensions (the number of the sequences used). </p>
 
@@ -73,12 +73,21 @@
 run 2: -6173.49655
 </code></pre></li>
 <li><p><strong>Which option is best and why do you think so?</strong> <br>
-    The best option in this case is to use the ML approach since the ML optimisation technique provides better estimates for the nucleotide frequencies, which, in turn, affect the likelihood of the inferred tree. </p></li>
+    The best option in this case is to use the ML approach since the ML optimisation technique provides better estimates for the nucleotide frequencies, which, in turn, affect the likelihood of the inferred tree. This is due to the nucleotide frequencies which are used in the calculation of the likelihood of each site of the alignment (<script type="math/tex" id="MathJax-Element-563">\pi Q = 0</script>, where <script type="math/tex" id="MathJax-Element-564">\pi</script> is the vector of the nucleotide frequencies and <script type="math/tex" id="MathJax-Element-565">Q</script> the rate matrix). </p></li>
 </ol>
 
 <h4 id="exercise-2">Exercise 2</h4>
 
+<p>GOAL: In this exercise you are asked to optimise the tree topology on the substitution parameters obtained using ML performing a tree search (i.e. NNI, SPR, TBR) on the initial tree topology.</p>
 
+<p>Run PhyML without the tree-search, so that all model parameters are optimized on the BioNJ tree. Compare the ML and the BioNJ trees and the model estimates (HKY+Gamma) obtained for the two trees. Compare the likelihood of the ML and NJ trees. What do you observe and why?</p>
+
+
+
+<h5 id="execution-1">Execution</h5>
+
+<p><strong>1. First run</strong> <br>
+        - Nucleotide substitution model =  <em>HKY85 + Gamma</em></p>
 
 <h4 id="exercise-3">Exercise 3</h4>
 
