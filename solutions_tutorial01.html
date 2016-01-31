@@ -13,15 +13,13 @@
 
 <h2 id="tutorial-1-inferring-phylogenies-using-maximum-likelihood"><strong>Tutorial 1</strong>: Inferring phylogenies using maximum likelihood</h2>
 
-<p>In this tutorial you will be guided in using PhyML and its extension, CodonPhyML,  to solve common phylogenetic problems. For some of the following exercises there might be more than one single solution.</p>
+<p>In this tutorial you will be guided in using PhyML and its extension, CodonPhyML,  to solve common phylogenetic problems. For some of the following exercises there might be more than one single solution. Herewith I show you my solutions for the exercises prepared by Maria Anisimova</p>
 
 <hr>
 
-
-
 <h3 id="ml-with-dna-data-the-primate-dna-dataset">ML with DNA data (the primate DNA dataset)</h3>
 
-
+<p>Dataset file: <em>primates-nt.phy</em></p>
 
 <h4 id="exercise-1">Exercise 1</h4>
 
@@ -80,14 +78,33 @@ run 2: -6173.49655
 
 <p>GOAL: In this exercise you are asked to optimise the tree topology on the substitution parameters obtained using ML performing a tree search (i.e. NNI, SPR, TBR) on the initial tree topology.</p>
 
-<p>Run PhyML without the tree-search, so that all model parameters are optimized on the BioNJ tree. Compare the ML and the BioNJ trees and the model estimates (HKY+Gamma) obtained for the two trees. Compare the likelihood of the ML and NJ trees. What do you observe and why?</p>
-
-
-
 <h5 id="execution-1">Execution</h5>
 
-<p><strong>1. First run</strong> <br>
-        - Nucleotide substitution model =  <em>HKY85 + Gamma</em></p>
+<p><strong>1. Run</strong> <br>
+        - Nucleotide substitution model =  <em>HKY85 + Gamma</em> <br>
+        - Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-584">\kappa</script> parameter of HKY85 model) <br>
+        - Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-585">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
+        - Estimating <em>nucleotide frequencies</em> <strong>with ML</strong> <br>
+        - No <em>tree search</em> (tree optimisation)</p>
+
+<p>Here is the list of the parameters to change from the PhyML menu:</p>
+
+<pre><code>[M] ................. Model of nucleotide substitution  HKY85
+[F] ................. Optimise equilibrium frequencies  yes
+[T] .................... Ts/tv ratio (fixed/estimated)  estimated
+[C] ........... Number of substitution rate categories  4
+[G] ............. Gamma distributed rates across sites  yes
+[A] ... Gamma distribution parameter (fixed/estimated)  estimated
+[O] ........................... Optimise tree topoLOGy  no
+</code></pre>
+
+<h5 id="questions-1">Questions</h5>
+
+<ol>
+<li><strong>Compare the trees obtained with and without tree-search. What do you observe and why?</strong></li>
+<li><strong>Compare the model estimates with and without tree-search. What do you observe and why?</strong></li>
+<li><strong>Compare the likelihood of the ML and NJ trees. What do you observe and why?</strong></li>
+</ol>
 
 <h4 id="exercise-3">Exercise 3</h4>
 
@@ -143,5 +160,5 @@ run 2: -6173.49655
 
 <hr>
 
-<p>© Lorenzo Gatti – Applied Computational Genomic Team (ACGT) @ Institute of Applied Simulations (ZHAW) | Wädenswil | Zürich</p></div></body>
+<p>© 2016 Lorenzo Gatti – Applied Computational Genomic Team (ACGT) @ Institute of Applied Simulations (ZHAW) | Wädenswil | Zürich</p></div></body>
 </html>
