@@ -150,7 +150,106 @@ without tree-search: -6173.00555
 
 <h4 id="exercise-3">Exercise 3</h4>
 
+<table>
+<thead>
+<tr>
+  <th align="center">Model</th>
+  <th align="center">Log-likelihood</th>
+  <th align="center">Parameters</th>
+  <th align="center">AIC</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">JC</td>
+  <td align="center">-6379.66383</td>
+  <td align="center">38</td>
+  <td align="center">12835.32766</td>
+</tr>
+<tr>
+  <td align="center">JC_I</td>
+  <td align="center">-6311.41650</td>
+  <td align="center">39</td>
+  <td align="center">12700.833</td>
+</tr>
+<tr>
+  <td align="center">JC_G</td>
+  <td align="center">-6304.38084</td>
+  <td align="center">39</td>
+  <td align="center">12686.76168</td>
+</tr>
+<tr>
+  <td align="center">JC_G_I</td>
+  <td align="center">-6304.35263</td>
+  <td align="center">40</td>
+  <td align="center">12688.70526</td>
+</tr>
+<tr>
+  <td align="center">HKY</td>
+  <td align="center">-6251.43051</td>
+  <td align="center">42</td>
+  <td align="center">12586.86102</td>
+</tr>
+<tr>
+  <td align="center">HKY_I</td>
+  <td align="center">-6180.09689</td>
+  <td align="center">43</td>
+  <td align="center">12446.19378</td>
+</tr>
+<tr>
+  <td align="center">HKY_G</td>
+  <td align="center">-6172.58045</td>
+  <td align="center">43</td>
+  <td align="center">12431.1609</td>
+</tr>
+<tr>
+  <td align="center">HKY_G_I</td>
+  <td align="center">-6172.52896</td>
+  <td align="center">44</td>
+  <td align="center">12433.05792</td>
+</tr>
+<tr>
+  <td align="center">GTR</td>
+  <td align="center">-6241.48788</td>
+  <td align="center">46</td>
+  <td align="center">12574.97576</td>
+</tr>
+<tr>
+  <td align="center">GTR_I</td>
+  <td align="center">-6171.17472</td>
+  <td align="center">47</td>
+  <td align="center">12436.34944</td>
+</tr>
+<tr>
+  <td align="center">GTR_G</td>
+  <td align="center">-6163.87291</td>
+  <td align="center">47</td>
+  <td align="center">12421.74582</td>
+</tr>
+<tr>
+  <td align="center">GTR_G_I</td>
+  <td align="center">-6172.52896</td>
+  <td align="center">48</td>
+  <td align="center">12441.05792</td>
+</tr>
+</tbody></table>
 
+
+<p>The number of parameters are computed in the following way for a rooted tree:</p>
+
+<blockquote>
+  <p><script type="math/tex" id="MathJax-Element-814">k = (2* \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
+  substitution models:  JC = 0 parameters | HKY = 4 parameters | GTR = 8 parameters <br>
+  invariant sites = +1 parameter <br>
+  gamma rates = +1 parameter</p>
+</blockquote>
+
+<p>After computing the AIC value with </p>
+
+<blockquote>
+  <p><script type="math/tex" id="MathJax-Element-815">AIC = 2(k) - \log(L)</script></p>
+</blockquote>
+
+<p>we select the model with the lowest AIC value. In this case, <strong>GTR + Gamma</strong></p>
 
 <h4 id="exercise-4">Exercise 4</h4>
 
