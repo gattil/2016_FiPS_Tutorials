@@ -344,11 +344,13 @@ We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma
 <li>Are the results compatible?</li>
 </ol>
 
+<p>Both the methods used to infer the branch support appear to agree on the support provided by long branches, however they do not agree for short ones. These two methods infer branch support using completely different strategies. </p>
+
 <table>
 <thead>
 <tr>
   <th align="center">With <em>bootstrap</em> support</th>
-  <th align="center">Without <em>sh-aLRT</em> support</th>
+  <th align="center">With <em>sh-aLRT</em> support</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -359,6 +361,49 @@ We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma
 
 
 <h4 id="exercise-5">Exercise 5</h4>
+
+<p>For linux/Mac Os X <br>
+We assume <em>PhyML</em> binary is included in the user <strong>PATH</strong> variable and it can be called with <em>phyml</em></p>
+
+<p>Positioning in the directory containing the dataset:</p>
+
+<pre><code>cd path/to/tutorial01_phyml
+</code></pre>
+
+<p><strong>ex. 1</strong></p>
+
+<pre><code>run1&gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'm'
+run2&gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' 
+</code></pre>
+
+<p><strong>ex. 2</strong></p>
+
+<pre><code>run1&gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'm' -o 'lr'
+</code></pre>
+
+<p><strong>ex. 3</strong></p>
+
+<pre><code>JC      &gt; phyml -i primates-nt.phy -m 'JC69' -t 'e' -a 'e' -f 'm' -c 1
+JC_I    &gt; phyml -i primates-nt.phy -m 'JC69' -t 'e' -a 'e' -f 'm' -c 1 -v 'e'
+JC_G    &gt; phyml -i primates-nt.phy -m 'JC69' -t 'e' -a 'e' -f 'm'
+JC_I_G  &gt; phyml -i primates-nt.phy -m 'JC69' -t 'e' -a 'e' -f 'm' -v 'e'
+
+HKY     &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'm' -c 1
+HKY_I   &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'm' -c 1 -v 'e'
+HKY_G   &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'm'
+HKY_I_G &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'm' -v 'e'
+
+GTR     &gt; phyml -i primates-nt.phy -m 'GTR' -t 'e' -a 'e' -f 'm' -c 1
+GTR_I   &gt; phyml -i primates-nt.phy -m 'GTR' -t 'e' -a 'e' -f 'm' -c 1 -v 'e'
+GTR_G   &gt; phyml -i primates-nt.phy -m 'GTR' -t 'e' -a 'e' -f 'm'
+GTR_I_G &gt; phyml -i primates-nt.phy -m 'GTR' -t 'e' -a 'e' -f 'm' -v 'e'
+</code></pre>
+
+<p><strong>ex. 4</strong></p>
+
+<pre><code>Bootstrap(100) &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b 100
+SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b -4
+</code></pre>
 
 <h4 id="exercise-6">Exercise 6</h4>
 
