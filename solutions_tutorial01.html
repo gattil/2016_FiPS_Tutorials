@@ -150,6 +150,10 @@ without tree-search: -6173.00555
 
 <h4 id="exercise-3">Exercise 3</h4>
 
+<p>GOAL: In this exercise you are asked to compare different substitution models (and their variations) on the same dataset.</p>
+
+<h5 id="execution-2">Execution</h5>
+
 <table>
 <thead>
 <tr>
@@ -237,33 +241,130 @@ without tree-search: -6173.00555
 <p>The number of parameters are computed in the following way for a rooted tree:</p>
 
 <blockquote>
-  <p><script type="math/tex" id="MathJax-Element-814">k = (2* \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
+  <p><script type="math/tex" id="MathJax-Element-880">k = (2* \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
   substitution models:  JC = 0 parameters | HKY = 4 parameters | GTR = 8 parameters <br>
   invariant sites = +1 parameter <br>
   gamma rates = +1 parameter</p>
 </blockquote>
 
-<p>After computing the AIC value with </p>
+<p>We compute the AIC value as follows:</p>
 
 <blockquote>
-  <p><script type="math/tex" id="MathJax-Element-815">AIC = 2(k) - \log(L)</script></p>
+  <p><script type="math/tex" id="MathJax-Element-881">AIC = 2(k) - \log(L)</script></p>
 </blockquote>
 
-<p>we select the model with the lowest AIC value. In this case, <strong>GTR + Gamma</strong></p>
+<h5 id="questions-2">Questions</h5>
+
+<ol>
+<li>Which model is the best (including HKY+Gamma), based on the AIC criterion? <br>
+We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma</strong></li>
+</ol>
+
+<hr>
+
+<p>This exercise can be solved using <a href="https://github.com/ddarriba/jmodeltest2">jmodeltest</a> which performs automatically phylogenetic tree reconstructions with every model and extra parameters (i.e. invariant sites,  gamma).</p>
 
 <h4 id="exercise-4">Exercise 4</h4>
 
+<p>GOAL: In this exercise you are asked to compute the branch support using different statistical methods. We are going to evaluate it on the phylogenetic tree evaluated with the following settings:</p>
+
+<pre><code>    . Tree topology search :        NNIs
+    . Initial tree:                 BioNJ
+    . Model of nucleotides substitution:    GTR
+    . Number of taxa:           20
+    . Log-likelihood:           -6163.87291
+    . Unconstrained likelihood: -5060.29926
+    . Parsimony:                741
+    . Tree size:                0.54568
+    . Discrete gamma model:     Yes
+      - Number of categories:           4
+      - Gamma shape parameter:      0.565
+    . Nucleotides frequencies:
+      - f(A)= 0.29130
+      - f(C)= 0.21021
+      - f(G)= 0.25260
+      - f(T)= 0.24589
+    . GTR relative rate parameters : 
+      A &lt;-&gt; C    1.62195
+      A &lt;-&gt; G    4.11843
+      A &lt;-&gt; T    0.80648
+      C &lt;-&gt; G    1.47358
+      C &lt;-&gt; T    3.64931
+      G &lt;-&gt; T    1.00000
+
+    . Instantaneous rate matrix : 
+      [A---------C---------G---------T------]
+      -1.00085   0.21604   0.65916   0.12565  
+       0.29937  -1.10379   0.23585   0.56858  
+       0.76015   0.19627  -1.11222   0.15580  
+       0.14885   0.48607   0.16005  -0.79498  
+</code></pre>
+
+
+
+<h5 id="execution-3">Execution</h5>
+
+<p>We are going to run PhyML twice: once using the non parametric bootstrap and the second time using the SH-aLRT method. </p>
+
+<p><strong>1. First run</strong></p>
+
+<pre><code>[B] ................ Non parametric bootstrap analysis  yes (100 replicates)
+[A] ................ Approximate likelihood ratio test  no
+</code></pre>
+
+<p>We perform a bootstrap analysis using 100 replicates (4<sup>th</sup> menu).</p>
+
+<blockquote>
+  <p><strong>Bootstrap</strong> analysis assumes that: <br>
+  - sites are independently and identically distributed (i.i.d.) <br>
+  - Amplifies the biases of the tree inference method <br>
+  - Often conservative (&gt;70% is considered strong support, but no guarantee) <br>
+  - Slow for large datasets <br>
+  - Difficult to interpret</p>
+</blockquote>
+
+<p><strong>2. Second run</strong></p>
+
+<pre><code>  [B] ................ Non parametric bootstrap analysis  no
+  [A] ................ Approximate likelihood ratio test  yes / aLRT statistics
+</code></pre>
+
+<p>We perform an sh-aLRT analysis (4<sup>th</sup> menu).</p>
+
+<blockquote>
+  <p><strong>SH-aLRT</strong> method assumes that: <br>
+  - the branch being studied provides a significant likelihood gain. <br>
+  - per each branch two alternative hypotheses are tested: a null hypothesis where the branch is collapsed and the rest of the topology is maintained vs. an alternative hypothesis where the branch length is kept and the topology is intact.  <br>
+  - aLRT is much faster than bootstrap</p>
+</blockquote>
+
+<h5 id="questions-3">Questions</h5>
+
+<ol>
+<li>Are the results compatible?</li>
+</ol>
+
+<table>
+<thead>
+<tr>
+  <th align="center">With <em>bootstrap</em> support</th>
+  <th align="center">Without <em>sh-aLRT</em> support</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><img src="./images/ex4_tree_bootstrap.png" alt="" title=""></td>
+  <td align="center"><img src="./images/ex4_tree_sh_aLRT.png" alt="" title=""></td>
+</tr>
+</tbody></table>
 
 
 <h4 id="exercise-5">Exercise 5</h4>
 
-
-
 <h4 id="exercise-6">Exercise 6</h4>
 
+<p>For this task, use CodonPhyML (the menu mode) to analyse your dataset (data should be protein-coding DNA). The menu interface is very similar to PhyML except CodonPhyML includes codon models and some additional amino acid models (eg, PCA models by Zoller and Schneider; antibody model AB by Mirsky et al 2015; models for ordered/disordered proteins by Szalkowski and Anisimova 2011). Choose to work with a protein-coding DNA dataset (codon sequences, eg, one of datasets from day 9). Analyze the data using codon models M0, M0+Gamma and M5; amino acid models LG, WAG, LG+Gamma and WAG+Gamma; and GTR+Gamma. The log- likelihods for codon models and amino acid models are comparable. Fro GTR+Gamma model, the converted log-likelihood score is also available so the comparison across DNA, AA and codon models can be made. Based on AIC, which model fits your dataset best? Are the trees inferred using the best AA and best codon model different? Are they different to the tree inferred using teh DNA model?</p>
+
 <hr>
-
-
 
 <h3 id="ml-with-protein-data">ML with protein data</h3>
 
