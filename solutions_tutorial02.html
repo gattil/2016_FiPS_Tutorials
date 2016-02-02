@@ -27,7 +27,7 @@
 
 <h4 id="1-the-simple-codon-model-with-constant-ω">1. The simple codon model with constant ω</h4>
 
-<p>GOAL: In this exercise we apply the simplest codon model with constant <script type="math/tex" id="MathJax-Element-1349"> \omega </script> parameter over tree branches and MSA sites. We run <code>codeml</code> <strong>twice</strong> since we want to compare the log-likelihood of the model when the parameters are optimised on a fixed tree topology (provided with the exercise) and when the branch lengths are re-estimated using the selected substitution model. </p>
+<p>GOAL: In this exercise we apply the simplest codon model with constant <script type="math/tex" id="MathJax-Element-1"> \omega </script> parameter over tree branches and MSA sites. We run <code>codeml</code> <strong>twice</strong> since we want to compare the log-likelihood of the model when the parameters are optimised on a fixed tree topology (provided with the exercise) and when the branch lengths are re-estimated using the selected substitution model. </p>
 
 
 
@@ -156,7 +156,9 @@ Average         T:0.23870    C:0.26089    A:0.20792    G:0.29248
 
 <h4 id="2-branch-models">2. Branch models</h4>
 
-<p>GOAL: In this exercise we estimate the <script type="math/tex" id="MathJax-Element-1379"> \omega </script> parameter following several different strategies: a. allowing it to change at each branch on the tree topology, b. fixing it on one single branch (two-categories) c. fixing it on two branches (three-categories).</p>
+<p>GOAL: In this exercise we estimate the <script type="math/tex" id="MathJax-Element-2"> \omega </script> parameter following several different strategies: a. allowing it to change at each branch on the tree topology, b. fixing it on one single branch (two-categories) c. fixing it on two branches (three-categories).</p>
+
+
 
 <h5 id="execution-1">Execution</h5>
 
@@ -186,7 +188,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
                  *  0:one, 1:b, 2:2 or more dN/dS ratios for branches
 </code></pre>
 
-<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branch where we think the <script type="math/tex" id="MathJax-Element-1544">\omega </script> parameter differs from the rest of the tree.</p>
+<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branch where we think the <script type="math/tex" id="MathJax-Element-3">\omega </script> parameter differs from the rest of the tree.</p>
 
 <blockquote>
   <p>PaML (and codeML) accepts only the following label format at branch level: <code>'#1'</code> where <code>1</code> is an integer greater than 0 </p>
@@ -195,7 +197,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
 <pre><code>((Hsa_Human, Hla_gibbon) ,((Cgu/Can_colobus, Pne_langur) '#1', Mmu_rhesus), (Ssc_squirrelM, Cja_marmoset));
 </code></pre>
 
-<p>In this case we labeled the branch leading to the clade [colobus, langur]. We are therefore assuming that only this branch will have a value for <script type="math/tex" id="MathJax-Element-1545"> \omega </script> that differs from the rest of the tree.</p>
+<p>In this case we labeled the branch leading to the clade [colobus, langur]. We are therefore assuming that only this branch will have a value for <script type="math/tex" id="MathJax-Element-4"> \omega </script> that differs from the rest of the tree.</p>
 
 <p><strong>c. three dN/dS ratios</strong></p>
 
@@ -205,7 +207,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
                  *  0:one, 1:b, 2:2 or more dN/dS ratios for branches
 </code></pre>
 
-<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branches where we think the <script type="math/tex" id="MathJax-Element-1546">\omega </script> parameter differs from the rest of the tree.</p>
+<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branches where we think the <script type="math/tex" id="MathJax-Element-5">\omega </script> parameter differs from the rest of the tree.</p>
 
 <blockquote>
   <p>PaML (and codeML) accepts only the following label format at branch level: <code>'#1'</code> where <code>1</code> is an integer greater than 0 </p>
@@ -214,32 +216,40 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
 <pre><code>((Hsa_Human, Hla_gibbon) '#2',((Cgu/Can_colobus, Pne_langur) '#1', Mmu_rhesus), (Ssc_squirrelM, Cja_marmoset));
 </code></pre>
 
-<p>In this case we labeled the branch leading to the clade [colobus, langur] and the branch leading to the human clade [Hsa_Human, Hla_gibbon].  We are therefore assuming that only those branches will have values for <script type="math/tex" id="MathJax-Element-1547"> \omega </script> that differ from the rest of the tree.</p>
+<p>In this case we labeled the branch leading to the clade [colobus, langur] and the branch leading to the human clade [Hsa_Human, Hla_gibbon].  We are therefore assuming that only those branches will have values for <script type="math/tex" id="MathJax-Element-6"> \omega </script> that differ from the rest of the tree.</p>
+
+
 
 <h5 id="questions-1">Questions</h5>
 
-<p><strong>1. Are results consistent with those presented in ref. (2)?</strong>  <br>
-<strong>2. Based on LRTs, what model fits your data the best (among 2-ratio, 3-ratio and free-ratio models)?</strong>  <br>
+<p><strong>1. Are results consistent with those presented in ref. (2)?</strong> </p>
+
+<p><strong>2. Based on LRTs, what model fits your data the best (among 2-ratio, 3-ratio and free-ratio models)?</strong>  <br>
 <strong>3. What are the degrees of freedoms for each comparison?</strong>  <br>
 <strong>4. What can you tell about the evolution of your gene from the ML estimates under this best model?</strong></p>
 
 <hr>
 
+
+
 <h4 id="3-site-models">3. Site-models</h4>
 
-<p>GOAL:</p>
-
-
+<p>GOAL: In this exercise we apply different codon models to a protein-coding dataset in order to evaluate which one fits better our dataset w.r.t. natural selection detection. We evaluate alternative evolutionary hypotheses using nested codon models.</p>
 
 <h5 id="execution-2">Execution</h5>
 
-
-
 <h5 id="questions-2">Questions</h5>
 
+<p><strong>1. Which models are nested?</strong>  <br>
+<strong>2. How many degrees of freedom do you use each time to test for significance of the LRT statistic?</strong>  <br>
+<strong>3. Do your tests suggest positive selection?</strong>  <br>
+<strong>4. Interpret the ML estimates relevant to selective pressure.</strong>  <br>
+<strong>5. If LRTs suggest positive selection, which sites are inferred by the Bayesian approach to be under positive selection (models M2 and M8)?</strong> <br>
+<strong>6. Do NEB and BEB agree on the sites inferred?</strong>  <br>
+<strong>7. Compare results from the LRT comparing M7 vs M8 and the LRT comparing M8a vs M8. Are they both significant (or both non-significant)?</strong>  <br>
+<strong>8. If they are both significant, does the Bayesian approach predict the same sites?</strong></p>
+
 <hr>
-
-
 
 <h4 id="4-branch-site-models-coming-soon">4. Branch-site models <em>(coming soon)</em></h4>
 
@@ -292,6 +302,9 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
 <h4 id="references">References</h4>
 
 <ol>
+<li><a href="http://abacus.gene.ucl.ac.uk/ziheng/pdf/2005ZhangNielsenYangMBEv22p2472.pdf">Z. Yang, R. Nielsen, N. Goldman, A. Krabbe Pedersen, Codon-Substitution Models for Heterogeneous Selection Pressure at Amino Acid Sites, GENETICS May 1, 2000 vol. 155 no. 1 431-449</a></li>
+<li><a href="http://mbe.oxfordjournals.org/content/15/5/568.long">Z Yang, Likelihood ratio tests for detecting positive selection and application to primate lysozyme evolution, Molecular Biology and Evolution, Oxford University Press, 1998</a></li>
+<li>Jianzhi Zhang, Rasmus Nielsen, and Ziheng Yang, Evaluation of an Improved Branch-Site Likelihood Method for Detecting Positive Selection at the Molecular Level, Mol Biol Evol (December 2005) 22 (12): 2472-2479 first published online August 17, 2005 <a href="http://mbe.oxfordjournals.org/content/22/12/2472.abstract">doi:10.1093/molbev/msi237</a></li>
 <li><a href="http://abacus.gene.ucl.ac.uk/software/pamlDOC.pdf">PaML documentation</a></li>
 </ol>
 
