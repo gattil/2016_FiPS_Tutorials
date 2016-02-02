@@ -1,0 +1,45 @@
+
+# oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#                 --- codonPhyML 1.00 201407.24 ---
+#                               Marcelo S Zanetti
+#                                 Stefan Zoller
+#                                  Manuel  Gil
+#                               Louis  du Plessis
+#                                Maria Anisimova
+#                  http://sourceforge.net/projects/codonphyml/
+# oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+. Sequence filename: 			primates-nt-nostop.phy
+. Data set: 				1
+. Tree topology search: 		NNIs
+. Initial tree: 			BioNJ
+. Model name: 				WAG 
+. Number of taxa: 			20
+. Branch support: 			SH-like
+. Log-likelihood: 			-4785.42
+. Codon Log-likelihood (no gaps): -14834.4
+. Codon Log-likelihood (with gaps): -14834.4
+. Codon Log-lk. (approx, no gaps): -15810.1
+. Codon Log-lk. (approx, with gaps): -15810.1
+. Unconstrained Log-likelihood: 	-2394.36
+. Parsimony: 				526
+. Tree size: 				1.07802
+. Proportion of invariant: 		0
+. Amino Acid frequencies: 
+    f(A)=0.08662790   f(R)=0.04397200   f(N)=0.03908940   f(D)=0.05704510   
+    f(C)=0.01930780   f(Q)=0.03672810   f(E)=0.05805890   f(G)=0.08325180   
+    f(H)=0.02443130   f(I)=0.04846600   f(L)=0.08620900   f(K)=0.06202860   
+    f(M)=0.01950270   f(F)=0.03843190   f(P)=0.04576310   f(S)=0.06951790   
+    f(T)=0.06101270   f(W)=0.01438590   f(Y)=0.03527420   f(V)=0.07089560   
+. Time used: 				0h0m4s
+. Seconds: 				4
+. MLTree: 				((((((((((Baboon:0.0040402203,Rhes_cDNA:0.0135371964):0.0022120950,(Tant_cDNA:0.0039045876,AGM_cDNA:0.0038841561):0.0096630817):0.0076512954,Patas:0.0236425259):0.0104598169,(DLangur:0.0059276964,Colobus:0.0077415585):0.0033812196):0.0531339914,(((Gorilla:0.0056215484,(Chimp:0.0059541812,Human:0.0156772126):0.0042383100):0.0141788176,Orangutan:0.0288299089):0.0032194466,Gibbon:0.0633620951):0.0355526969):0.2261777581,(Tamarin:0.0375613856,PMarmoset:0.0282984593):0.0294137372):0.0142160786,Squirrel:0.0977192331):0.0086643285,(Saki:0.0455186517,Titi:0.0313163828):0.0289171158):0.0359440948,Howler:0.0833257726):0.0148265928,Woolly:0.0434980286,Spider:0.0268077293);
+. MLTreeSize: 				1.07802
+# 
+# If you reconstruct trees or do model selection with CodonPhyML please cite:
+# M. Gil, M.S. Zanetti, S. Zoller and M. Anisimova 2013
+# CodonPhyML: Fast Maximum Likelihood Phylogeny Estimation under Codon Substitution Models
+# Molecular Biology and Evolution, pages 1270-1280, volume 30, number 6
+# 
+# If you use aBayes branch supports please cite:
+# M. Anisimova, M. Gil, J.F. Dufayard, C. Dessimoz and O. Gascuel 2011
+# Survey of branch support methods demonstrates accuracy, power, and robustness of fast likelihood-based approximation schemes. Syst Biol 60:685-699

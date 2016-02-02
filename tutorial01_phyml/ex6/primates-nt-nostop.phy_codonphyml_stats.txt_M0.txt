@@ -1,0 +1,59 @@
+
+# oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#                 --- codonPhyML 1.00 201407.24 ---
+#                               Marcelo S Zanetti
+#                                 Stefan Zoller
+#                                  Manuel  Gil
+#                               Louis  du Plessis
+#                                Maria Anisimova
+#                  http://sourceforge.net/projects/codonphyml/
+# oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+. Sequence filename: 			primates-nt-nostop.phy
+. Data set: 				1
+. Tree topology search: 		NNIs
+. Initial tree: 			BioNJ + GYECMK07
+. Model name: 				GY CF3x4
+. Genetic code: 			Standard
+. Number of taxa: 			20
+. Branch support: 			SH-like
+. Log-likelihood: 			-6163.53
+. Unconstrained Log-likelihood: 	-2809.71
+. Parsimony: 				233
+. Tree size: 				1.55715
+. Proportion of invariant: 		0
+. Transition/transversion ratio: 	3.35887
+. Nonsynonymous/synonymous ratio: 1.25497
+. Nucleotides frequencies: 
+    Position 1: f(T1)=0.23300686   f(C1)=0.23305228   f(A1)=0.26767445   f(G1)=0.26626642   
+    Position 2: f(T2)=0.27246976   f(C2)=0.16889097   f(A2)=0.40081939   f(G2)=0.15781988   
+    Position 3: f(T3)=0.25453529   f(C3)=0.21118565   f(A3)=0.23275516   f(G3)=0.30152390   
+. Codon frequencies: 
+    f(TTT)=0.01716307   f(TTC)=0.01424005   f(TTA)=0.01569446   f(TTG)=0.02033147   
+    f(TCT)=0.01063857   f(TCC)=0.00882672   f(TCA)=0.00972824   f(TCG)=0.01260251   
+    f(TAT)=0.02524791   f(TAC)=0.02094797   f(TAA)=0.00000000   f(TAG)=0.00000000   
+    f(TGT)=0.00994119   f(TGC)=0.00824812   f(TGA)=0.00000000   f(TGG)=0.01177639   
+    f(CTT)=0.01716642   f(CTC)=0.01424282   f(CTA)=0.01569752   f(CTG)=0.02033543   
+    f(CCT)=0.01064064   f(CCC)=0.00882845   f(CCA)=0.00973014   f(CCG)=0.01260496   
+    f(CAT)=0.02525283   f(CAC)=0.02095205   f(CAA)=0.02309199   f(CAG)=0.02991464   
+    f(CGT)=0.00994313   f(CGC)=0.00824973   f(CGA)=0.00909231   f(CGG)=0.01177869   
+    f(ATT)=0.01971666   f(ATC)=0.01635873   f(ATA)=0.01802954   f(ATG)=0.02335646   
+    f(ACT)=0.01222141   f(ACC)=0.01014000   f(ACA)=0.01117565   f(ACG)=0.01447755   
+    f(AAT)=0.02900439   f(AAC)=0.02406468   f(AAA)=0.02652253   f(AAG)=0.03435875   
+    f(AGT)=0.01142028   f(AGC)=0.00947530   f(AGA)=0.01044306   f(AGG)=0.01352852   
+    f(GTT)=0.01961294   f(GTC)=0.01627268   f(GTA)=0.01793470   f(GTG)=0.02323360   
+    f(GCT)=0.01215712   f(GCC)=0.01008666   f(GCA)=0.01111686   f(GCG)=0.01440140   
+    f(GAT)=0.02885182   f(GAC)=0.02393809   f(GAA)=0.02638302   f(GAG)=0.03417802   
+    f(GGT)=0.01136020   
+. Time used: 				0h0m55s
+. Seconds: 				55
+. MLTree: 				((((((((((Tant_cDNA:0.0040002674,AGM_cDNA:0.0040010530):0.0146261570,(Baboon:0.0095883585,Rhes_cDNA:0.0172043996):0.0129808863):0.0077834895,Patas:0.0321849686):0.0367850512,DLangur:0.0141871479):0.0038080377,Colobus:0.0081939191):0.0866227280,((Gibbon:0.0702674143,Orangutan:0.0371594911):0.0043241794,((Human:0.0199773378,Chimp:0.0062814984):0.0039580045,Gorilla:0.0164467639):0.0214655749):0.0408154899):0.3436265422,(Saki:0.0638758797,Titi:0.0580486726):0.0288888801):0.0084486892,(Squirrel:0.1410451956,(Tamarin:0.0563948880,PMarmoset:0.0527949537):0.0471990511):0.0062062412):0.0444016135,Howler:0.1115823030):0.0278130545,Woolly:0.0591002216,Spider:0.0350581523);
+. MLTreeSize: 				1.55715
+# 
+# If you reconstruct trees or do model selection with CodonPhyML please cite:
+# M. Gil, M.S. Zanetti, S. Zoller and M. Anisimova 2013
+# CodonPhyML: Fast Maximum Likelihood Phylogeny Estimation under Codon Substitution Models
+# Molecular Biology and Evolution, pages 1270-1280, volume 30, number 6
+# 
+# If you use aBayes branch supports please cite:
+# M. Anisimova, M. Gil, J.F. Dufayard, C. Dessimoz and O. Gascuel 2011
+# Survey of branch support methods demonstrates accuracy, power, and robustness of fast likelihood-based approximation schemes. Syst Biol 60:685-699
