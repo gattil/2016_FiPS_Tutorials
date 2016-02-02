@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>psc_exercises_tutorial01</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><p><a href="index.html">Home</a> | <a href="https://github.com/gattil/2016_FiPS_Tutorials/zipball/master">Download repository</a> </p>
+
+<hr>
+
+
+
+<h2 id="tutorial-1-inferring-phylogenies-using-maximum-likelihood"><strong>Tutorial 1</strong>: Inferring phylogenies using maximum likelihood</h2>
+
+<p><em>These exercises were prepared by Maria Anisimova</em></p>
+
+<hr>
+
+<p>1) Basic ML inference: Run PhyML (the menu mode). Set the model to HKY+Gamma,  estimating  the  transition/transversion  ratio  and  the  alpha  parameter  of  the  Gamma  distribution by maximum likelihood (ML). </p>
+
+<p>Run the program twice: first estimating the  nucleotide frequencies by ML and the second time estimating them empirically from  data.  </p>
+
+<ul>
+<li>Do  you  see  much  difference  in  the  tree?</li>
+<li>In  the  likelihood value  (stat  file)?</li>
+<li>Which option is best and why do you think so?</li>
+</ul>
+
+<hr>
+
+<p>2)  ML  Tree  vs.  starting  tree:  By  default  PhyML  builds  a     BioNJ  tree  and  uses  this  tree  as  a  starting  tree.  Run     PhyML  without  the  tree-search,  so  that  all  model  parameters     are optimized on the BioNJ tree.</p>
+
+<ul>
+<li>Compare the ML and the BioNJ trees and the model  estimates (HKY+Gamma)  obtained  for  the  two  trees.  </li>
+<li>Compare  the likelihood  of  the  ML and NJ trees. </li>
+<li>What do you observe and why?</li>
+</ul>
+
+<hr>
+
+<p>3)  Model  comparison:  Use  now  GTR+Gamma  and  JC+Gamma,  GTR,  HKY  and  JC.  </p>
+
+<ul>
+<li>Which  model  is  the  best  (including  HKY+Gamma),  based  on  the AIC  criterion?   </li>
+<li>What  about adding invariant sites (+I)?</li>
+</ul>
+
+<hr>
+
+<p>4)  Branch  supports:  Evaluate  branch  supports  for  the  inferred  ML  phylogeny.  </p>
+
+<ul>
+<li>Compare supports inferred by non-parametric ML bootstrap to those obtained using  SH-aLRT  method <br>
+<em>(note:  the  running  time  is  much  shorter  for  SH-aLRT)</em>.  </li>
+<li>Are  the  results compatible?  </li>
+</ul>
+
+<hr>
+
+<p>5)  Command  line:  Discover  the  specification  of  PhyML  options  on  a  command  line  by  typing  <code>phyml  -h</code>.  Write  down  command  lines  to  execute  the  analyses  performed  in  (1)-(4).  </p>
+
+<hr>
+
+<p>6)** (Only for the brave) Inferring ML phylogenies with codon models:  For  this  task,  use  CodonPhyML  (the  menu  mode)  to  analyse  your  dataset  (data  should  be  protein-coding  DNA).  The  menu  interface  is  very  similar  to  PhyML  except  CodonPhyML  includes  codon  models  and  some  additional  amino  acid  models  (eg,  PCA  models  by  Zoller  and  Schneider;  antibody  model  AB  by  Mirsky  et  al  2015;  models for ordered/disordered proteins by Szalkowski and Anisimova 2011). </p>
+
+<ul>
+<li>Choose  to  work  with  a  protein-coding  DNA  dataset  (codon  sequences,  eg,  one  of  datasets).  </li>
+<li>Analyze  the  data  using  codon  models  M0,  M0+Gamma  and  M5;  amino  acid  models  LG,  WAG,  LG+Gamma  and  WAG+Gamma;  and  GTR+Gamma.</li>
+<li>The  Log-likelihods  for  codon  models  and  amino  acid  models  are  comparable.  For  GTR+Gamma  model,  the  converted  log-likelihood  score  is  also  available  so  the  comparison  across  DNA,  AA  and  codon  models  can  be  made.  Based  on  AIC,  which  model  fits  your  dataset  best?  </li>
+<li>Are  the  trees  inferred  using  the  best  AA  and  best  codon model different? </li>
+<li>Are they different to the tree inferred using the DNA model?  </li>
+</ul>
+
+<hr>
+
+<p>7) Analyse the primate AA dataset.</p>
+
+<ul>
+<li>Run PhyML (the menu mode). Set the model to LG+Gamma, and try both +F and – F  options.  </li>
+<li>Compare  the  trees  and  the  likelihood  values.  Which  model  is  best,  based  on AIC criterion. </li>
+<li>What about using invariant sites? </li>
+<li>Search for the best model using ProtTest:  <a href="http://darwin.uvigo.es/software/prottest2_server.html">http://darwin.uvigo.es/software/prottest2_server.html</a>  </li>
+<li>Compare the trees, likelihood and AIC values to those of LG+Gamma.  </li>
+</ul>
+
+<hr>
+
+<p>8) Reanalyse the protein data sets from Lerat et al. (2003)  “From  gene  trees  to  organismal phylogeny in Prokaryotes: The case of the gammaTProteobacteria.” PLoS  Biology 1:101T109</p>
+
+<ul>
+<li>Infer the tree with a reasonable model (e.g. LG+G)</li>
+<li>Search for the best model using ProtTest, and construct the corresponding tree  </li>
+<li>Look into the stat file, what can you tell based on the ML estimates?</li>
+<li>Display the tree in a nice and meaningful way (eg, using Figtree or any  other program)</li>
+<li>Are you able to recover the HGT (horizontal gene transfer) published by  Lerat et al.?</li>
+</ul>
+
+<p><img src="./images/BacterialProteinDataConsensusTree.png" alt="" title=""></p>
+
+<hr>
+
+<h4 id="references">References</h4>
+
+<ol>
+<li><a href="http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf">http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf</a></li>
+</ol>
+
+<hr>
+
+<p>Document last updated on 02.01.2016</p>
+
+<hr>
+
+<p>© 2016 Lorenzo Gatti – Applied Computational Genomic Team (ACGT) @ Institute of Applied Simulations (ZHAW) | Wädenswil | Zürich</p></div></body>
+</html>
