@@ -842,7 +842,37 @@ We selected the <strong>LG + Gamma</strong> model according to the AIC criterion
 
 <p><strong>1. What can you tell based on the ML estimates?</strong></p>
 
+<table>
+<thead>
+<tr>
+  <th align="center">Parameter</th>
+  <th align="center">Using <em>LG+G+I</em> model</th>
+  <th align="center">Using <em>WAG+G+F</em> model</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">Log-likelihood:</td>
+  <td align="center">-4546.52</td>
+  <td align="center">-4542.71</td>
+</tr>
+<tr>
+  <td align="center">Gamma shape parameter:</td>
+  <td align="center">0.953</td>
+  <td align="center">0.633</td>
+</tr>
+<tr>
+  <td align="center">Proportion of invariant:</td>
+  <td align="center">0.182</td>
+  <td align="center">0</td>
+</tr>
+</tbody></table>
+
+
+<p>When <em>LG+G+I</em> model is used, the alpha parameter of the gamma distribution is skewed towards <script type="math/tex" id="MathJax-Element-1347"> \alpha = 1 </script> which in turns indicate that the rate variability is centred on one category. </p>
+
 <p><strong>2. Display trees</strong></p>
+
+<p>We coloured the branches according to their support (blue = 1, red=0). </p>
 
 <table>
 <thead>
