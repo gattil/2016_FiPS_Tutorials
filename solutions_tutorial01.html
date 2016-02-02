@@ -11,6 +11,8 @@
 
 <hr>
 
+
+
 <h2 id="tutorial-1-inferring-phylogenies-using-maximum-likelihood"><strong>Tutorial 1</strong>: Inferring phylogenies using maximum likelihood</h2>
 
 <p>In this tutorial you will be guided in using PhyML and its extension, CodonPhyML,  to solve common phylogenetic problems. For some of the following exercises there might be more than one single solution. </p>
@@ -19,20 +21,26 @@
 
 <hr>
 
+
+
 <h3 id="ml-with-dna-data-the-primate-dna-dataset">ML with DNA data (the primate DNA dataset)</h3>
 
 <p>Dataset file: <em>primates-nt.phy</em></p>
+
+
 
 <h4 id="exercise-1">Exercise 1</h4>
 
 <p>GOAL: In this exercise you are asked to run PhyML <strong>twice</strong> in order to compare the effect of estimating nucleotide frequencies from the used dataset vs. optimising them with a maximum likelihood (ML) approach. </p>
 
+
+
 <h5 id="execution">Execution</h5>
 
 <p><strong>1. First run</strong> <br>
         - Nucleotide substitution model =  <em>HKY85 + Gamma</em> <br>
-        - Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-922">\kappa</script> parameter of HKY85 model) <br>
-        - Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-923">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
+        - Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-1292">\kappa</script> parameter of HKY85 model) <br>
+        - Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-1293">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
         - Estimating <em>nucleotide frequencies</em> <strong>with ML</strong></p>
 
 <p>Here is the list of the parameters to change:</p>
@@ -49,8 +57,8 @@
 
 <p><strong>2. Second run</strong> <br>
         - Nucleotide substitution model =  <em>HKY85 + Gamma</em> <br>
-        - Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-924">\kappa</script> parameter of HKY85 model) <br>
-        - Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-925">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
+        - Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-1294">\kappa</script> parameter of HKY85 model) <br>
+        - Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-1295">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
         - Estimating <em>nucleotide frequencies</em> <strong>empirically</strong> from the data</p>
 
 <p>Here is the list of the parameters to change:</p>
@@ -64,6 +72,8 @@
 [G] ............. Gamma distributed rates across sites  yes
 [A] ... Gamma distribution parameter (fixed/estimated)  estimated
 </code></pre>
+
+
 
 <h5 id="questions">Questions</h5>
 
@@ -92,18 +102,22 @@
 </code></pre>
 
 <p><strong>3. Which option is best and why do you think so?</strong> <br>
-        The best option in this case is to use the ML approach since the ML optimisation technique provides better estimates for the nucleotide frequencies, which, in turn, affect the likelihood of the inferred tree. This is due to the nucleotide frequencies which are used in the calculation of the likelihood of each site of the alignment (<script type="math/tex" id="MathJax-Element-1097">\pi Q = 0</script>, where <script type="math/tex" id="MathJax-Element-1098">\pi</script> is the vector of the nucleotide frequencies and <script type="math/tex" id="MathJax-Element-1099">Q</script> the rate matrix). </p>
+        The best option in this case is to use the ML approach since the ML optimisation technique provides better estimates for the nucleotide frequencies, which, in turn, affect the likelihood of the inferred tree. This is due to the nucleotide frequencies which are used in the calculation of the likelihood of each site of the alignment (<script type="math/tex" id="MathJax-Element-1296">\pi Q = 0</script>, where <script type="math/tex" id="MathJax-Element-1297">\pi</script> is the vector of the nucleotide frequencies and <script type="math/tex" id="MathJax-Element-1298">Q</script> the rate matrix). </p>
+
+
 
 <h4 id="exercise-2">Exercise 2</h4>
 
 <p>GOAL: In this exercise you are asked to optimise the tree topology on the substitution parameters obtained using ML performing a tree search (i.e. NNI, SPR, TBR) on the initial tree topology.</p>
 
+
+
 <h5 id="execution-1">Execution</h5>
 
 <p><strong>1. Run</strong> <br>
         - Nucleotide substitution model =  <em>HKY85 + Gamma</em> <br>
-        - Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-896">\kappa</script> parameter of HKY85 model) <br>
-        - Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-897">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
+        - Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-1299">\kappa</script> parameter of HKY85 model) <br>
+        - Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-1300">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
         - Estimating <em>nucleotide frequencies</em> <strong>with ML</strong> <br>
         - No <em>tree search</em> (tree optimisation)</p>
 
@@ -123,6 +137,8 @@
 
 <pre><code>[O] ........................... Optimise tree topoLOGy  no
 </code></pre>
+
+
 
 <h5 id="questions-1">Questions</h5>
 
@@ -144,7 +160,7 @@ The topology inferred without tree search presents a variation in the internal n
 
 
 <p><em>* 2.  Compare the model estimates with and without tree-search. What do you observe and why?*</em> <br>
-The transition/transversion ratio differs slightly between the two runs. As the matter of fact, <script type="math/tex" id="MathJax-Element-1108"> k </script> parameter appears to have a higher value when tree-search is not performed. </p>
+The transition/transversion ratio differs slightly between the two runs. As the matter of fact, <script type="math/tex" id="MathJax-Element-1301"> k </script> parameter appears to have a higher value when tree-search is not performed. </p>
 
 <p><strong>3. Compare the likelihood of the ML and NJ trees. What do you observe and why?</strong> <br>
 The likelihood value obtained without tree-search is lower than the value obtain performing the topology optimisation. This value is expected since the substitution parameters are optimised over the first inferred tree topology which did not undergo any refinement. </p>
@@ -153,9 +169,13 @@ The likelihood value obtained without tree-search is lower than the value obtain
     without tree-search: -6173.00555
 </code></pre>
 
+
+
 <h4 id="exercise-3">Exercise 3</h4>
 
 <p>GOAL: In this exercise you are asked to compare different substitution models (and their variations) on the same dataset.</p>
+
+
 
 <h5 id="execution-2">Execution</h5>
 
@@ -246,7 +266,7 @@ The likelihood value obtained without tree-search is lower than the value obtain
 <p>The number of parameters are computed in the following way for a rooted tree:</p>
 
 <blockquote>
-  <p><script type="math/tex" id="MathJax-Element-880">k = (2* \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
+  <p><script type="math/tex" id="MathJax-Element-1302">k = (2* \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
   substitution models:  JC = 0 parameters | HKY = 4 parameters | GTR = 8 parameters <br>
   invariant sites = +1 parameter <br>
   gamma rates = +1 parameter</p>
@@ -255,8 +275,10 @@ The likelihood value obtained without tree-search is lower than the value obtain
 <p>We compute the AIC value as follows:</p>
 
 <blockquote>
-  <p><script type="math/tex" id="MathJax-Element-881">AIC = 2(k) - \log(L)</script></p>
+  <p><script type="math/tex" id="MathJax-Element-1303">AIC = 2(k) - \log(L)</script></p>
 </blockquote>
+
+
 
 <h5 id="questions-2">Questions</h5>
 
@@ -266,6 +288,8 @@ We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma
 <hr>
 
 <p>This exercise can also be solved using <a href="https://github.com/ddarriba/jmodeltest2">jmodeltest</a> which performs automatically phylogenetic tree reconstructions with every model and extra parameters (i.e. invariant sites,  gamma).</p>
+
+
 
 <h4 id="exercise-4">Exercise 4</h4>
 
@@ -341,6 +365,8 @@ We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma
   - aLRT is much faster than bootstrap</p>
 </blockquote>
 
+
+
 <h5 id="questions-3">Questions</h5>
 
 <p><strong>1. Are the results compatible?</strong></p>
@@ -359,6 +385,8 @@ We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma
   <td align="center"><img src="./images/ex4_tree_sh_aLRT.png" alt="" title=""></td>
 </tr>
 </tbody></table>
+
+
 
 
 <h4 id="exercise-5">Exercise 5</h4>
@@ -406,9 +434,13 @@ GTR_I_G &gt; phyml -i primates-nt.phy -m 'GTR' -t 'e' -a 'e' -f 'm' -v 'e'
 SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b -4
 </code></pre>
 
+
+
 <h4 id="exercise-6">Exercise 6</h4>
 
 <p>GOAL:</p>
+
+
 
 <h5 id="execution-4">Execution</h5>
 
@@ -552,7 +584,7 @@ SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b 
 <p>The number of parameters are computed in the following way for a rooted tree:</p>
 
 <blockquote>
-  <p><script type="math/tex" id="MathJax-Element-1044">k = (2* \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
+  <p><script type="math/tex" id="MathJax-Element-1304">k = (2* \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
   substitution models:  LG = 0 parameters | WAG = 0 parameters | GTR = 8 parameters | GY = 2 | M0 = 2 | M5 = 2  <br>
   gamma rates = +1 parameter</p>
 </blockquote>
@@ -560,7 +592,7 @@ SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b 
 <p>We compute the AIC value as follows:</p>
 
 <blockquote>
-  <p><script type="math/tex" id="MathJax-Element-1045">AIC = 2(k) - \log(L)</script></p>
+  <p><script type="math/tex" id="MathJax-Element-1305">AIC = 2(k) - \log(L)</script></p>
 </blockquote>
 
 <table>
@@ -623,6 +655,8 @@ SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b 
 </tbody></table>
 
 
+
+
 <h5 id="questions-4">Questions</h5>
 
 <p><strong>1. Based on AIC, which model fits your dataset best?</strong>  <br>
@@ -650,12 +684,18 @@ Yes, they are also different to the tree inferred using the GTR+Gamma model. </p
 
 <hr>
 
+
+
 <h3 id="ml-with-protein-data">ML with protein data</h3>
+
+
 
 <h4 id="with-primate-dataset">With primate dataset</h4>
 
 <p>GOAL: Testing different amino acids substitution models on a protein dataset <br>
 Dataset: <strong>primates-aa.phy</strong></p>
+
+
 
 <h5 id="execution-5">Execution</h5>
 
@@ -709,6 +749,8 @@ Dataset: <strong>primates-aa.phy</strong></p>
 
 <p>You can find the results in the file <em>ex7/prottest_analysis.txt</em></p>
 
+
+
 <h5 id="questions-5">Questions</h5>
 
 <p><strong>1. Which is the best model based on AIC criterion? What about using invariant sites?</strong> <br>
@@ -742,9 +784,13 @@ We selected the <strong>LG + Gamma</strong> model according to the AIC criterion
 </tbody></table>
 
 
+
+
 <h4 id="with-protein-data-sets-from-lerat-et-al-2003">With protein data sets from Lerat et al. (2003)</h4>
 
 <p>GOAL: Inferring a phylogenetic tree on a protein dataset using an appropriate substitution model and detect an event of HGT.</p>
+
+
 
 <h5 id="execution-6">Execution</h5>
 
@@ -790,6 +836,8 @@ We selected the <strong>LG + Gamma</strong> model according to the AIC criterion
 
 <p>You can find the results in the file <em>ex8/prottest_analysis.txt</em></p>
 
+
+
 <h5 id="questions-6">Questions</h5>
 
 <p><strong>1. What can you tell based on the ML estimates?</strong></p>
@@ -814,10 +862,15 @@ We selected the <strong>LG + Gamma</strong> model according to the AIC criterion
 
 <hr>
 
+
+
 <h4 id="references">References</h4>
 
 <ol>
+<li>Darriba D, Taboada GL, Doallo R, Posada D. 2012. jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8), 772. <a href="http://dx.doi.org/10.1038/nmeth.2109">http://dx.doi.org/10.1038/nmeth.2109</a></li>
+<li>Guindon S and Gascuel O (2003). A simple, fast and accurate method to estimate large phylogenies by maximum-likelihood”. Systematic Biology 52: 696-704. <a href="http://sysbio.oxfordjournals.org/content/52/5/696.long">DOI: 10.1080/10635150390235520</a></li>
 <li><a href="http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf">http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf</a></li>
+<li>Lerat E, Daubin V, Moran NA (2003) From Gene Trees to Organismal Phylogeny in Prokaryotes:The Case of the γ-Proteobacteria. PLoS Biol 1(1): e19. <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0000019">doi: 10.1371/journal.pbio.0000019</a></li>
 </ol>
 
 <hr>
