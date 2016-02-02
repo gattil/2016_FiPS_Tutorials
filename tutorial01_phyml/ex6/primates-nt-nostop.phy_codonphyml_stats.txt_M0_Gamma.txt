@@ -1,0 +1,62 @@
+
+# oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#                 --- codonPhyML 1.00 201407.24 ---
+#                               Marcelo S Zanetti
+#                                 Stefan Zoller
+#                                  Manuel  Gil
+#                               Louis  du Plessis
+#                                Maria Anisimova
+#                  http://sourceforge.net/projects/codonphyml/
+# oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+. Sequence filename: 			primates-nt-nostop.phy
+. Data set: 				1
+. Tree topology search: 		NNIs
+. Initial tree: 			BioNJ + GYECMK07
+. Model name: 				GY CF3x4
+. Genetic code: 			Standard
+. Number of taxa: 			20
+. Branch support: 			SH-like
+. Log-likelihood: 			-6075.69
+. Unconstrained Log-likelihood: 	-2809.71
+. Parsimony: 				233
+. Tree size: 				1.66904
+. Discrete gamma model: Yes
+    . Number of categories: 		4
+    . Gamma shape parameter: 		1.00581
+. Proportion of invariant: 		0
+. Transition/transversion ratio: 	3.46758
+. Nonsynonymous/synonymous ratio: 1.24898
+. Nucleotides frequencies: 
+    Position 1: f(T1)=0.23300686   f(C1)=0.23305228   f(A1)=0.26767445   f(G1)=0.26626642   
+    Position 2: f(T2)=0.27246976   f(C2)=0.16889097   f(A2)=0.40081939   f(G2)=0.15781988   
+    Position 3: f(T3)=0.25453529   f(C3)=0.21118565   f(A3)=0.23275516   f(G3)=0.30152390   
+. Codon frequencies: 
+    f(TTT)=0.01716307   f(TTC)=0.01424005   f(TTA)=0.01569446   f(TTG)=0.02033147   
+    f(TCT)=0.01063857   f(TCC)=0.00882672   f(TCA)=0.00972824   f(TCG)=0.01260251   
+    f(TAT)=0.02524791   f(TAC)=0.02094797   f(TAA)=0.00000000   f(TAG)=0.00000000   
+    f(TGT)=0.00994119   f(TGC)=0.00824812   f(TGA)=0.00000000   f(TGG)=0.01177639   
+    f(CTT)=0.01716642   f(CTC)=0.01424282   f(CTA)=0.01569752   f(CTG)=0.02033543   
+    f(CCT)=0.01064064   f(CCC)=0.00882845   f(CCA)=0.00973014   f(CCG)=0.01260496   
+    f(CAT)=0.02525283   f(CAC)=0.02095205   f(CAA)=0.02309199   f(CAG)=0.02991464   
+    f(CGT)=0.00994313   f(CGC)=0.00824973   f(CGA)=0.00909231   f(CGG)=0.01177869   
+    f(ATT)=0.01971666   f(ATC)=0.01635873   f(ATA)=0.01802954   f(ATG)=0.02335646   
+    f(ACT)=0.01222141   f(ACC)=0.01014000   f(ACA)=0.01117565   f(ACG)=0.01447755   
+    f(AAT)=0.02900439   f(AAC)=0.02406468   f(AAA)=0.02652253   f(AAG)=0.03435875   
+    f(AGT)=0.01142028   f(AGC)=0.00947530   f(AGA)=0.01044306   f(AGG)=0.01352852   
+    f(GTT)=0.01961294   f(GTC)=0.01627268   f(GTA)=0.01793470   f(GTG)=0.02323360   
+    f(GCT)=0.01215712   f(GCC)=0.01008666   f(GCA)=0.01111686   f(GCG)=0.01440140   
+    f(GAT)=0.02885182   f(GAC)=0.02393809   f(GAA)=0.02638302   f(GAG)=0.03417802   
+    f(GGT)=0.01136020   
+. Time used: 				0h4m4s
+. Seconds: 				244
+. MLTree: 				((((((((((Tant_cDNA:0.0041254423,AGM_cDNA:0.0041229060):0.0150908191,(Baboon:0.0098687785,Rhes_cDNA:0.0177874819):0.0134678515):0.0078866047,Patas:0.0334738818):0.0385046922,DLangur:0.0147037146):0.0037721010,Colobus:0.0085600687):0.0938012084,((Gibbon:0.0739997240,Orangutan:0.0388755283):0.0046729004,((Human:0.0207733029,Chimp:0.0064782478):0.0040642074,Gorilla:0.0170640015):0.0219059053):0.0412660789):0.3909435513,(Saki:0.0681869907,Titi:0.0601822940):0.0315370739):0.0068567820,(Squirrel:0.1536427367,(Tamarin:0.0581622476,PMarmoset:0.0572177975):0.0496160210):0.0055005850):0.0467307892,Howler:0.1188757609):0.0283073923,Woolly:0.0618092898,Spider:0.0372100429);
+. MLTreeSize: 				1.66904
+# 
+# If you reconstruct trees or do model selection with CodonPhyML please cite:
+# M. Gil, M.S. Zanetti, S. Zoller and M. Anisimova 2013
+# CodonPhyML: Fast Maximum Likelihood Phylogeny Estimation under Codon Substitution Models
+# Molecular Biology and Evolution, pages 1270-1280, volume 30, number 6
+# 
+# If you use aBayes branch supports please cite:
+# M. Anisimova, M. Gil, J.F. Dufayard, C. Dessimoz and O. Gascuel 2011
+# Survey of branch support methods demonstrates accuracy, power, and robustness of fast likelihood-based approximation schemes. Syst Biol 60:685-699

@@ -1,0 +1,56 @@
+
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+                                  ---  PhyML 20120412  ---                                             
+                            http://www.atgc-montpellier.fr/phyml                                          
+                         Copyright CNRS - Universite Montpellier II                                 
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+. Sequence filename: 			primates-nt.phy
+. Data set: 				#1
+. Tree topology search : 		NNIs
+. Initial tree: 			BioNJ
+. Model of nucleotides substitution: 	GTR
+. Number of taxa: 			20
+. Log-likelihood: 			-6171.17472
+. Unconstrained likelihood: 		-5060.29926
+. Parsimony: 				739
+. Tree size: 				0.53752
+. Proportion of invariant: 		0.486
+. Nucleotides frequencies:
+  - f(A)= 0.29042
+  - f(C)= 0.21001
+  - f(G)= 0.25365
+  - f(T)= 0.24592
+. GTR relative rate parameters : 
+  A <-> C    1.65536
+  A <-> G    4.11992
+  A <-> T    0.82445
+  C <-> G    1.47883
+  C <-> T    3.67428
+  G <-> T    1.00000
+
+. Instantaneous rate matrix : 
+  [A---------C---------G---------T------]
+  -1.00435   0.21885   0.65786   0.12764  
+   0.30264  -1.10760   0.23614   0.56882  
+   0.75322   0.19551  -1.10354   0.15481  
+   0.15073   0.48577   0.15968  -0.79618  
+
+
+
+. Run ID:				GTR_I
+. Random seed:				1454315267
+. Subtree patterns aliasing:		no
+. Version:				20120412
+. Time used:				0h0m1s (1 seconds)
+
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ Suggested citations:
+ S. Guindon, JF. Dufayard, V. Lefort, M. Anisimova, W. Hordijk, O. Gascuel
+ "New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0."
+ Systematic Biology. 2010. 59(3):307-321.
+
+ S. Guindon & O. Gascuel
+ "A simple, fast, and accurate algorithm to estimate large phylogenies by maximum likelihood"
+ Systematic Biology. 2003. 52(5):696-704.
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo

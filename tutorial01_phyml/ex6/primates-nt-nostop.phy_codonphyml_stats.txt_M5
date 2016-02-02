@@ -1,0 +1,66 @@
+
+# oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#                 --- codonPhyML 1.00 201407.24 ---
+#                               Marcelo S Zanetti
+#                                 Stefan Zoller
+#                                  Manuel  Gil
+#                               Louis  du Plessis
+#                                Maria Anisimova
+#                  http://sourceforge.net/projects/codonphyml/
+# oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+. Sequence filename: 			primates-nt-nostop.phy
+. Data set: 				1
+. Tree topology search: 		NNIs
+. Initial tree: 			BioNJ + GYECMK07
+. Model name: 				GY CF3x4
+. Genetic code: 			Standard
+. Number of taxa: 			20
+. Branch support: 			SH-like
+. Log-likelihood: 			-6057.39
+. Unconstrained Log-likelihood: 	-2809.71
+. Parsimony: 				234
+. Tree size: 				1.69941
+. Discrete gamma model: Yes
+    . Number of categories: 		3
+    . Gamma shape (alpha): 		0.568686
+    . Gamma shape (beta): 		0.386754
+. Proportion of invariant: 		0
+. Transition/transversion ratio: 	3.53232
+. Nonsynonmous/synonymous ratio: 
+    Omega / Probability: o0=0.11620940   p0=0.33333333   
+    Omega / Probability: o1=0.78966876   p1=0.33333333   
+    Omega / Probability: o2=3.50534392   p2=0.33333333   
+. Nucleotides frequencies: 
+    Position 1: f(T1)=0.23300686   f(C1)=0.23305228   f(A1)=0.26767445   f(G1)=0.26626642   
+    Position 2: f(T2)=0.27246976   f(C2)=0.16889097   f(A2)=0.40081939   f(G2)=0.15781988   
+    Position 3: f(T3)=0.25453529   f(C3)=0.21118565   f(A3)=0.23275516   f(G3)=0.30152390   
+. Codon frequencies: 
+    f(TTT)=0.01716307   f(TTC)=0.01424005   f(TTA)=0.01569446   f(TTG)=0.02033147   
+    f(TCT)=0.01063857   f(TCC)=0.00882672   f(TCA)=0.00972824   f(TCG)=0.01260251   
+    f(TAT)=0.02524791   f(TAC)=0.02094797   f(TAA)=0.00000000   f(TAG)=0.00000000   
+    f(TGT)=0.00994119   f(TGC)=0.00824812   f(TGA)=0.00000000   f(TGG)=0.01177639   
+    f(CTT)=0.01716642   f(CTC)=0.01424282   f(CTA)=0.01569752   f(CTG)=0.02033543   
+    f(CCT)=0.01064064   f(CCC)=0.00882845   f(CCA)=0.00973014   f(CCG)=0.01260496   
+    f(CAT)=0.02525283   f(CAC)=0.02095205   f(CAA)=0.02309199   f(CAG)=0.02991464   
+    f(CGT)=0.00994313   f(CGC)=0.00824973   f(CGA)=0.00909231   f(CGG)=0.01177869   
+    f(ATT)=0.01971666   f(ATC)=0.01635873   f(ATA)=0.01802954   f(ATG)=0.02335646   
+    f(ACT)=0.01222141   f(ACC)=0.01014000   f(ACA)=0.01117565   f(ACG)=0.01447755   
+    f(AAT)=0.02900439   f(AAC)=0.02406468   f(AAA)=0.02652253   f(AAG)=0.03435875   
+    f(AGT)=0.01142028   f(AGC)=0.00947530   f(AGA)=0.01044306   f(AGG)=0.01352852   
+    f(GTT)=0.01961294   f(GTC)=0.01627268   f(GTA)=0.01793470   f(GTG)=0.02323360   
+    f(GCT)=0.01215712   f(GCC)=0.01008666   f(GCA)=0.01111686   f(GCG)=0.01440140   
+    f(GAT)=0.02885182   f(GAC)=0.02393809   f(GAA)=0.02638302   f(GAG)=0.03417802   
+    f(GGT)=0.01136020   
+. Time used: 				0h4m41s
+. Seconds: 				281
+. MLTree: 				((((((((((Tant_cDNA:0.0041652220,AGM_cDNA:0.0041686184):0.0147464273,Patas:0.0382064674):0.0043342267,(Baboon:0.0098603022,Rhes_cDNA:0.0183827407):0.0117794942):0.0426308817,DLangur:0.0147891740):0.0041008468,Colobus:0.0084257311):0.0950389431,((Gibbon:0.0748820532,Orangutan:0.0392956721):0.0045484024,((Human:0.0210007760,Chimp:0.0065521723):0.0040531097,Gorilla:0.0172818946):0.0224389023):0.0412008068):0.4008233220,(Saki:0.0691854536,Titi:0.0616278071):0.0307784369):0.0078319226,(Squirrel:0.1572551874,(Tamarin:0.0582171620,PMarmoset:0.0586060174):0.0505551448):0.0050307458):0.0468909207,Howler:0.1205331781):0.0297048209,Woolly:0.0629989773,Spider:0.0374849074);
+. MLTreeSize: 				1.69941
+# 
+# If you reconstruct trees or do model selection with CodonPhyML please cite:
+# M. Gil, M.S. Zanetti, S. Zoller and M. Anisimova 2013
+# CodonPhyML: Fast Maximum Likelihood Phylogeny Estimation under Codon Substitution Models
+# Molecular Biology and Evolution, pages 1270-1280, volume 30, number 6
+# 
+# If you use aBayes branch supports please cite:
+# M. Anisimova, M. Gil, J.F. Dufayard, C. Dessimoz and O. Gascuel 2011
+# Survey of branch support methods demonstrates accuracy, power, and robustness of fast likelihood-based approximation schemes. Syst Biol 60:685-699
