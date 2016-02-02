@@ -11,11 +11,86 @@
 
 <hr>
 
+
+
 <h2 id="tutorial-2-evaluating-selection-pressure-with-codon-models"><strong>Tutorial 2</strong>: Evaluating selection pressure with codon models</h2>
 
-<p>In this tutorial you will be guided in using PaML to detect natural selection on protein coding gene datasets. For some of the following exercises there might be more than one single solution. </p>
+<p>We will use codeml program from PAML by Ziheng Yang. Use the command line mode for the tasks below. First, you need to understand which with control file options to use. Next, try to reproduce the same analyses with codeml or PAML-X (the GUI for PAML).  <br>
+You will need a dataset of homologous protein-coding DNA sequences (starting with the 1<sup>st</sup> codon position and ending with the 3<sup>rd</sup>). We will use data from published articles and will regenerate published results: </p>
+
+<ol>
+<li><p>Site-models: Yang, Z., R. Nielsen, N. Goldman, A.-M. K. Pedersen. 2000. Codon-substitution models for heterogeneous selection pressure at amino acid sites. Genetics 155: 431-449. <br>
+Data 1: <code>bglobin.nuc</code> Tree 2: <code>bglobin.tree</code> <br>
+Data 2: <code>HIVenvSweden.nuc</code> Tree 3: <code>HIVenvSweden.tree</code> <br>
+Data 3: <code>adh.nuc</code> Tree 1: <code>adh.tree</code></p></li>
+<li><p>Branch models: Yang, Z. 1998. Likelihood ratio tests for detecting positive selection and application to primate lysozyme evolution. Mol. Biol. Evol. 15:568-573.  <br>
+Data 1: <code>lysozymeSmall.nuc</code> Tree 1: <code>lysozymeSmall.trees</code></p></li>
+<li><p>Branch-site models: Zhang, J., R. Nielsen, and Z. Yang. 2005. Evaluation of an improved branch-site likelihood method for detecting positive selection at the molecular level. Molecular Biology and Evolution 22:2472-2479. <br>
+We will use the same data as in 2 (also analysed in the paper).</p></li>
+</ol>
 
 <p><em>These exercises were prepared by Maria Anisimova</em></p>
 
-<hr></div></body>
+<hr>
+
+<ol>
+<li><p><strong>The simple codon model with constant ω</strong>. Choose a dataset from publication 1 and fit model M0 - the most simple codon model with constant ω over time and sites. Run model M0 twice: first with branch lengths fixed to those in the tree file, and once with branch lengths estimated by ML.  <br>
+Compare the optimised log-likelihoods for the two runs? In which case is it higher? Why?  <br>
+Next, study the output file for the run with estimated branch lengths:  <br>
+Do you observe the codon frequency bias?  <br>
+Study the statistics of nucleotide usage for different codon positions. Which position displays the most bias? Why?  <br>
+What is the ML estimate of the transition-transversion ratio κ? What is the ML estimate of the ω-ratio? How do you interpret these ML estimates?</p></li>
+<li><p><strong>Branch models</strong>. Use the small lysozyme example (publications 2 and 3) to fit free-ratio model for branches.  <br>
+Are results consistent with those presented in ref. (2)?  <br>
+Label the branch leading to colobine clade and fit the 2-ratio branch model to your data.  <br>
+In addition, label the branch leading to hominoids clade (use different label) and fit the 3-ratio branch model to your data.  <br>
+Based on LRTs, what model fits your data the best (among 2-ratio, 3-ratio and free-ratio models)?  <br>
+What are the degrees of freedoms for each comparison?  <br>
+What can you tell about the evolution of your gene from the ML estimates under this best model?</p></li>
+<li><p><strong>Site-models</strong>. Choose a dataset from publication 1 and fit the following site models to your data:  <br>
+M1, M2, M3, M7, M8a, and M8 (always estimate branch lengths by ML).  <br>
+Model M0 was already fitted above (make sure you have the output file).  <br>
+Note: M8a is model M8 with ω for the discrete category fixed to 1.  <br>
+Which models are nested?  <br>
+Perform likelihood ratio tests (LRTs) of nested hypotheses.  <br>
+How many degrees of freedom do you use each time to test for significance of the LRT statistic?  <br>
+Do your tests suggest positive selection?  <br>
+Interpret the ML estimates relevant to selective pressure.  <br>
+If LRTs suggest positive selection, which sites are inferred by the Bayesian approach to be under positive selection (models M2 and M8)?  <br>
+Do NEB and BEB agree on the sites inferred?  <br>
+Compare results from the LRT comparing M7 vs M8 and the LRT comparing M8a vs M8. Are they both significant (or both non-significant)? If they are both significant, does the Bayesian approach predict the same sites?</p></li>
+<li><p><strong>Branch-site models</strong>. Use the small lysozyme example (publications 2 and 3) to to fit branch-site models to the same data:  <br>
+For each branch of the tree (one at a time) perform the LRT comparing model MA (ω is estimated) with model MA (fixed ω = 1).  <br>
+How many LRTs are significant?  <br>
+How many LRTs remain significant after the Bonferroni correction for multiple testing?  <br>
+What can you tell about the evolution of your gene from the ML estimates obtained after the multiple LRT procedure?</p></li>
+<li><p><strong>Effect of the tree topology</strong>. For one of the datasets you analysed above: Infer a new phylogeny using a simple codon model (M0+Gamma) using CodonPhyML.  <br>
+Is the phylogeny different from the one you used?  <br>
+If it is identical, then do you see differences in branch lengths?  <br>
+If the codon tree is different, use this tree to redo one of the analyses above. Do you still get the same results?  <br>
+If the codon tree is the same, create a new tree that is different from this topology. Use this tree to redo one of the analyses above. Do you still get the same results?  <br>
+How important do you think is the effect of the assumed tree topology for the selection analyses?</p></li>
+<li><p><strong>Feeling adventurous?</strong> Try the switching codon model implemented in FitModel (Guindon et al 2004).  <br>
+Use the same dataset and the tree as in task 4.  <br>
+Use FitModel to test if sites evolved with constant selective pressure over time or whether episodic selective pressure changes took place.  <br>
+What models would you fit to perform the LRT that answers your question?  <br>
+Are the results of this analysis consistent with the analyses by branch-site models in codeml?  <br>
+What is your conclusion?</p></li>
+</ol>
+
+<hr>
+
+<h4 id="references">References</h4>
+
+<ol>
+<li><a href="http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf">http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf</a></li>
+</ol>
+
+<hr>
+
+<p>Document last updated on 02.01.2016</p>
+
+<hr>
+
+<p>© 2016 Lorenzo Gatti – Applied Computational Genomic Team (ACGT) @ Institute of Applied Simulations (ZHAW) | Wädenswil | Zürich</p></div></body>
 </html>
