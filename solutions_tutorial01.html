@@ -13,7 +13,9 @@
 
 <h2 id="tutorial-1-inferring-phylogenies-using-maximum-likelihood"><strong>Tutorial 1</strong>: Inferring phylogenies using maximum likelihood</h2>
 
-<p>In this tutorial you will be guided in using PhyML and its extension, CodonPhyML,  to solve common phylogenetic problems. For some of the following exercises there might be more than one single solution. Herewith I show you my solutions for the exercises prepared by Maria Anisimova</p>
+<p>In this tutorial you will be guided in using PhyML and its extension, CodonPhyML,  to solve common phylogenetic problems. For some of the following exercises there might be more than one single solution. </p>
+
+<p><em>These exercises were prepared by Maria Anisimova</em></p>
 
 <hr>
 
@@ -263,7 +265,7 @@ We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma
 
 <hr>
 
-<p>This exercise can be solved using <a href="https://github.com/ddarriba/jmodeltest2">jmodeltest</a> which performs automatically phylogenetic tree reconstructions with every model and extra parameters (i.e. invariant sites,  gamma).</p>
+<p>This exercise can also be solved using <a href="https://github.com/ddarriba/jmodeltest2">jmodeltest</a> which performs automatically phylogenetic tree reconstructions with every model and extra parameters (i.e. invariant sites,  gamma).</p>
 
 <h4 id="exercise-4">Exercise 4</h4>
 
@@ -650,39 +652,159 @@ Yes, they are also different to the tree inferred using the GTR+Gamma model. </p
 
 <h3 id="ml-with-protein-data">ML with protein data</h3>
 
+<h4 id="with-primate-dataset">With primate dataset</h4>
+
+<p>GOAL: Testing different amino acids substitution models on a protein dataset <br>
+Dataset: <strong>primates-aa.phy</strong></p>
+
+<h5 id="execution-5">Execution</h5>
+
+<p><strong>1. Using PhyML</strong> </p>
+
+<p>We performed the analyses using PhyML and combining the following settings accordingly to the requests:</p>
+
+<pre><code>[M] ................ Model of amino-acids substitution  LG
+[F] . Amino acid frequencies (empirical/model defined)  model
+[V] . Proportion of invariable sites (fixed/estimated)  fixed (p-invar = 0.00)
+[R] ....... One category of substitution rate (yes/no)  yes
+</code></pre>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Model</th>
+  <th align="center">Log-likelihood</th>
+  <th align="center">Parameters</th>
+  <th align="center">AIC</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">LG_G</td>
+  <td align="center">-5199.88631</td>
+  <td align="center">39</td>
+  <td align="center">10477.77262</td>
+</tr>
+<tr>
+  <td align="center">LG_G_I</td>
+  <td align="center">-5199.55701</td>
+  <td align="center">40</td>
+  <td align="center">10479.11402</td>
+</tr>
+<tr>
+  <td align="center">LG_G_F</td>
+  <td align="center">-5230.44821</td>
+  <td align="center">58</td>
+  <td align="center">10576.89642</td>
+</tr>
+<tr>
+  <td align="center">LG_G_F_I</td>
+  <td align="center">-5230.08104</td>
+  <td align="center">59</td>
+  <td align="center">10578.16208</td>
+</tr>
+</tbody></table>
 
 
-<h3 id="with-primate-dataset">With primate dataset</h3>
+<p><strong>2. Using ProTest webservice</strong> </p>
+
+<p>You can find the results in the file <em>protest_analysis.txt</em></p>
+
+<h5 id="questions-5">Questions</h5>
+
+<p><strong>1. Which is the best model based on AIC criterion? What about using invariant sites?</strong> <br>
+We selected the <strong>LG + Gamma</strong> model according to the AIC criterion. Using the invariant sites does not influence the model selection. Adding a proportion of invariant sites increases the number of parameters, therefore the AIC penalises the inferred log-likelihood value. </p>
+
+<p><strong>2. Compare the trees, likelihood and AIC values to those of LG+Gamma.</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th align="right">Value</th>
+  <th align="center">Tree estimated with <em>LG+Gamma</em></th>
+  <th align="center">Tree estimated with <em>HIVw+G+F</em></th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="right">Log-Likelihood:</td>
+  <td align="center">-5199.89</td>
+  <td align="center">-5013.50</td>
+</tr>
+<tr>
+  <td align="right">AIC:</td>
+  <td align="center">10477.77</td>
+  <td align="center">10141.01</td>
+</tr>
+<tr>
+  <td align="right">Tree</td>
+  <td align="center"><img src="./images/ex7_BestTree_PhyML.png" alt="" title=""></td>
+  <td align="center"><img src="./images/ex7_BestTree_ProTest.png" alt="" title=""></td>
+</tr>
+</tbody></table>
 
 
+<h4 id="with-protein-data-sets-from-lerat-et-al-2003">With protein data sets from Lerat et al. (2003)</h4>
 
-<h5 id="exercise-1-1">Exercise 1</h5>
+<p>GOAL: Inferring a phylogenetic tree on a protein dataset using an appropriate substitution model and detect an event of HGT.</p>
+
+<h5 id="execution-6">Execution</h5>
+
+<p><strong>1. Using PhyML</strong> </p>
+
+<p>We used a selection of candidate substitution models (JTT, LG, WAG) that are suitable for the protein datasets.</p>
+
+<p>dataset: <strong>Prot_biob.phy</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Model</th>
+  <th align="center">Log-likelihood</th>
+  <th align="center">Parameters</th>
+  <th align="center">AIC</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">JTT_G_I</td>
+  <td align="center">-4593.61928</td>
+  <td align="center">40</td>
+  <td align="center">9267.23856</td>
+</tr>
+<tr>
+  <td align="center">LG_G_I</td>
+  <td align="center">-4546.51747</td>
+  <td align="center">40</td>
+  <td align="center">9173.03494</td>
+</tr>
+<tr>
+  <td align="center">WAG_G_I</td>
+  <td align="center">-4564.41245</td>
+  <td align="center">40</td>
+  <td align="center">9208.8249</td>
+</tr>
+</tbody></table>
 
 
+<p>We ranked the tested model according to the AIC statistics and we selected the <strong>LG+G+I</strong> model which best fits our dataset</p>
 
-<h5 id="exercise-2-1">Exercise 2</h5>
+<p><strong>2. Using ProTest webservice</strong> </p>
 
+<h5 id="questions-6">Questions</h5>
 
+<p><strong>1. What can you tell based on the ML estimates?</strong></p>
 
-<h3 id="with-protein-data-sets-from-lerat-et-al-2003">With protein data sets from Lerat et al. (2003)</h3>
-
-
-
-<h5 id="exercise-1-2">Exercise 1</h5>
-
-
-
-<h5 id="exercise-2-2">Exercise 2</h5>
+<p><strong>2. Are you able to recover the HGT (horizontal gene transfer) published by Lerat et al.?</strong></p>
 
 <hr>
 
 <h4 id="references">References</h4>
 
+<ol>
+<li><a href="http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf">http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf</a></li>
+</ol>
 
+<hr>
 
-<h2 id="httpdarwinuvigoesdownloadpapersb04modelphylhandbook03pdf"><a href="http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf">http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf</a></h2>
-
-<p>Document last updated on 31.01.2016</p>
+<p>Document last updated on 02.01.2016</p>
 
 <hr>
 
