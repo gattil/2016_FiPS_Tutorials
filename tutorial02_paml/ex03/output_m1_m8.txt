@@ -1,0 +1,760 @@
+     17    432
+
+human                           CTG ACT CCT GAG GAG AAG TCT GCC GTT ACT GCC CTG TGG GGC AAG GTG AAC GTG GAT GAA GTT GGT GGT GAG GCC CTG GGC AGG CTG CTG GTG GTC TAC CCT TGG ACC CAG AGG TTC TTT GAG TCC TTT GGG GAT CTG TCC ACT CCT GAT GCT GTT ATG GGC AAC CCT AAG GTG AAG GCT CAT GGC AAG AAA GTG CTC GGT GCC TTT AGT GAT GGC CTG GCT CAC CTG GAC AAC CTC AAG GGC ACC TTT GCC ACA CTG AGT GAG CTG CAC TGT GAC AAG CTG CAC GTG GAT CCT GAG AAC TTC AGG CTC CTG GGC AAC GTG CTG GTC TGT GTG CTG GCC CAT CAC TTT GGC AAA GAA TTC ACC CCA CCA GTG CAG GCT GCC TAT CAG AAA GTG GTG GCT GGT GTG GCT AAT GCC CTG GCC CAC AAG TAT CAC 
+tarsier                         CTG ACT GCT GAA GAG AAG GCC GCC GTC ACT GCC CTG TGG GGC AAG GTA GAC GTG GAA GAT GTT GGT GGT GAG GCC CTG GGC AGG CTG CTG GTC GTC TAC CCA TGG ACC CAG AGG TTC TTT GAC TCC TTT GGG GAC CTG TCC ACT CCT GCC GCT GTT ATG AGC AAT GCT AAG GTC AAG GCC CAT GGC AAA AAG GTG CTG AAC GCC TTT AGT GAC GGC ATG GCT CAT CTG GAC AAC CTC AAG GGC ACC TTT GCT AAG CTG AGT GAG CTG CAC TGT GAC AAA TTG CAC GTG GAT CCT GAG AAT TTC AGG CTC TTG GGC AAT GTG CTG GTG TGT GTG CTG GCC CAC CAC TTT GGC AAA GAA TTC ACC CCG CAG GTT CAG GCT GCC TAT CAG AAG GTG GTG GCT GGT GTG GCT ACT GCC TTG GCT CAC AAG TAC CAC 
+bushbaby                        CTG ACT CCT GAT GAG AAG AAT GCC GTT TGT GCC CTG TGG GGC AAG GTG AAT GTG GAA GAA GTT GGT GGT GAG GCC CTG GGC AGG CTG CTG GTT GTC TAC CCA TGG ACC CAG AGG TTC TTT GAC TCC TTT GGG GAC CTG TCC TCT CCT TCT GCT GTT ATG GGC AAC CCT AAA GTG AAG GCC CAC GGC AAG AAG GTG CTG AGT GCC TTT AGC GAG GGC CTG AAT CAC CTG GAC AAC CTC AAG GGC ACC TTT GCT AAG CTG AGT GAG CTG CAT TGT GAC AAG CTG CAC GTG GAC CCT GAG AAC TTC AGG CTC CTG GGC AAC GTG CTG GTG GTT GTC CTG GCT CAC CAC TTT GGC AAG GAT TTC ACC CCA CAG GTG CAG GCT GCC TAT CAG AAG GTG GTG GCT GGT GTG GCT ACT GCC CTG GCT CAC AAA TAC CAC 
+hare                            CTG TCC GGT GAG GAG AAG TCT GCG GTC ACT GCC CTG TGG GGC AAG GTG AAT GTG GAA GAA GTT GGT GGT GAG ACC CTG GGC AGG CTG CTG GTT GTC TAC CCA TGG ACC CAG AGG TTC TTC GAG TCC TTT GGG GAC CTG TCC ACT GCT TCT GCT GTT ATG GGC AAC CCT AAG GTG AAG GCT CAT GGC AAG AAG GTG CTG GCT GCC TTC AGT GAG GGT CTG AGT CAC CTG GAC AAC CTC AAA GGC ACC TTC GCT AAG CTG AGT GAA CTG CAT TGT GAC AAG CTG CAC GTG GAT CCT GAG AAC TTC AGG CTC CTG GGC AAC GTG CTG GTT ATT GTG CTG TCT CAT CAC TTT GGC AAA GAA TTC ACT CCT CAG GTG CAG GCT GCC TAT CAG AAG GTG GTG GCT GGT GTG GCC AAT GCC CTG GCT CAC AAA TAC CAC 
+rabbit                          CTG TCC AGT GAG GAG AAG TCT GCG GTC ACT GCC CTG TGG GGC AAG GTG AAT GTG GAA GAA GTT GGT GGT GAG GCC CTG GGC AGG CTG CTG GTT GTC TAC CCA TGG ACC CAG AGG TTC TTC GAG TCC TTT GGG GAC CTG TCC TCT GCA AAT GCT GTT ATG AAC AAT CCT AAG GTG AAG GCT CAT GGC AAG AAG GTG CTG GCT GCC TTC AGT GAG GGT CTG AGT CAC CTG GAC AAC CTC AAA GGC ACC TTT GCT AAG CTG AGT GAA CTG CAC TGT GAC AAG CTG CAC GTG GAT CCT GAG AAC TTC AGG CTC CTG GGC AAC GTG CTG GTT ATT GTG CTG TCT CAT CAT TTT GGC AAA GAA TTC ACT CCT CAG GTG CAG GCT GCC TAT CAG AAG GTG GTG GCT GGT GTG GCC AAT GCC CTG GCT CAC AAA TAC CAC 
+cow                             CTG ACT GCT GAG GAG AAG GCT GCC GTC ACC GCC TTT TGG GGC AAG GTG AAA GTG GAT GAA GTT GGT GGT GAG GCC CTG GGC AGG CTG CTG GTT GTC TAC CCC TGG ACT CAG AGG TTC TTT GAG TCC TTT GGG GAC TTG TCC ACT GCT GAT GCT GTT ATG AAC AAC CCT AAG GTG AAG GCC CAT GGC AAG AAG GTG CTA GAT TCC TTT AGT AAT GGC ATG AAG CAT CTC GAT GAC CTC AAG GGC ACC TTT GCT GCG CTG AGT GAG CTG CAC TGT GAT AAG CTG CAT GTG GAT CCT GAG AAC TTC AAG CTC CTG GGC AAC GTG CTA GTG GTT GTG CTG GCT CGC AAT TTT GGC AAG GAA TTC ACC CCG GTG CTG CAG GCT GAC TTT CAG AAG GTG GTG GCT GGT GTG GCC AAT GCC CTG GCC CAC AGA TAT CAT 
+sheep                           CTG ACT GCT GAG GAG AAG GCT GCC GTC ACC GGC TTC TGG GGC AAG GTG AAA GTG GAT GAA GTT GGT GCT GAG GCC CTG GGC AGG CTG CTG GTT GTC TAC CCC TGG ACT CAG AGG TTC TTT GAG CAC TTT GGG GAC TTG TCC AAT GCT GAT GCT GTT ATG AAC AAC CCT AAG GTG AAG GCC CAT GGC AAG AAG GTG CTA GAC TCC TTT AGT AAC GGC ATG AAG CAT CTC GAT GAC CTC AAG GGC ACC TTT GCT CAG CTG AGT GAG CTG CAC TGT GAT AAG CTG CAC GTG GAT CCT GAG AAC TTC AGG CTC CTG GGC AAC GTG CTG GTG GTT GTG CTG GCT CGC CAC CAT GGC AAT GAA TTC ACC CCG GTG CTG CAG GCT GAC TTT CAG AAG GTG GTG GCT GGT GTT GCC AAT GCC CTG GCC CAC AAA TAT CAC 
+pig                             CTG TCT GCT GAG GAG AAG GAG GCC GTC CTC GGC CTG TGG GGC AAA GTG AAT GTG GAC GAA GTT GGT GGT GAG GCC CTG GGC AGG CTG CTG GTT GTC TAC CCC TGG ACT CAG AGG TTC TTC GAG TCC TTT GGG GAC CTG TCC AAT GCC GAT GCC GTC ATG GGC AAT CCC AAG GTG AAG GCC CAC GGC AAG AAG GTG CTC CAG TCC TTC AGT GAC GGC CTG AAA CAT CTC GAC AAC CTC AAG GGC ACC TTT GCT AAG CTG AGC GAG CTG CAC TGT GAC CAG CTG CAC GTG GAT CCT GAG AAC TTC AGG CTC CTG GGC AAC GTG ATA GTG GTT GTT CTG GCT CGC CGC CTT GGC CAT GAC TTC AAC CCG AAT GTG CAG GCT GCT TTT CAG AAG GTG GTG GCT GGT GTT GCT AAT GCC CTG GCC CAC AAG TAC CAC 
+elephseal                       TTG ACG GCG GAG GAG AAG TCT GCC GTC ACC TCC CTG TGG GGC AAA GTG AAG GTG GAT GAA GTT GGT GGT GAA GCC CTG GGC AGG CTG CTG GTT GTC TAC CCC TGG ACT CAG AGG TTC TTT GAC TCC TTT GGG GAC CTG TCC TCT CCT AAT GCT ATT ATG AGC AAC CCC AAG GTC AAG GCC CAT GGC AAG AAG GTG CTG AAT TCC TTT AGT GAT GGC CTG AAG AAT CTG GAC AAC CTC AAG GGC ACC TTT GCT AAG CTC AGT GAG CTG CAC TGT GAC CAG CTG CAT GTG GAT CCC GAG AAC TTC AAG CTC CTG GGC AAT GTG CTG GTG TGT GTG CTG GCC CGC CAC TTT GGC AAG GAA TTC ACC CCA CAG ATG CAG GGT GCC TTT CAG AAG GTG GTA GCT GGT GTG GCC AAT GCC CTC GCC CAC AAA TAT CAC 
+rat                             CTA ACT GAT GCT GAG AAG GCT GCT GTT AAT GCC CTG TGG GGA AAG GTG AAC CCT GAT GAT GTT GGT GGC GAG GCC CTG GGC AGG CTG CTG GTT GTC TAC CCT TGG ACC CAG AGG TAC TTT GAT AGC TTT GGG GAC CTG TCC TCT GCC TCT GCT ATC ATG GGT AAC CCT AAG GTG AAG GCC CAT GGC AAG AAG GTG ATA AAC GCC TTC AAT GAT GGC CTG AAA CAC TTG GAC AAC CTC AAG GGC ACC TTT GCT CAT CTG AGT GAA CTC CAC TGT GAC AAG CTG CAT GTG GAT CCT GAG AAC TTC AGG CTC CTG GGC AAT ATG ATT GTG ATT GTG TTG GGC CAC CAC CTG GGC AAG GAA TTC ACC CCC TGT GCA CAG GCT GCC TTC CAG AAG GTG GTG GCT GGA GTG GCC AGT GCC CTG GCT CAC AAG TAC CAC 
+mouse                           CTG ACT GAT GCT GAG AAG TCT GCT GTC TCT TGC CTG TGG GCA AAG GTG AAC CCC GAT GAA GTT GGT GGT GAG GCC CTG GGC AGG CTG CTG GTT GTC TAC CCT TGG ACC CAG CGG TAC TTT GAT AGC TTT GGA GAC CTA TCC TCT GCC TCT GCT ATC ATG GGT AAT CCC AAG GTG AAG GCC CAT GGC AAA AAG GTG ATA ACT GCC TTT AAC GAG GGC CTG AAA AAC CTG GAC AAC CTC AAG GGC ACC TTT GCC AGC CTC AGT GAG CTC CAC TGT GAC AAG CTG CAT GTG GAT CCT GAG AAC TTC AGG CTC CTA GGC AAT GCG ATC GTG ATT GTG CTG GGC CAC CAC CTG GGC AAG GAT TTC ACC CCT GCT GCA CAG GCT GCC TTC CAG AAG GTG GTG GCT GGA GTG GCC ACT GCC CTG GCT CAC AAG TAC CAC 
+hamster                         CTG ACT GAT GCT GAG AAG GCC CTT GTC ACT GGC CTG TGG GGA AAG GTG AAC GCC GAT GCA GTT GGC GCT GAG GCC CTG GGC AGG TTG CTG GTT GTC TAC CCT TGG ACC CAG AGG TTC TTT GAA CAC TTT GGA GAC CTG TCT CTG CCA GTT GCT GTC ATG AAT AAC CCC CAG GTG AAG GCC CAT GGC AAG AAG GTG ATC CAC TCC TTC GCT GAT GGC CTG AAA CAC CTG GAC AAC CTG AAG GGC GCC TTT TCC AGC CTG AGT GAG CTC CAC TGT GAC AAG CTG CAC GTG GAT CCT GAG AAC TTC AAG CTC CTG GGC AAT ATG ATC ATC ATT GTG CTG ATC CAC GAC CTG GGC AAG GAC TTC ACT CCC AGT GCA CAG TCT GCC TTT CAT AAG GTG GTG GCT GGT GTG GCC AAT GCC CTG GCT CAC AAG TAC CAC 
+marsupial                       TTG ACT TCT GAG GAG AAG AAC TGC ATC ACT ACC ATC TGG TCT AAG GTG CAG GTT GAC CAG ACT GGT GGT GAG GCC CTT GGC AGG ATG CTC GTT GTC TAC CCC TGG ACC ACC AGG TTT TTT GGG AGC TTT GGT GAT CTG TCC TCT CCT GGC GCT GTC ATG TCA AAT TCT AAG GTT CAA GCC CAT GGT GCT AAG GTG TTG ACC TCC TTC GGT GAA GCA GTC AAG CAT TTG GAC AAC CTG AAG GGT ACT TAT GCC AAG TTG AGT GAG CTC CAC TGT GAC AAG CTG CAT GTG GAC CCT GAG AAC TTC AAG ATG CTG GGG AAT ATC ATT GTG ATC TGC CTG GCT GAG CAC TTT GGC AAG GAT TTT ACT CCT GAA TGT CAG GTT GCT TGG CAG AAG CTC GTG GCT GGA GTT GCC CAT GCC CTG GCC CAC AAG TAC CAC 
+duck                            TGG ACA GCC GAG GAG AAG CAG CTC ATC ACC GGC CTC TGG GGC AAG GTC AAT GTG GCC GAC TGT GGA GCT GAG GCC CTG GCC AGG CTG CTG ATC GTC TAC CCC TGG ACC CAG AGG TTC TTC GCC TCC TTC GGG AAC CTG TCC AGC CCC ACT GCC ATC CTT GGC AAC CCC ATG GTC CGT GCC CAT GGC AAG AAA GTG CTC ACC TCC TTC GGA GAT GCT GTG AAG AAC CTG GAC AAC ATC AAG AAC ACC TTC GCC CAG CTG TCC GAG CTG CAC TGC GAC AAG CTG CAC GTG GAC CCT GAG AAC TTC AGG CTC CTG GGT GAC ATC CTC ATC ATC GTC CTG GCC GCC CAC TTC ACC AAG GAT TTC ACT CCT GAC TGC CAG GCC GCC TGG CAG AAG CTG GTC CGC GTG GTG GCC CAC GCT CTG GCC CGC AAG TAC CAC 
+chicken                         TGG ACT GCT GAG GAG AAG CAG CTC ATC ACC GGC CTC TGG GGC AAG GTC AAT GTG GCC GAA TGT GGG GCC GAA GCC CTG GCC AGG CTG CTG ATC GTC TAC CCC TGG ACC CAG AGG TTC TTT GCG TCC TTT GGG AAC CTC TCC AGC CCC ACT GCC ATC CTT GGC AAC CCC ATG GTC CGC GCC CAC GGC AAG AAA GTG CTC ACC TCC TTT GGG GAT GCT GTG AAG AAC CTG GAC AAC ATC AAG AAC ACC TTC TCC CAA CTG TCC GAA CTG CAT TGT GAC AAG CTG CAT GTG GAC CCC GAG AAC TTC AGG CTC CTG GGT GAC ATC CTC ATC ATT GTC CTG GCC GCC CAC TTC AGC AAG GAC TTC ACT CCT GAA TGC CAG GCT GCC TGG CAG AAG CTG GTC CGC GTG GTG GCC CAT GCC CTG GCT CGC AAG TAC CAC 
+xenlaev                         TGG ACA GCT GAA GAG AAG GCC GCC ATC ACT TCT GTA TGG CAG AAG GTC AAT GTA GAA CAT GAT GGC CAT GAT GCC CTG GGC AGG CTG CTG ATT GTG TAC CCC TGG ACC CAG AGA TAC TTC AGT AAC TTT GGA AAC CTC TCC AAT TCA GCT GCT GTT GCT GGA AAT GCC AAG GTT CAA GCC CAT GGC AAG AAG GTT CTT TCA GCT GTT GGC AAT GCC ATT AGC CAT ATT GAC AGT GTG AAG TCC TCT CTC CAA CAA CTC AGT AAG ATC CAT GCC ACT GAA CTG TTT GTG GAC CCT GAG AAC TTT AAG CGT TTT GGT GGA GTT CTG GTC ATT GTC TTG GGT GCC AAA CTG GGA ACT GCC TTC ACT CCT AAA GTT CAG GCT GCT TGG GAG AAA TTC ATT GCA GTT TTG GTT GAT GGT CTT AGC CAG GGC TAT AAC 
+xentrop                         TGG ACA GCT GAA GAA AAA GCA ACC ATT GCT TCT GTG TGG GGG AAA GTC GAC ATT GAA CAG GAT GGC CAT GAT GCA TTA TCC AGG CTG CTG GTT GTT TAT CCC TGG ACT CAG AGG TAC TTC AGC AGT TTT GGA AAC CTC TCC AAT GTC TCC GCT GTC TCT GGA AAT GTC AAG GTT AAA GCC CAT GGA AAT AAA GTC CTG TCA GCT GTT GGC AGT GCA ATC CAG CAT CTG GAT GAT GTG AAG AGC CAC CTT AAA GGT CTT AGC AAG AGC CAT GCT GAG GAT CTT CAT GTG GAT CCC GAA AAC TTC AAG CGC CTT GCG GAT GTT CTG GTG ATC GTT CTG GCT GCC AAA CTT GGA TCT GCC TTC ACT CCC CAA GTC CAA GCT GTC TGG GAG AAG CTC AAT GCA ACT CTG GTG GCT GCT CTT AGC CAT GGC TAC TTC 
+
+
+
+Printing out site pattern counts
+
+
+        17        426  P
+
+human                           AAA AAA AAA AAC AAC AAC AAC AAC AAG AAG AAG AAG AAG AAG AAG AAG AAT ACA ACC ACC ACC ACT ACT ACT AGG AGG AGG AGT AGT ATG CAC CAC CAC CAC CAC CAC CAG CAG CAG CAT CAT CCA CCA CCT CCT CCT CCT CCT CTC CTC CTC CTG CTG CTG CTG CTG CTG CTG CTG CTG CTG CTG CTG CTG CTG CTG GAA GAA GAC GAC GAG GAG GAG GAG GAG GAT GAT GAT GAT GAT GCC GCC GCC GCC GCC GCC GCC GCC GCC GCT GCT GCT GCT GCT GCT GGC GGC GGC GGC GGC GGC GGC GGC GGG GGT GGT GGT GGT GTC GTC GTG GTG GTG GTG GTG GTG GTG GTG GTG GTG GTG GTG GTT GTT GTT TAC TAT TAT TCC TCC TCT TGG TGT TGT TTC TTC TTC TTT TTT TTT TTT TTT 
+tarsier                         ... ..G ..G ... ..T ..T ..T G.. ..A ..A ... ... ... ... ... ... .C. .AG ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ..T ... ... ... ..C ... .AG ..G ..A ... ... G.. G.. ... ... ..G A.. ... ... ... ... ... ... ... ... ... ... ... T.. T.. T.. ... ..T ... ... ..A ..C ... ... ... ..A ..C ..C ... .CC ... ... ... ... ... ... ... ..T ..T ..C ... ... ... ... ... A.. ... ... ... ... ... ... ... ... AAC ... ... ... ... ..G ..A ..C ..C ... ... ... ... ... ... ... ... ..T ..C ... ... ... ..C ... ... ... G.C ... ... ... ... ... ... ... ... ... ... ... 
+bushbaby                        ..G ..G ..G ... ... ... ... ..T ... ... ..A ..A ... ... ... ... .C. .AG ... ... ... ... T.. TG. ... ... ... ..C ... ... ... ... ... ... ..T ... ... ... ... ..C ..C .AG ... ..A ... ... ... ... ... ... ..G ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ..T ... ... ... ..T ..C ... ... ... ..A ..C ..G ..C TC. ... ... ... ... ... ... ..T ..T ..T ..C AA. ... ... ... ... ... ... ... ... ... ... ... ... ... A.. ... ... ... ... ..G ... ... ..T ..C ... ... ... ... ... ... ... ... ... ... ... ... ..C ... ... ... AA. ... GT. ... ... ... ... ... ... ... ... ... 
+hare                            ... ..G ..G ... ... ... ... ..T ... ... ..A ... ..A ... ... ... ... .AG ... ... ..T T.C ... ... ... ... ... ... ... ... ... ... ... ... ..T ... ... ... ... ... ... .AG ..T ..A ... G.. ... GG. ... ... ..G ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ..A ... ... ..A ..C ..G ... TC. A.. ... ... ... ... ..G T.T ..T ..T ... AG. ..C ... ... ... ... ... ... ... ... ... ... ..T ... .C. ... ... ... ... ..T ... ... ..T ... ... ... ... ... ... ... ... ... ..C ... ... ... ..C ... ... ... ... ... AT. ... ... ... ... ..C ..C ..C ... ... 
+rabbit                          ... ..G ..G ... ... ... ..T ..T ... ... ..A ... ..A ... ... ... ... .AG ... ... ..T T.C T.. ... ... ... ... ... ... ... ... ... ... ..T ... ... ... ... ... ... ... .AG ..T ..A ... G.A ... AG. ... ... ..G ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ..A ... ... ..A ..C ..G ... A.. ... ... ... ... ... ..G T.T ..T ..T ... AG. ..C ... ... ... AA. ... ... ... ... ... ... ..T ... .C. ... ... ... ... ..T ... ... ..T ... ... ... ... ... ... ... ... ... ..C ... ... ... ..C ... ... ... ... ... AT. ... ... ... ... ..C ..C ... ... ... 
+cow                             ..G ..G ..G G.. ... ... ... ..A ... ... .GA ... ... ... ... ... ... G.G ... ..T ... ... ... ..C .A. ... ... ... ... ... ... ..T ..T A.T ... ..T ... ... ... .GC ... GTG ..G ..C ... G.. ... G.. ... ... ..A A.. ..A ..C ... ... ... ... ... ... ... T.. T.T ... ... ... ... ... ..T ..T ... ... ... ... ... ... ..C A.. ... ... ... .A. ... ... T.. ... ..T ... ..T ..C AAG ..C ... ... ... AA. ... ... ... ... ... ... ... ... .A. ... ... ... ... ..G ... ... ..T ... ... ... ... ... ... ... ... C.. ..C ... ... ... ... .T. ... ... G.. ... GT. ... ... ... ... ... ... ... ... ... 
+sheep                           ..T ..G ..G G.. ... ... ... ..A ... ... ..A ... ... ... ... ... ... CAG ... ..T ... ... .A. ..C ... ... ... ... ... ... ... ... ... ... ... ..T ... ... ... .GC ... GTG ..G ..C ... G.. ... G.. ... ... ..A A.. ... ..C ... ... ... ... ... ... ... T.. T.C ... ... ... ... ... ..T ..T ... ... ... ... ... ... ..C A.C ... ... ... .A. ... .G. T.. ... ..T ... ..T ..C AAG ..C ... ... ... AA. ... ... ... ... ... ... ... ... .AC .C. ... ... ... ..G ... ... ..T ... ... ... ... ... ... ... ..T C.. ..C ... ... ... ... .T. CA. ... G.. ... GT. ... ... ... ... ... ... ... CA. ... 
+pig                             C.T ..G ..G ... ... ... ..T ..T ... C.. ... ... ... ..A ... ... ... .AG ... ..T .A. T.. .A. CTC ... ... ... ... ..C ... ... ... ... .G. ... ..T ... ... ... .GC ..C AAT ..G ..C ... G.C ..C G.. ... ... ... ... A.A ..C ... ... ... ... ... ... ... ... ... ... ... ... ..C ... ... ... ... ... ... ... ... ..C ..C ..C ... ... ... ..T ... .G. T.. ... ..T ... ..T ..C AAA ... ..C ... ... ... ... ... ... ... ... ... ... ... CAG ... ... ... ... ..G ... ... ..T ..T ... ... ... ... ... ... ..T ... ..C ..C ... ... ..C .T. ... ... GAG ... GT. ... ... ... ... ..C ..C ... C.. ... 
+elephseal                       ..G ..G ..G ... ... ..T ... ..G ... C.. ..A ... ... ..A ... ... ... .AG ... ..T ... ..G T.. ..C .A. ... ... ... ... ... ... ... ..T ... ... A.T ... ... ... .GC ... .AG ... ..C ..C ... ..C G.G ... ... ..G ... ... ... ..C ... ... ... ... ... T.. ... ... ..C ... ... ... ... ... ... ... ..C ... ..A ... ... ..C ... ... A.. ... ... ... T.. T.. ... ... ... ..T ..C AAG ..C ... ... .G. A.. ... ... ... ... ... ... ... ... AA. ... ... ... ... ..G ... ..C ..T ... ..A ... ... ... ... ... ... A.. ..C A.. ... ... ... .T. ... ... ... ... ... ... ... ... ... ... ... ... ... ... 
+rat                             ..G ..G ..G ... ... ..T ... ... ... ... ... ... ... ... ... ... .G. CAT ... ... ... ... T.. .A. ... ... ... .A. ... ... ... ... ..T ... ... ... ... ... ... ..C ... TGT ..C ... ... G.C ... GA. ... ... A.A ... A.T T.. ... ..C ... ... ... T.. ..A ... ... ... ... ... ... ..T ... ... .CT ..T ..A ... ... ... ..C ... ... TC. ... ... ... ... ... ..T .G. ..T ..T ..C AAA ..C ... ... ... ..T ..A ... ... ... ... ... ... ... AAC ..C ..A ... ... ..G ... ... ..T ... ... A.. CCT ... ... ... ... .CA ... A.C ... ... ..C .TC AG. ... G.. ... AT. ... .A. ... ... ..C ... ... C.G ... 
+mouse                           ..G ..G ..G ... ... ..T ..T ... ..A ... ... ... ... ... ... ... .C. .GC ... ... ... ... T.. T.. ... ... C.. .AC ... ... ... ... ..T ... ... A.. ... ... ... ..C ... G.T ..T ... ... G.C ..C GA. ... ... A.A ... A.C ... ..C ..C ... ... ... ... ... ..A ... ... ..A ... ..T ... ... ... .CT ..T ... ... ... ... ..C ..G ... TC. ... ... ... TG. ... ..T .G. ..T ... ..C AAA ..C ... ... ... ..T .CA ... ... ... ... ... ... ..A AC. ... ..A ... ... ..G ... ... ..T ... ... .C. CCC ... ... ... ... .CA ..C A.C ... ... ..C .TC AG. ... ... ... AT. ... .A. ... ... ... ... ... C.G ... 
+hamster                         ..G ..G ..G ... ... ..T ... ... ... ... ... C.. ... ... ... ... ... .GC G.. ... ..T ... CTG ... .A. ... ... GC. ... ... ... ... ... G.. ... ... ... ... ..T ..C ... AGT ..C ... ... ..A ..C GA. ... ..G A.. ... A.C ... ... ..C ... ... T.. ... ... ... ... ... ... ... ..C .C. ... ... .CT ..A ... ... ... ... ..C ... ... .T. ... ... ... .G. T.. CTT AT. ..T T.. ..C AAA ..C ... ... T.. AAT ..A ... ... ... ... ... ... ..A CAC .C. ... ..C ... A.. ... ... ..T ... ... A.. .CC ... ... ... ... .CA ..C ..C ... ... ..C .T. CA. ..T G.C ... AT. ... ... ... ... ..C ... ... C.G ... 
+marsupial                       ..G ..G ..G ... ... ..T ..T C.G GCT ... ... ... ... ... ... C.A C.. .AG ..T ... ..T ... T.. ... .A. ... ... G.. ... ... ... ... ..T ... ... ..T ACC ... ... G.G ... GA. ..T ..C ... ... T.. T.. A.G ..G T.G G.C A.T T.. T.. ..C ..C ..T A.. ... T.. ... A.C ... ... ... ..T C.G ... ... ... .G. ... ... ... ..C ... ..A ..C .GC ... ..T ... A.. T.. TG. ..T ... ... ..C AAG ..C ... ... .T. TCA TCT ... ... ..G ..T ..T .CA ..T ACC ... ..A ... ... ..G ... ..T ..T TGC ... A.C ..T C.C ... ... ..T TGT A.C ..C AC. ... ..C .GG AG. ... AAC ... ATC ... ..T ... ..T ..C ... .A. ... ... 
+duck                            ..G ... ..G ... ... G.. ... ..T ... ... ... .T. ... ... ... CGT C.C CAG ... ... ..T ..A .GC ..C ... ... ... G.A TCC C.T .G. ... ... ... ... A.. ... ... ... GCC ... GAC ..T ..C ... ..C ..C G.C ... A.. ... G.. ..C ... ... ... ... ... ... ... TG. ... ..C ... ... ... ..T ..C ... ... ... .CC ... ... ... .CC A.C ... ..C AC. ... ... ..T .G. T.. CT. ... ... ... ..C AAG ..C ..C CGC ..C ... ... AC. .C. ..T AA. ... .CT ... ACC .C. .TG ..A ... A.. ..C ..C A.C ..C ..C A.C ... C.. ... ... ... TGC A.C A.C TG. ... ..C .GG ... ... CAG ... ATC ..C ... ... ... ..C ..C ..C ..C ..C 
+chicken                         ..G ... ..G ... ... G.. ... ..T ... ... ... .T. ... ... ... CGC C.. CA. ... ... ..T ... .GC ..C ... ... ... G.G TCC C.T .G. ... ..T ... ..T A.. ... ... ... GCC ..C GA. ..T ..C ..C ..C ..C G.. ... A.. ... G.. ..C ... ... ... ... ... ... ... TG. ..C ..C ... ... ... ..C ... ... ... ... .C. ..A ..A ... .CC A.C ... ..C AC. ... ... ... .G. T.. CT. ... ..T T.. ..C AAG ..C ..C CGC ... ... ... A.. .C. ..T AA. ... .CT ... ACC .CC .TG ..G ... A.. ..C ..C A.C ..C ..C A.C ... C.. ... ... ... TGC A.C A.C TG. ... ..C .GG ... ... CAG ... AT. ... ... ... ... ... ... ..C ..C ... 
+xenlaev                         .CT ..G ... .GT ... GGA ..T ..T ... G.A GGC ... ... ... ... C.A G.. CA. T.T ... ..T ..A .A. ... .A. ... ..A G.C ... GCT ..G A.. TTT A.A ..T ..T ... ... G.. GCC ... AA. ..T ..C ... T.A G.C G.. .GT G.G ..T A.T ... A.T ..C A.C ... ... ... T.. TG. ..C G.A ..T T.T ... .CC C.T ACT ... ..A AGT A.. ..T ... ..A A.C A.. ..C .C. ... ..T .GT T.T ..T ... .GT AG. CAA ..C AGC .T. ... ..A ... ..A CAG ..A ... ..T TC. ... .C. ..A TCA CA. .T. ..C ..G ... ..C ..T A.T ..C A.T ..T ..A T.C ... ..T T.. ..T A.C ... .A. ... ... .GG AA. ... G.C ... AT. GCC .A. ..T ... G.. ..C C.C C.G ... 
+xentrop                         TCT ... ..G G.T ... G.T ..T G.. ..T G.T GGC ... ... ..A ..A ..A GC. GGT CA. ..T ..T ..A .A. G.. .A. ... ... G.C ..C TCT ..T TT. ..T A.A ..T ..T ... ..A G.. GCC ... .A. ..C ..C ..C GTC GTC G.. .G. G.G ..G A.C ... ... ..T AGC ... T.A ... ... TG. ..C G.. ..T ..T ..T .CC C.G ..G ..T ..A AGC A.. ..T ..A ..A A.C AG. ... TCC ..A .T. ..T T.T ..T A.. ..T AG. AAA ..C CAG .TG ... ..A ... ..A ..G ..A TC. .CG A.. ..A .CA ..A TCA CA. AC. ..C ..T ..G ..C ..T ..T ..T AAT ..T A.T C.C ... ..C C.. ..C A.. ..C .A. ..T ..C .GG AGT ... G.A ... ATC GC. .A. ... ... G.. ..C C.. C.. ... 
+
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    2
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    2    1    1    1
+    1    1    1    1    1    1    1
+
+CODONML (in paml version 4.8a, August 2014)  /Users/lorenzogatti/Downloads/tutorial02_paml/bglobin.nuc
+Model: One dN/dS ratio for branches, 
+Codon frequency model: F3x4
+Site-class models: 
+ns =  17  ls = 144
+
+Codon usage in sequences
+--------------------------------------------------------------------------------------------------------------------------------------
+Phe TTT   5   5   5   2   3   7 | Ser TCT   1   0   2   3   3   0 | Tyr TAT   2   1   1   1   1   1 | Cys TGT   2   2   2   1   1   1
+    TTC   3   3   3   6   5   3 |     TCC   2   2   2   3   3   3 |     TAC   1   2   2   2   2   1 |     TGC   0   0   0   0   0   0
+Leu TTA   0   0   0   0   0   0 |     TCA   0   0   0   0   0   0 | *** TAA   0   0   0   0   0   0 | *** TGA   0   0   0   0   0   0
+    TTG   0   3   0   0   0   1 |     TCG   0   0   0   0   0   0 |     TAG   0   0   0   0   0   0 | Trp TGG   2   2   2   2   2   2
+--------------------------------------------------------------------------------------------------------------------------------------
+Leu CTT   0   0   0   0   0   0 | Pro CCT   5   2   4   3   3   2 | His CAT   2   2   1   3   3   4 | Arg CGT   0   0   0   0   0   0
+    CTC   3   2   2   2   2   3 |     CCC   0   0   0   0   0   1 |     CAC   6   6   7   5   5   2 |     CGC   0   0   0   0   0   1
+    CTA   0   0   0   0   0   2 |     CCA   2   1   2   1   1   0 | Gln CAA   0   0   0   0   0   0 |     CGA   0   0   0   0   0   0
+    CTG  15  12  16  16  16  11 |     CCG   0   1   0   0   0   1 |     CAG   3   4   4   4   4   3 |     CGG   0   0   0   0   0   0
+--------------------------------------------------------------------------------------------------------------------------------------
+Ile ATT   0   0   0   1   1   0 | Thr ACT   3   4   2   3   2   3 | Asn AAT   1   3   3   2   4   3 | Ser AGT   2   2   2   3   4   2
+    ATC   0   0   0   0   0   0 |     ACC   3   3   3   3   2   3 |     AAC   5   2   4   4   4   4 |     AGC   0   1   1   0   0   0
+    ATA   0   0   0   0   0   0 |     ACA   1   0   0   0   0   0 | Lys AAA   3   3   2   3   3   1 | Arg AGA   0   0   0   0   0   1
+Met ATG   1   2   1   1   1   2 |     ACG   0   0   0   0   0   0 |     AAG   8   9  10   9   9  12 |     AGG   3   3   3   3   3   2
+--------------------------------------------------------------------------------------------------------------------------------------
+Val GTT   3   3   5   4   4   4 | Ala GCT   6   9   7   8   7   8 | Asp GAT   5   2   2   1   1   6 | Gly GGT   4   3   3   5   4   3
+    GTC   2   4   2   2   2   2 |     GCC   9  10   7   5   6   7 |     GAC   2   6   5   3   3   3 |     GGC   8   7   8   7   6   7
+    GTA   0   1   0   0   0   0 |     GCA   0   0   0   0   1   0 | Glu GAA   2   3   2   4   4   2 |     GGA   0   0   0   0   0   0
+    GTG  12   9  11  11  11  12 |     GCG   0   0   0   1   1   1 |     GAG   6   4   5   6   6   6 |     GGG   1   1   1   1   1   1
+--------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Phe TTT   5   3   6   3   4   4 | Ser TCT   0   1   2   2   4   2 | Tyr TAT   1   0   1   0   0   0 | Cys TGT   1   1   2   2   1   1
+    TTC   4   5   3   4   3   4 |     TCC   2   3   4   1   1   2 |     TAC   1   2   1   3   3   2 |     TGC   0   0   0   0   1   0
+Leu TTA   0   0   0   0   0   0 |     TCA   0   0   0   0   0   0 | *** TAA   0   0   0   0   0   0 | *** TGA   0   0   0   0   0   0
+    TTG   1   0   1   2   0   1 |     TCG   0   0   0   0   0   0 |     TAG   0   0   0   0   0   0 | Trp TGG   2   2   2   2   2   2
+--------------------------------------------------------------------------------------------------------------------------------------
+Leu CTT   0   1   0   0   0   1 | Pro CCT   2   1   1   4   3   2 | His CAT   3   2   2   3   2   2 | Arg CGT   0   0   0   0   0   0
+    CTC   3   5   4   3   4   2 |     CCC   1   2   3   1   2   2 |     CAC   6   5   4   6   5   8 |     CGC   1   2   1   0   0   0
+    CTA   1   0   0   1   2   0 |     CCA   0   0   1   0   0   1 | Gln CAA   0   0   0   0   0   0 |     CGA   0   0   0   0   0   0
+    CTG  12  13  13  11  11  15 |     CCG   1   1   0   0   0   0 |     CAG   4   5   5   3   3   3 |     CGG   0   0   0   0   1   0
+--------------------------------------------------------------------------------------------------------------------------------------
+Ile ATT   0   0   1   2   1   1 | Thr ACT   2   1   1   1   3   3 | Asn AAT   3   5   5   3   2   3 | Ser AGT   2   1   2   2   1   2
+    ATC   0   0   0   1   2   4 |     ACC   3   1   3   3   3   1 |     AAC   5   4   3   5   5   4 |     AGC   0   1   1   1   2   1
+    ATA   0   1   0   1   1   0 |     ACA   0   0   0   0   0   0 | Lys AAA   2   2   2   1   2   1 | Arg AGA   0   0   0   0   0   0
+Met ATG   2   1   2   2   1   2 |     ACG   0   0   1   0   0   0 |     AAG  10   9  12  11  10  11 |     AGG   3   3   2   3   2   2
+--------------------------------------------------------------------------------------------------------------------------------------
+Val GTT   5   5   2   3   2   3 | Ala GCT   9   7   3   8   7   6 | Asp GAT   5   2   3   6   5   4 | Gly GGT   2   3   4   2   3   1
+    GTC   2   3   3   1   2   3 |     GCC   6   7   8   8   8   8 |     GAC   4   6   4   3   3   5 |     GGC   8   9   7   8   7   8
+    GTA   0   0   1   0   0   0 |     GCA   0   0   0   1   2   2 | Glu GAA   2   1   3   2   1   1 |     GGA   0   0   0   2   2   2
+    GTG  11  10   9   9   9   8 |     GCG   0   0   1   0   1   0 |     GAG   6   7   4   3   5   4 |     GGG   1   1   1   1   0   0
+--------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------
+Phe TTT   5   0   3   4   1 | Ser TCT   4   0   0   2   3 | Tyr TAT   1   0   0   1   1 | Cys TGT   2   1   2   0   0
+    TTC   2   8   5   3   4 |     TCC   2   4   5   2   3 |     TAC   2   2   2   2   2 |     TGC   2   2   1   0   0
+Leu TTA   0   0   0   0   1 |     TCA   1   0   0   2   1 | *** TAA   0   0   0   0   0 | *** TGA   0   0   0   0   0
+    TTG   4   0   0   2   0 |     TCG   0   0   0   0   0 |     TAG   0   0   0   0   0 | Trp TGG   3   4   4   4   4
+----------------------------------------------------------------------------------------------------------------------
+Leu CTT   1   1   1   2   6 | Pro CCT   3   2   1   2   0 | His CAT   4   1   3   5   6 | Arg CGT   0   1   0   1   0
+    CTC   3   5   6   3   2 |     CCC   1   3   4   1   3 |     CAC   4   5   3   0   1 |     CGC   0   2   3   0   1
+    CTA   0   0   0   0   0 |     CCA   0   0   0   0   0 | Gln CAA   1   0   1   3   2 |     CGA   0   0   0   0   0
+    CTG   6  12  11   6   7 |     CCG   0   0   0   0   0 |     CAG   4   5   4   4   3 |     CGG   0   0   0   0   0
+----------------------------------------------------------------------------------------------------------------------
+Ile ATT   1   0   1   5   2 | Thr ACT   5   2   3   4   3 | Asn AAT   2   1   1   4   4 | Ser AGT   1   0   0   3   2
+    ATC   4   7   6   2   2 |     ACC   4   5   4   1   1 |     AAC   3   6   6   4   2 |     AGC   1   1   2   2   5
+    ATA   0   0   0   0   0 |     ACA   0   1   0   1   1 | Lys AAA   0   1   1   3   6 | Arg AGA   0   0   0   1   0
+Met ATG   3   1   1   0   0 |     ACG   0   0   0   0   0 |     AAG  12   9   9   8   5 |     AGG   2   3   3   1   2
+----------------------------------------------------------------------------------------------------------------------
+Val GTT   5   0   0   8   6 | Ala GCT   5   3   4   7   9 | Asp GAT   2   2   1   3   7 | Gly GGT   6   1   1   3   1
+    GTC   3   5   5   3   7 |     GCC   6  14  11   9   3 |     GAC   4   6   5   2   1 |     GGC   3   4   4   5   3
+    GTA   0   0   0   2   0 |     GCA   1   0   0   1   4 | Glu GAA   2   0   4   3   4 |     GGA   1   2   0   4   4
+    GTG   5   6   6   3   5 |     GCG   0   0   1   0   1 |     GAG   6   5   3   3   2 |     GGG   2   1   3   0   1
+----------------------------------------------------------------------------------------------------------------------
+
+Codon position x base (3x4) table for each sequence.
+
+#1: human          
+position  1:    T:0.12500    C:0.25000    A:0.20833    G:0.41667
+position  2:    T:0.30556    C:0.22222    A:0.31944    G:0.15278
+position  3:    T:0.28472    C:0.30556    A:0.05556    G:0.35417
+Average         T:0.23843    C:0.25926    A:0.19444    G:0.30787
+
+#2: tarsier        
+position  1:    T:0.13889    C:0.20833    A:0.22222    G:0.43056
+position  2:    T:0.30556    C:0.22222    A:0.32639    G:0.14583
+position  3:    T:0.26389    C:0.33333    A:0.05556    G:0.34722
+Average         T:0.23611    C:0.25463    A:0.20139    G:0.30787
+
+#3: bushbaby       
+position  1:    T:0.13194    C:0.25000    A:0.21528    G:0.40278
+position  2:    T:0.31250    C:0.20139    A:0.33333    G:0.15278
+position  3:    T:0.27083    C:0.31944    A:0.04167    G:0.36806
+Average         T:0.23843    C:0.25694    A:0.19676    G:0.30787
+
+#4: hare           
+position  1:    T:0.13889    C:0.23611    A:0.22222    G:0.40278
+position  2:    T:0.31250    C:0.20833    A:0.32639    G:0.15278
+position  3:    T:0.27778    C:0.29167    A:0.05556    G:0.37500
+Average         T:0.24306    C:0.24537    A:0.20139    G:0.31019
+
+#5: rabbit         
+position  1:    T:0.13889    C:0.23611    A:0.22917    G:0.39583
+position  2:    T:0.31250    C:0.20139    A:0.34028    G:0.14583
+position  3:    T:0.28472    C:0.27778    A:0.06250    G:0.37500
+Average         T:0.24537    C:0.23843    A:0.21065    G:0.30556
+
+#6: cow            
+position  1:    T:0.13194    C:0.20833    A:0.22917    G:0.43056
+position  2:    T:0.32639    C:0.20139    A:0.33333    G:0.13889
+position  3:    T:0.30556    C:0.27778    A:0.04167    G:0.37500
+Average         T:0.25463    C:0.22917    A:0.20139    G:0.31481
+
+#7: sheep          
+position  1:    T:0.11806    C:0.23611    A:0.22222    G:0.42361
+position  2:    T:0.31944    C:0.18056    A:0.36111    G:0.13889
+position  3:    T:0.27778    C:0.31944    A:0.03472    G:0.36806
+Average         T:0.23843    C:0.24537    A:0.20602    G:0.31019
+
+#8: pig            
+position  1:    T:0.11806    C:0.25694    A:0.20139    G:0.42361
+position  2:    T:0.32639    C:0.16667    A:0.34722    G:0.15972
+position  3:    T:0.22917    C:0.38194    A:0.02778    G:0.36111
+Average         T:0.22454    C:0.26852    A:0.19213    G:0.31481
+
+#9: elephseal      
+position  1:    T:0.15278    C:0.23611    A:0.24306    G:0.36806
+position  2:    T:0.31250    C:0.19444    A:0.34028    G:0.15278
+position  3:    T:0.24306    C:0.34028    A:0.04861    G:0.36806
+Average         T:0.23611    C:0.25694    A:0.21065    G:0.29630
+
+#10: rat            
+position  1:    T:0.13194    C:0.22222    A:0.25000    G:0.39583
+position  2:    T:0.29861    C:0.20139    A:0.34028    G:0.15972
+position  3:    T:0.28472    C:0.33333    A:0.05556    G:0.32639
+Average         T:0.23843    C:0.25231    A:0.21528    G:0.29398
+
+#11: mouse          
+position  1:    T:0.13194    C:0.22917    A:0.24306    G:0.39583
+position  2:    T:0.29167    C:0.23611    A:0.31944    G:0.15278
+position  3:    T:0.26389    C:0.35417    A:0.06944    G:0.31250
+Average         T:0.22917    C:0.27315    A:0.21065    G:0.28704
+
+#12: hamster        
+position  1:    T:0.12500    C:0.25000    A:0.24306    G:0.38194
+position  2:    T:0.33333    C:0.20139    A:0.33333    G:0.13194
+position  3:    T:0.24306    C:0.37500    A:0.04861    G:0.33333
+Average         T:0.23380    C:0.27546    A:0.20833    G:0.28241
+
+#13: marsupial      
+position  1:    T:0.19444    C:0.18750    A:0.26389    G:0.35417
+position  2:    T:0.29167    C:0.22222    A:0.32639    G:0.15972
+position  3:    T:0.32639    C:0.30556    A:0.04167    G:0.32639
+Average         T:0.27083    C:0.23843    A:0.21065    G:0.28009
+
+#14: duck           
+position  1:    T:0.14583    C:0.25694    A:0.25694    G:0.34028
+position  2:    T:0.31250    C:0.23611    A:0.29861    G:0.15278
+position  3:    T:0.10417    C:0.54861    A:0.02778    G:0.31944
+Average         T:0.18750    C:0.34722    A:0.19444    G:0.27083
+
+#15: chicken        
+position  1:    T:0.15278    C:0.25694    A:0.25694    G:0.33333
+position  2:    T:0.31250    C:0.22917    A:0.29861    G:0.15972
+position  3:    T:0.14583    C:0.50000    A:0.04167    G:0.31250
+Average         T:0.20370    C:0.32870    A:0.19907    G:0.26852
+
+#16: xenlaev        
+position  1:    T:0.15278    C:0.18750    A:0.27083    G:0.38889
+position  2:    T:0.29861    C:0.22222    A:0.31250    G:0.16667
+position  3:    T:0.37500    C:0.27083    A:0.13889    G:0.21528
+Average         T:0.27546    C:0.22685    A:0.24074    G:0.25694
+
+#17: xentrop        
+position  1:    T:0.13889    C:0.21528    A:0.24306    G:0.40278
+position  2:    T:0.29861    C:0.22222    A:0.31944    G:0.15972
+position  3:    T:0.35417    C:0.27778    A:0.15972    G:0.20833
+Average         T:0.26389    C:0.23843    A:0.24074    G:0.25694
+
+Sums of codon usage counts
+------------------------------------------------------------------------------
+Phe F TTT      65 | Ser S TCT      29 | Tyr Y TAT      12 | Cys C TGT      22
+      TTC      68 |       TCC      44 |       TAC      32 |       TGC       6
+Leu L TTA       1 |       TCA       4 | *** * TAA       0 | *** * TGA       0
+      TTG      15 |       TCG       0 |       TAG       0 | Trp W TGG      43
+------------------------------------------------------------------------------
+Leu L CTT      13 | Pro P CCT      40 | His H CAT      48 | Arg R CGT       2
+      CTC      54 |       CCC      24 |       CAC      78 |       CGC      11
+      CTA       6 |       CCA       9 | Gln Q CAA       7 |       CGA       0
+      CTG     203 |       CCG       4 |       CAG      65 |       CGG       1
+------------------------------------------------------------------------------
+Ile I ATT      16 | Thr T ACT      45 | Asn N AAT      49 | Ser S AGT      31
+      ATC      28 |       ACC      46 |       AAC      70 |       AGC      19
+      ATA       3 |       ACA       4 | Lys K AAA      36 | Arg R AGA       2
+Met M ATG      23 |       ACG       1 |       AAG     163 |       AGG      43
+------------------------------------------------------------------------------
+Val V GTT      62 | Ala A GCT     113 | Asp D GAT      57 | Gly G GGT      49
+      GTC      51 |       GCC     132 |       GAC      65 |       GGC     109
+      GTA       4 |       GCA      12 | Glu E GAA      40 |       GGA      17
+      GTG     147 |       GCG       7 |       GAG      81 |       GGG      17
+------------------------------------------------------------------------------
+
+
+Codon position x base (3x4) table, overall
+
+position  1:    T:0.13930    C:0.23080    A:0.23652    G:0.39338
+position  2:    T:0.31005    C:0.20997    A:0.32802    G:0.15196
+position  3:    T:0.26675    C:0.34191    A:0.05923    G:0.33211
+Average         T:0.23870    C:0.26089    A:0.20792    G:0.29248
+
+Codon frequencies under model, for use in evolver (TTT TTC TTA TTG ... GGG):
+  0.01174535  0.01505491  0.00260808  0.01462323
+  0.00795403  0.01019529  0.00176621  0.00990295
+  0.01242624  0.01592766  0.00000000  0.00000000
+  0.00575661  0.00737869  0.00000000  0.00716712
+  0.01946077  0.02494436  0.00432130  0.02422911
+  0.01317897  0.01689249  0.00292642  0.01640812
+  0.02058893  0.02639041  0.00457181  0.02563369
+  0.00953808  0.01222569  0.00211795  0.01187513
+  0.01994298  0.02556245  0.00442838  0.02482947
+  0.01350553  0.01731106  0.00299893  0.01681469
+  0.02109910  0.02704433  0.00468510  0.02626886
+  0.00977443  0.01252863  0.00217043  0.01216939
+  0.03316942  0.04251578  0.00736534  0.04129669
+  0.02246256  0.02879198  0.00498786  0.02796640
+  0.03509228  0.04498046  0.00779231  0.04369070
+  0.01625695  0.02083777  0.00360989  0.02024027
+
+
+
+Nei & Gojobori 1986. dN/dS (dN, dS)
+(Note: This matrix is not used in later ML. analysis.
+Use runmode = -2 for ML pairwise comparison.)
+
+human               
+tarsier              0.1202 (0.0477 0.3966)
+bushbaby             0.2458 (0.0645 0.2624) 0.1975 (0.0641 0.3244)
+hare                 0.1735 (0.0546 0.3145) 0.1571 (0.0676 0.4301) 0.2719 (0.0611 0.2247)
+rabbit               0.1735 (0.0577 0.3326) 0.1767 (0.0741 0.4191) 0.2541 (0.0676 0.2661) 0.4573 (0.0219 0.0479)
+cow                  0.2414 (0.0864 0.3578) 0.2137 (0.0996 0.4662) 0.4370 (0.1232 0.2820) 0.2881 (0.1055 0.3663) 0.2761 (0.0982 0.3556)
+sheep                0.3219 (0.1070 0.3325) 0.3049 (0.1134 0.3717) 0.5320 (0.1373 0.2582) 0.3663 (0.1194 0.3260) 0.3243 (0.1119 0.3450) 0.5024 (0.0407 0.0811)
+pig                  0.2304 (0.1040 0.4514) 0.2821 (0.1211 0.4292) 0.3424 (0.1096 0.3202) 0.2665 (0.1075 0.4032) 0.3032 (0.1142 0.3767) 0.3363 (0.1092 0.3247) 0.3644 (0.0966 0.2650)
+elephseal            0.1854 (0.0725 0.3914) 0.1888 (0.0805 0.4265) 0.2792 (0.0912 0.3265) 0.2276 (0.0948 0.4166) 0.1969 (0.0853 0.4332) 0.3064 (0.0839 0.2740) 0.3579 (0.1043 0.2915) 0.2661 (0.1084 0.4073)
+rat                  0.2706 (0.1268 0.4685) 0.2235 (0.1214 0.5432) 0.2778 (0.1183 0.4260) 0.2664 (0.1240 0.4654) 0.2850 (0.1344 0.4717) 0.2942 (0.1498 0.5090) 0.3095 (0.1511 0.4882) 0.2538 (0.1407 0.5544) 0.2375 (0.1332 0.5610)
+mouse                0.2764 (0.1351 0.4890) 0.2950 (0.1509 0.5117) 0.2546 (0.1147 0.4507) 0.2340 (0.1277 0.5456) 0.2683 (0.1383 0.5153) 0.2976 (0.1674 0.5626) 0.2978 (0.1681 0.5644) 0.2516 (0.1474 0.5860) 0.2690 (0.1370 0.5093) 0.2345 (0.0573 0.2442)
+hamster              0.3624 (0.1658 0.4575) 0.3527 (0.1820 0.5159) 0.3855 (0.1873 0.4860) 0.3667 (0.1812 0.4941) 0.3509 (0.1715 0.4887) 0.2573 (0.1634 0.6350) 0.2814 (0.1584 0.5629) 0.2947 (0.1605 0.5445) 0.3156 (0.1797 0.5693) 0.4414 (0.1289 0.2920) 0.5554 (0.1465 0.2638)
+marsupial            0.2352 (0.2327 0.9894) 0.2649 (0.2300 0.8681) 0.2200 (0.2096 0.9525) 0.2319 (0.2319 0.9997) 0.2295 (0.2238 0.9752) 0.2170 (0.2287 1.0539) 0.2703 (0.2465 0.9120) 0.3038 (0.2545 0.8379) 0.2081 (0.2153 1.0346) 0.3277 (0.2561 0.7815) 0.2816 (0.2504 0.8893) 0.3327 (0.2775 0.8338)
+duck                 0.3254 (0.2480 0.7622) 0.2360 (0.2377 1.0073) 0.3483 (0.2430 0.6976) 0.3523 (0.2435 0.6912) 0.3398 (0.2555 0.7518) 0.2936 (0.2641 0.8996) 0.3081 (0.2545 0.8259) 0.3741 (0.2466 0.6591) 0.3056 (0.2309 0.7558) 0.2486 (0.2632 1.0586) 0.2816 (0.2743 0.9740) 0.3469 (0.2787 0.8033) 0.2266 (0.2545 1.1233)
+chicken              0.3442 (0.2390 0.6944) 0.2482 (0.2394 0.9643) 0.3789 (0.2362 0.6235) 0.3395 (0.2325 0.6849) 0.3061 (0.2443 0.7981) 0.3170 (0.2593 0.8180) 0.3103 (0.2497 0.8048) 0.3737 (0.2440 0.6529) 0.3210 (0.2243 0.6989) 0.3527 (0.2721 0.7716) 0.3426 (0.2738 0.7991) 0.3656 (0.2686 0.7348) 0.1914 (0.2456 1.2831) 0.0434 (0.0124 0.2848)
+xenlaev              0.2751 (0.3905 1.4195) 0.2502 (0.3616 1.4454) 0.2989 (0.3913 1.3092) 0.2401 (0.3672 1.5292) 0.2545 (0.3894 1.5298) 0.3089 (0.3920 1.2691) 0.3104 (0.3937 1.2686) 0.2804 (0.3983 1.4203) 0.2986 (0.4014 1.3443) 0.2343 (0.4060 1.7330) 0.3367 (0.4228 1.2559) 0.3998 (0.4638 1.1602) 0.3405 (0.4411 1.2956) 0.2463 (0.3871 1.5717) 0.2850 (0.3846 1.3496)
+xentrop              0.1235 (0.4102 3.3216) 0.2318 (0.3907 1.6852) 0.2138 (0.3996 1.8687) 0.0932 (0.3915 4.2015) 0.1332 (0.4196 3.1511) 0.1939 (0.3865 1.9929) 0.1956 (0.4064 2.0772) 0.2372 (0.4128 1.7407) 0.2953 (0.4204 1.4234) 0.1617 (0.4197 2.5958) 0.2199 (0.4100 1.8648) 0.2740 (0.4944 1.8041) 0.3011 (0.4639 1.5406) 0.1761 (0.4353 2.4717) 0.1920 (0.4217 2.1963) 0.2199 (0.1935 0.8797)
+
+
+Model 1: NearlyNeutral (2 categories)
+
+
+TREE #  1:  (16, 17, ((14, 15), (13, ((12, (10, 11)), ((9, (8, (6, 7))), ((3, (4, 5)), (1, 2)))))));   MP score: 613
+lnL(ntime: 31  np: 34):  -3716.144143      +0.000000
+  18..16   18..17   18..19   19..20   20..14   20..15   19..21   21..13   21..22   22..23   23..12   23..24   24..10   24..11   22..25   25..26   26..9    26..27   27..8    27..28   28..6    28..7    25..29   29..30   30..3    30..31   31..4    31..5    29..32   32..1    32..2  
+ 0.494383 0.733738 1.663199 0.529388 0.177281 0.050238 0.212457 0.821456 0.307592 0.265937 0.356820 0.098717 0.134117 0.189953 0.061781 0.057127 0.216018 0.058988 0.312310 0.137237 0.060730 0.095226 0.071529 0.017253 0.146055 0.163656 0.027022 0.061534 0.059528 0.176390 0.215669 2.112325 0.774110 0.119389
+
+Note: Branch length is defined as number of nucleotide substitutions per codon (not per neucleotide site).
+
+tree length =   7.97333
+
+(16: 0.494383, 17: 0.733738, ((14: 0.177281, 15: 0.050238): 0.529388, (13: 0.821456, ((12: 0.356820, (10: 0.134117, 11: 0.189953): 0.098717): 0.265937, ((9: 0.216018, (8: 0.312310, (6: 0.060730, 7: 0.095226): 0.137237): 0.058988): 0.057127, ((3: 0.146055, (4: 0.027022, 5: 0.061534): 0.163656): 0.017253, (1: 0.176390, 2: 0.215669): 0.059528): 0.071529): 0.061781): 0.307592): 0.212457): 1.663199);
+
+(xenlaev: 0.494383, xentrop: 0.733738, ((duck: 0.177281, chicken: 0.050238): 0.529388, (marsupial: 0.821456, ((hamster: 0.356820, (rat: 0.134117, mouse: 0.189953): 0.098717): 0.265937, ((elephseal: 0.216018, (pig: 0.312310, (cow: 0.060730, sheep: 0.095226): 0.137237): 0.058988): 0.057127, ((bushbaby: 0.146055, (hare: 0.027022, rabbit: 0.061534): 0.163656): 0.017253, (human: 0.176390, tarsier: 0.215669): 0.059528): 0.071529): 0.061781): 0.307592): 0.212457): 1.663199);
+
+Detailed output identifying parameters
+
+kappa (ts/tv) =  2.11232
+
+
+dN/dS (w) for site classes (K=2)
+
+p:   0.77411  0.22589
+w:   0.11939  1.00000
+
+dN & dS for each branch
+
+ branch          t       N       S   dN/dS      dN      dS  N*dN  S*dS
+
+  18..16      0.494    329.1    102.9   0.3183   0.1091   0.3428   35.9   35.3
+  18..17      0.734    329.1    102.9   0.3183   0.1620   0.5088   53.3   52.4
+  18..19      1.663    329.1    102.9   0.3183   0.3671   1.1533  120.8  118.7
+  19..20      0.529    329.1    102.9   0.3183   0.1169   0.3671   38.5   37.8
+  20..14      0.177    329.1    102.9   0.3183   0.0391   0.1229   12.9   12.7
+  20..15      0.050    329.1    102.9   0.3183   0.0111   0.0348    3.6    3.6
+  19..21      0.212    329.1    102.9   0.3183   0.0469   0.1473   15.4   15.2
+  21..13      0.821    329.1    102.9   0.3183   0.1813   0.5696   59.7   58.6
+  21..22      0.308    329.1    102.9   0.3183   0.0679   0.2133   22.3   21.9
+  22..23      0.266    329.1    102.9   0.3183   0.0587   0.1844   19.3   19.0
+  23..12      0.357    329.1    102.9   0.3183   0.0788   0.2474   25.9   25.5
+  23..24      0.099    329.1    102.9   0.3183   0.0218   0.0685    7.2    7.0
+  24..10      0.134    329.1    102.9   0.3183   0.0296   0.0930    9.7    9.6
+  24..11      0.190    329.1    102.9   0.3183   0.0419   0.1317   13.8   13.6
+  22..25      0.062    329.1    102.9   0.3183   0.0136   0.0428    4.5    4.4
+  25..26      0.057    329.1    102.9   0.3183   0.0126   0.0396    4.1    4.1
+  26..9       0.216    329.1    102.9   0.3183   0.0477   0.1498   15.7   15.4
+  26..27      0.059    329.1    102.9   0.3183   0.0130   0.0409    4.3    4.2
+  27..8       0.312    329.1    102.9   0.3183   0.0689   0.2166   22.7   22.3
+  27..28      0.137    329.1    102.9   0.3183   0.0303   0.0952   10.0    9.8
+  28..6       0.061    329.1    102.9   0.3183   0.0134   0.0421    4.4    4.3
+  28..7       0.095    329.1    102.9   0.3183   0.0210   0.0660    6.9    6.8
+  25..29      0.072    329.1    102.9   0.3183   0.0158   0.0496    5.2    5.1
+  29..30      0.017    329.1    102.9   0.3183   0.0038   0.0120    1.3    1.2
+  30..3       0.146    329.1    102.9   0.3183   0.0322   0.1013   10.6   10.4
+  30..31      0.164    329.1    102.9   0.3183   0.0361   0.1135   11.9   11.7
+  31..4       0.027    329.1    102.9   0.3183   0.0060   0.0187    2.0    1.9
+  31..5       0.062    329.1    102.9   0.3183   0.0136   0.0427    4.5    4.4
+  29..32      0.060    329.1    102.9   0.3183   0.0131   0.0413    4.3    4.2
+  32..1       0.176    329.1    102.9   0.3183   0.0389   0.1223   12.8   12.6
+  32..2       0.216    329.1    102.9   0.3183   0.0476   0.1496   15.7   15.4
+
+
+Time used:  1:02
+
+
+Model 2: PositiveSelection (3 categories)
+
+
+TREE #  1:  (16, 17, ((14, 15), (13, ((12, (10, 11)), ((9, (8, (6, 7))), ((3, (4, 5)), (1, 2)))))));   MP score: 613
+lnL(ntime: 31  np: 36):  -3712.548971      +0.000000
+  18..16   18..17   18..19   19..20   20..14   20..15   19..21   21..13   21..22   22..23   23..12   23..24   24..10   24..11   22..25   25..26   26..9    26..27   27..8    27..28   28..6    28..7    25..29   29..30   30..3    30..31   31..4    31..5    29..32   32..1    32..2  
+ 0.539635 0.771521 1.783187 0.565721 0.173272 0.056045 0.220575 0.890358 0.318211 0.282325 0.375436 0.099744 0.143360 0.192814 0.060537 0.060772 0.218644 0.061522 0.323030 0.143306 0.061504 0.096571 0.073151 0.008037 0.154101 0.164368 0.029426 0.061067 0.069143 0.175696 0.228142 2.194415 0.764907 0.202786 0.124341 2.941044
+
+Note: Branch length is defined as number of nucleotide substitutions per codon (not per neucleotide site).
+
+tree length =   8.40122
+
+(16: 0.539635, 17: 0.771521, ((14: 0.173272, 15: 0.056045): 0.565721, (13: 0.890358, ((12: 0.375436, (10: 0.143360, 11: 0.192814): 0.099744): 0.282325, ((9: 0.218644, (8: 0.323030, (6: 0.061504, 7: 0.096571): 0.143306): 0.061522): 0.060772, ((3: 0.154101, (4: 0.029426, 5: 0.061067): 0.164368): 0.008037, (1: 0.175696, 2: 0.228142): 0.069143): 0.073151): 0.060537): 0.318211): 0.220575): 1.783187);
+
+(xenlaev: 0.539635, xentrop: 0.771521, ((duck: 0.173272, chicken: 0.056045): 0.565721, (marsupial: 0.890358, ((hamster: 0.375436, (rat: 0.143360, mouse: 0.192814): 0.099744): 0.282325, ((elephseal: 0.218644, (pig: 0.323030, (cow: 0.061504, sheep: 0.096571): 0.143306): 0.061522): 0.060772, ((bushbaby: 0.154101, (hare: 0.029426, rabbit: 0.061067): 0.164368): 0.008037, (human: 0.175696, tarsier: 0.228142): 0.069143): 0.073151): 0.060537): 0.318211): 0.220575): 1.783187);
+
+Detailed output identifying parameters
+
+kappa (ts/tv) =  2.19442
+
+
+dN/dS (w) for site classes (K=3)
+
+p:   0.76491  0.20279  0.03231
+w:   0.12434  1.00000  2.94104
+
+dN & dS for each branch
+
+ branch          t       N       S   dN/dS      dN      dS  N*dN  S*dS
+
+  18..16      0.540    328.5    103.5   0.3929   0.1313   0.3341   43.1   34.6
+  18..17      0.772    328.5    103.5   0.3929   0.1877   0.4777   61.7   49.4
+  18..19      1.783    328.5    103.5   0.3929   0.4338   1.1040  142.5  114.3
+  19..20      0.566    328.5    103.5   0.3929   0.1376   0.3503   45.2   36.3
+  20..14      0.173    328.5    103.5   0.3929   0.0422   0.1073   13.8   11.1
+  20..15      0.056    328.5    103.5   0.3929   0.0136   0.0347    4.5    3.6
+  19..21      0.221    328.5    103.5   0.3929   0.0537   0.1366   17.6   14.1
+  21..13      0.890    328.5    103.5   0.3929   0.2166   0.5513   71.1   57.1
+  21..22      0.318    328.5    103.5   0.3929   0.0774   0.1970   25.4   20.4
+  22..23      0.282    328.5    103.5   0.3929   0.0687   0.1748   22.6   18.1
+  23..12      0.375    328.5    103.5   0.3929   0.0913   0.2324   30.0   24.1
+  23..24      0.100    328.5    103.5   0.3929   0.0243   0.0618    8.0    6.4
+  24..10      0.143    328.5    103.5   0.3929   0.0349   0.0888   11.5    9.2
+  24..11      0.193    328.5    103.5   0.3929   0.0469   0.1194   15.4   12.4
+  22..25      0.061    328.5    103.5   0.3929   0.0147   0.0375    4.8    3.9
+  25..26      0.061    328.5    103.5   0.3929   0.0148   0.0376    4.9    3.9
+  26..9       0.219    328.5    103.5   0.3929   0.0532   0.1354   17.5   14.0
+  26..27      0.062    328.5    103.5   0.3929   0.0150   0.0381    4.9    3.9
+  27..8       0.323    328.5    103.5   0.3929   0.0786   0.2000   25.8   20.7
+  27..28      0.143    328.5    103.5   0.3929   0.0349   0.0887   11.5    9.2
+  28..6       0.062    328.5    103.5   0.3929   0.0150   0.0381    4.9    3.9
+  28..7       0.097    328.5    103.5   0.3929   0.0235   0.0598    7.7    6.2
+  25..29      0.073    328.5    103.5   0.3929   0.0178   0.0453    5.8    4.7
+  29..30      0.008    328.5    103.5   0.3929   0.0020   0.0050    0.6    0.5
+  30..3       0.154    328.5    103.5   0.3929   0.0375   0.0954   12.3    9.9
+  30..31      0.164    328.5    103.5   0.3929   0.0400   0.1018   13.1   10.5
+  31..4       0.029    328.5    103.5   0.3929   0.0072   0.0182    2.4    1.9
+  31..5       0.061    328.5    103.5   0.3929   0.0149   0.0378    4.9    3.9
+  29..32      0.069    328.5    103.5   0.3929   0.0168   0.0428    5.5    4.4
+  32..1       0.176    328.5    103.5   0.3929   0.0427   0.1088   14.0   11.3
+  32..2       0.228    328.5    103.5   0.3929   0.0555   0.1413   18.2   14.6
+
+
+Naive Empirical Bayes (NEB) analysis
+Positively selected sites (*: P>95%; **: P>99%)
+(amino acids refer to 1st sequence: human)
+
+            Pr(w>1)     post mean +- SE for w
+
+     7 S      0.913         2.772
+    50 D      0.889         2.725
+    67 G      0.835         2.620
+   123 P      0.872         2.693
+
+
+Bayes Empirical Bayes (BEB) analysis (Yang, Wong & Nielsen 2005. Mol. Biol. Evol. 22:1107-1118)
+Positively selected sites (*: P>95%; **: P>99%)
+(amino acids refer to 1st sequence: human)
+
+            Pr(w>1)     post mean +- SE for w
+
+     7 S      0.922         2.929 +- 0.956
+    48 T      0.542         2.037 +- 1.072
+    50 D      0.905         2.904 +- 0.991
+    67 G      0.860         2.798 +- 1.039
+   123 P      0.883         2.818 +- 0.988
+
+
+
+The grid (see ternary graph for p0-p1)
+
+w0:   0.050  0.150  0.250  0.350  0.450  0.550  0.650  0.750  0.850  0.950
+w2:   1.500  2.500  3.500  4.500  5.500  6.500  7.500  8.500  9.500 10.500
+
+
+Posterior on the grid
+
+w0:   0.000  1.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000
+w2:   0.030  0.504  0.349  0.093  0.019  0.004  0.001  0.000  0.000  0.000
+
+Posterior for p0-p1 (see the ternary graph)
+
+ 0.000
+ 0.000 0.000 0.000
+ 0.000 0.000 0.000 0.000 0.000
+ 0.000 0.000 0.000 0.000 0.000 0.000 0.000
+ 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
+ 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
+ 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.001
+ 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.009 0.314
+ 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.002 0.268 0.401
+ 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.004 0.000
+
+sum of density on p0-p1 =   1.000000
+
+Time used:  2:42
+
+
+Model 3: discrete (3 categories)
+
+
+TREE #  1:  (16, 17, ((14, 15), (13, ((12, (10, 11)), ((9, (8, (6, 7))), ((3, (4, 5)), (1, 2)))))));   MP score: 613
+lnL(ntime: 31  np: 37):  -3687.063897      +0.000000
+  18..16   18..17   18..19   19..20   20..14   20..15   19..21   21..13   21..22   22..23   23..12   23..24   24..10   24..11   22..25   25..26   26..9    26..27   27..8    27..28   28..6    28..7    25..29   29..30   30..3    30..31   31..4    31..5    29..32   32..1    32..2  
+ 0.510402 0.786634 1.864808 0.578014 0.173457 0.057712 0.190695 0.892590 0.339785 0.283607 0.366423 0.103439 0.139742 0.193561 0.052410 0.059748 0.215711 0.065708 0.321525 0.135882 0.061578 0.095412 0.070908 0.016374 0.149749 0.159854 0.028400 0.060317 0.064663 0.173519 0.221274 2.144744 0.385458 0.535181 0.018386 0.304096 1.690550
+
+Note: Branch length is defined as number of nucleotide substitutions per codon (not per neucleotide site).
+
+tree length =   8.43390
+
+(16: 0.510402, 17: 0.786634, ((14: 0.173457, 15: 0.057712): 0.578014, (13: 0.892590, ((12: 0.366423, (10: 0.139742, 11: 0.193561): 0.103439): 0.283607, ((9: 0.215711, (8: 0.321525, (6: 0.061578, 7: 0.095412): 0.135882): 0.065708): 0.059748, ((3: 0.149749, (4: 0.028400, 5: 0.060317): 0.159854): 0.016374, (1: 0.173519, 2: 0.221274): 0.064663): 0.070908): 0.052410): 0.339785): 0.190695): 1.864808);
+
+(xenlaev: 0.510402, xentrop: 0.786634, ((duck: 0.173457, chicken: 0.057712): 0.578014, (marsupial: 0.892590, ((hamster: 0.366423, (rat: 0.139742, mouse: 0.193561): 0.103439): 0.283607, ((elephseal: 0.215711, (pig: 0.321525, (cow: 0.061578, sheep: 0.095412): 0.135882): 0.065708): 0.059748, ((bushbaby: 0.149749, (hare: 0.028400, rabbit: 0.060317): 0.159854): 0.016374, (human: 0.173519, tarsier: 0.221274): 0.064663): 0.070908): 0.052410): 0.339785): 0.190695): 1.864808);
+
+Detailed output identifying parameters
+
+kappa (ts/tv) =  2.14474
+
+
+dN/dS (w) for site classes (K=3)
+
+p:   0.38546  0.53518  0.07936
+w:   0.01839  0.30410  1.69055
+
+dN & dS for each branch
+
+ branch          t       N       S   dN/dS      dN      dS  N*dN  S*dS
+
+  18..16      0.510    328.9    103.1   0.3040   0.1100   0.3618   36.2   37.3
+  18..17      0.787    328.9    103.1   0.3040   0.1695   0.5577   55.8   57.5
+  18..19      1.865    328.9    103.1   0.3040   0.4019   1.3220  132.2  136.4
+  19..20      0.578    328.9    103.1   0.3040   0.1246   0.4098   41.0   42.3
+  20..14      0.173    328.9    103.1   0.3040   0.0374   0.1230   12.3   12.7
+  20..15      0.058    328.9    103.1   0.3040   0.0124   0.0409    4.1    4.2
+  19..21      0.191    328.9    103.1   0.3040   0.0411   0.1352   13.5   13.9
+  21..13      0.893    328.9    103.1   0.3040   0.1924   0.6328   63.3   65.3
+  21..22      0.340    328.9    103.1   0.3040   0.0732   0.2409   24.1   24.8
+  22..23      0.284    328.9    103.1   0.3040   0.0611   0.2011   20.1   20.7
+  23..12      0.366    328.9    103.1   0.3040   0.0790   0.2598   26.0   26.8
+  23..24      0.103    328.9    103.1   0.3040   0.0223   0.0733    7.3    7.6
+  24..10      0.140    328.9    103.1   0.3040   0.0301   0.0991    9.9   10.2
+  24..11      0.194    328.9    103.1   0.3040   0.0417   0.1372   13.7   14.2
+  22..25      0.052    328.9    103.1   0.3040   0.0113   0.0372    3.7    3.8
+  25..26      0.060    328.9    103.1   0.3040   0.0129   0.0424    4.2    4.4
+  26..9       0.216    328.9    103.1   0.3040   0.0465   0.1529   15.3   15.8
+  26..27      0.066    328.9    103.1   0.3040   0.0142   0.0466    4.7    4.8
+  27..8       0.322    328.9    103.1   0.3040   0.0693   0.2279   22.8   23.5
+  27..28      0.136    328.9    103.1   0.3040   0.0293   0.0963    9.6    9.9
+  28..6       0.062    328.9    103.1   0.3040   0.0133   0.0437    4.4    4.5
+  28..7       0.095    328.9    103.1   0.3040   0.0206   0.0676    6.8    7.0
+  25..29      0.071    328.9    103.1   0.3040   0.0153   0.0503    5.0    5.2
+  29..30      0.016    328.9    103.1   0.3040   0.0035   0.0116    1.2    1.2
+  30..3       0.150    328.9    103.1   0.3040   0.0323   0.1062   10.6   11.0
+  30..31      0.160    328.9    103.1   0.3040   0.0345   0.1133   11.3   11.7
+  31..4       0.028    328.9    103.1   0.3040   0.0061   0.0201    2.0    2.1
+  31..5       0.060    328.9    103.1   0.3040   0.0130   0.0428    4.3    4.4
+  29..32      0.065    328.9    103.1   0.3040   0.0139   0.0458    4.6    4.7
+  32..1       0.174    328.9    103.1   0.3040   0.0374   0.1230   12.3   12.7
+  32..2       0.221    328.9    103.1   0.3040   0.0477   0.1569   15.7   16.2
+
+
+Naive Empirical Bayes (NEB) analysis
+Positively selected sites (*: P>95%; **: P>99%)
+(amino acids refer to 1st sequence: human)
+
+            Pr(w>1)     post mean +- SE for w
+
+     7 S      1.000**       1.690
+    11 A      0.838         1.466
+    42 S      0.997**       1.686
+    48 T      0.998**       1.688
+    50 D      1.000**       1.690
+    54 G      0.991**       1.678
+    67 G      1.000**       1.690
+    85 T      0.998**       1.688
+   123 P      1.000**       1.691
+   124 V      0.731         1.318
+
+
+Time used:  4:58
+
+
+Model 7: beta (10 categories)
+
+
+TREE #  1:  (16, 17, ((14, 15), (13, ((12, (10, 11)), ((9, (8, (6, 7))), ((3, (4, 5)), (1, 2)))))));   MP score: 613
+lnL(ntime: 31  np: 34):  -3697.222789      +0.000000
+  18..16   18..17   18..19   19..20   20..14   20..15   19..21   21..13   21..22   22..23   23..12   23..24   24..10   24..11   22..25   25..26   26..9    26..27   27..8    27..28   28..6    28..7    25..29   29..30   30..3    30..31   31..4    31..5    29..32   32..1    32..2  
+ 0.485443 0.762948 1.788947 0.555514 0.180011 0.054151 0.198428 0.853394 0.317734 0.277331 0.363846 0.099110 0.134589 0.193808 0.054314 0.058012 0.222027 0.060550 0.319953 0.139283 0.062284 0.096706 0.072092 0.019998 0.148011 0.164974 0.026835 0.063061 0.061146 0.177620 0.218722 2.050747 0.407944 1.099010
+
+Note: Branch length is defined as number of nucleotide substitutions per codon (not per neucleotide site).
+
+tree length =   8.23084
+
+(16: 0.485443, 17: 0.762948, ((14: 0.180011, 15: 0.054151): 0.555514, (13: 0.853394, ((12: 0.363846, (10: 0.134589, 11: 0.193808): 0.099110): 0.277331, ((9: 0.222027, (8: 0.319953, (6: 0.062284, 7: 0.096706): 0.139283): 0.060550): 0.058012, ((3: 0.148011, (4: 0.026835, 5: 0.063061): 0.164974): 0.019998, (1: 0.177620, 2: 0.218722): 0.061146): 0.072092): 0.054314): 0.317734): 0.198428): 1.788947);
+
+(xenlaev: 0.485443, xentrop: 0.762948, ((duck: 0.180011, chicken: 0.054151): 0.555514, (marsupial: 0.853394, ((hamster: 0.363846, (rat: 0.134589, mouse: 0.193808): 0.099110): 0.277331, ((elephseal: 0.222027, (pig: 0.319953, (cow: 0.062284, sheep: 0.096706): 0.139283): 0.060550): 0.058012, ((bushbaby: 0.148011, (hare: 0.026835, rabbit: 0.063061): 0.164974): 0.019998, (human: 0.177620, tarsier: 0.218722): 0.061146): 0.072092): 0.054314): 0.317734): 0.198428): 1.788947);
+
+Detailed output identifying parameters
+
+kappa (ts/tv) =  2.05075
+
+Parameters in M7 (beta):
+ p =   0.40794  q =   1.09901
+
+
+dN/dS (w) for site classes (K=10)
+
+p:   0.10000  0.10000  0.10000  0.10000  0.10000  0.10000  0.10000  0.10000  0.10000  0.10000
+w:   0.00057  0.00848  0.02971  0.06797  0.12640  0.20803  0.31613  0.45466  0.62940  0.85235
+
+dN & dS for each branch
+
+ branch          t       N       S   dN/dS      dN      dS  N*dN  S*dS
+
+  18..16      0.485    329.6    102.4   0.2694   0.0985   0.3656   32.5   37.4
+  18..17      0.763    329.6    102.4   0.2694   0.1548   0.5746   51.0   58.9
+  18..19      1.789    329.6    102.4   0.2694   0.3629   1.3473  119.6  138.0
+  19..20      0.556    329.6    102.4   0.2694   0.1127   0.4184   37.1   42.9
+  20..14      0.180    329.6    102.4   0.2694   0.0365   0.1356   12.0   13.9
+  20..15      0.054    329.6    102.4   0.2694   0.0110   0.0408    3.6    4.2
+  19..21      0.198    329.6    102.4   0.2694   0.0403   0.1494   13.3   15.3
+  21..13      0.853    329.6    102.4   0.2694   0.1731   0.6427   57.1   65.8
+  21..22      0.318    329.6    102.4   0.2694   0.0645   0.2393   21.2   24.5
+  22..23      0.277    329.6    102.4   0.2694   0.0563   0.2089   18.5   21.4
+  23..12      0.364    329.6    102.4   0.2694   0.0738   0.2740   24.3   28.1
+  23..24      0.099    329.6    102.4   0.2694   0.0201   0.0746    6.6    7.6
+  24..10      0.135    329.6    102.4   0.2694   0.0273   0.1014    9.0   10.4
+  24..11      0.194    329.6    102.4   0.2694   0.0393   0.1460   13.0   15.0
+  22..25      0.054    329.6    102.4   0.2694   0.0110   0.0409    3.6    4.2
+  25..26      0.058    329.6    102.4   0.2694   0.0118   0.0437    3.9    4.5
+  26..9       0.222    329.6    102.4   0.2694   0.0450   0.1672   14.8   17.1
+  26..27      0.061    329.6    102.4   0.2694   0.0123   0.0456    4.0    4.7
+  27..8       0.320    329.6    102.4   0.2694   0.0649   0.2410   21.4   24.7
+  27..28      0.139    329.6    102.4   0.2694   0.0283   0.1049    9.3   10.7
+  28..6       0.062    329.6    102.4   0.2694   0.0126   0.0469    4.2    4.8
+  28..7       0.097    329.6    102.4   0.2694   0.0196   0.0728    6.5    7.5
+  25..29      0.072    329.6    102.4   0.2694   0.0146   0.0543    4.8    5.6
+  29..30      0.020    329.6    102.4   0.2694   0.0041   0.0151    1.3    1.5
+  30..3       0.148    329.6    102.4   0.2694   0.0300   0.1115    9.9   11.4
+  30..31      0.165    329.6    102.4   0.2694   0.0335   0.1242   11.0   12.7
+  31..4       0.027    329.6    102.4   0.2694   0.0054   0.0202    1.8    2.1
+  31..5       0.063    329.6    102.4   0.2694   0.0128   0.0475    4.2    4.9
+  29..32      0.061    329.6    102.4   0.2694   0.0124   0.0460    4.1    4.7
+  32..1       0.178    329.6    102.4   0.2694   0.0360   0.1338   11.9   13.7
+  32..2       0.219    329.6    102.4   0.2694   0.0444   0.1647   14.6   16.9
+
+
+Time used:  9:47
+
+
+Model 8: beta&w>1 (11 categories)
+
+
+TREE #  1:  (16, 17, ((14, 15), (13, ((12, (10, 11)), ((9, (8, (6, 7))), ((3, (4, 5)), (1, 2)))))));   MP score: 613
+lnL(ntime: 31  np: 36):  -3686.133656      +0.000000
+  18..16   18..17   18..19   19..20   20..14   20..15   19..21   21..13   21..22   22..23   23..12   23..24   24..10   24..11   22..25   25..26   26..9    26..27   27..8    27..28   28..6    28..7    25..29   29..30   30..3    30..31   31..4    31..5    29..32   32..1    32..2  
+ 0.543890 0.773963 1.924029 0.599538 0.176193 0.055186 0.190663 0.912936 0.338765 0.289394 0.370420 0.102022 0.140254 0.193623 0.050656 0.060162 0.216763 0.064373 0.323714 0.138090 0.061478 0.095637 0.071533 0.012954 0.152086 0.160986 0.029078 0.060191 0.067818 0.173709 0.224442 2.129649 0.943145 0.571797 2.171903 2.081273
+
+Note: Branch length is defined as number of nucleotide substitutions per codon (not per neucleotide site).
+
+tree length =   8.57454
+
+(16: 0.543890, 17: 0.773963, ((14: 0.176193, 15: 0.055186): 0.599538, (13: 0.912936, ((12: 0.370420, (10: 0.140254, 11: 0.193623): 0.102022): 0.289394, ((9: 0.216763, (8: 0.323714, (6: 0.061478, 7: 0.095637): 0.138090): 0.064373): 0.060162, ((3: 0.152086, (4: 0.029078, 5: 0.060191): 0.160986): 0.012954, (1: 0.173709, 2: 0.224442): 0.067818): 0.071533): 0.050656): 0.338765): 0.190663): 1.924029);
+
+(xenlaev: 0.543890, xentrop: 0.773963, ((duck: 0.176193, chicken: 0.055186): 0.599538, (marsupial: 0.912936, ((hamster: 0.370420, (rat: 0.140254, mouse: 0.193623): 0.102022): 0.289394, ((elephseal: 0.216763, (pig: 0.323714, (cow: 0.061478, sheep: 0.095637): 0.138090): 0.064373): 0.060162, ((bushbaby: 0.152086, (hare: 0.029078, rabbit: 0.060191): 0.160986): 0.012954, (human: 0.173709, tarsier: 0.224442): 0.067818): 0.071533): 0.050656): 0.338765): 0.190663): 1.924029);
+
+Detailed output identifying parameters
+
+kappa (ts/tv) =  2.12965
+
+Parameters in M8 (beta&w>1):
+  p0 =   0.94315  p =   0.57180 q =   2.17190
+ (p1 =   0.05685) w =   2.08127
+
+
+dN/dS (w) for site classes (K=11)
+
+p:   0.09431  0.09431  0.09431  0.09431  0.09431  0.09431  0.09431  0.09431  0.09431  0.09431  0.05685
+w:   0.00220  0.01518  0.03772  0.06960  0.11156  0.16524  0.23369  0.32283  0.44601  0.65084  2.08127
+
+dN & dS for each branch
+
+ branch          t       N       S   dN/dS      dN      dS  N*dN  S*dS
+
+  18..16      0.544    329.0    103.0   0.3121   0.1188   0.3807   39.1   39.2
+  18..17      0.774    329.0    103.0   0.3121   0.1691   0.5418   55.6   55.8
+  18..19      1.924    329.0    103.0   0.3121   0.4204   1.3468  138.3  138.8
+  19..20      0.600    329.0    103.0   0.3121   0.1310   0.4197   43.1   43.2
+  20..14      0.176    329.0    103.0   0.3121   0.0385   0.1233   12.7   12.7
+  20..15      0.055    329.0    103.0   0.3121   0.0121   0.0386    4.0    4.0
+  19..21      0.191    329.0    103.0   0.3121   0.0417   0.1335   13.7   13.8
+  21..13      0.913    329.0    103.0   0.3121   0.1995   0.6390   65.6   65.8
+  21..22      0.339    329.0    103.0   0.3121   0.0740   0.2371   24.3   24.4
+  22..23      0.289    329.0    103.0   0.3121   0.0632   0.2026   20.8   20.9
+  23..12      0.370    329.0    103.0   0.3121   0.0809   0.2593   26.6   26.7
+  23..24      0.102    329.0    103.0   0.3121   0.0223   0.0714    7.3    7.4
+  24..10      0.140    329.0    103.0   0.3121   0.0306   0.0982   10.1   10.1
+  24..11      0.194    329.0    103.0   0.3121   0.0423   0.1355   13.9   14.0
+  22..25      0.051    329.0    103.0   0.3121   0.0111   0.0355    3.6    3.7
+  25..26      0.060    329.0    103.0   0.3121   0.0131   0.0421    4.3    4.3
+  26..9       0.217    329.0    103.0   0.3121   0.0474   0.1517   15.6   15.6
+  26..27      0.064    329.0    103.0   0.3121   0.0141   0.0451    4.6    4.6
+  27..8       0.324    329.0    103.0   0.3121   0.0707   0.2266   23.3   23.3
+  27..28      0.138    329.0    103.0   0.3121   0.0302   0.0967    9.9   10.0
+  28..6       0.061    329.0    103.0   0.3121   0.0134   0.0430    4.4    4.4
+  28..7       0.096    329.0    103.0   0.3121   0.0209   0.0669    6.9    6.9
+  25..29      0.072    329.0    103.0   0.3121   0.0156   0.0501    5.1    5.2
+  29..30      0.013    329.0    103.0   0.3121   0.0028   0.0091    0.9    0.9
+  30..3       0.152    329.0    103.0   0.3121   0.0332   0.1065   10.9   11.0
+  30..31      0.161    329.0    103.0   0.3121   0.0352   0.1127   11.6   11.6
+  31..4       0.029    329.0    103.0   0.3121   0.0064   0.0204    2.1    2.1
+  31..5       0.060    329.0    103.0   0.3121   0.0132   0.0421    4.3    4.3
+  29..32      0.068    329.0    103.0   0.3121   0.0148   0.0475    4.9    4.9
+  32..1       0.174    329.0    103.0   0.3121   0.0380   0.1216   12.5   12.5
+  32..2       0.224    329.0    103.0   0.3121   0.0490   0.1571   16.1   16.2
+
+
+Naive Empirical Bayes (NEB) analysis
+Positively selected sites (*: P>95%; **: P>99%)
+(amino acids refer to 1st sequence: human)
+
+            Pr(w>1)     post mean +- SE for w
+
+     7 S      0.995**       2.074
+    42 S      0.845         1.856
+    48 T      0.942         1.997
+    50 D      0.990**       2.067
+    54 G      0.781         1.762
+    67 G      0.988*        2.064
+    85 T      0.866         1.887
+   123 P      0.995**       2.075
+
+
+Bayes Empirical Bayes (BEB) analysis (Yang, Wong & Nielsen 2005. Mol. Biol. Evol. 22:1107-1118)
+Positively selected sites (*: P>95%; **: P>99%)
+(amino acids refer to 1st sequence: human)
+
+            Pr(w>1)     post mean +- SE for w
+
+     7 S      0.979*        2.442 +- 0.534
+    42 S      0.539         1.625 +- 0.846
+    48 T      0.833         2.176 +- 0.753
+    50 D      0.970*        2.430 +- 0.554
+    54 G      0.520         1.594 +- 0.870
+    67 G      0.961*        2.413 +- 0.573
+    85 T      0.616         1.774 +- 0.860
+   123 P      0.976*        2.435 +- 0.540
+
+
+
+The grid 
+
+p0:   0.050  0.150  0.250  0.350  0.450  0.550  0.650  0.750  0.850  0.950
+p :   0.100  0.300  0.500  0.700  0.900  1.100  1.300  1.500  1.700  1.900
+q :   0.100  0.300  0.500  0.700  0.900  1.100  1.300  1.500  1.700  1.900
+ws:   1.500  2.500  3.500  4.500  5.500  6.500  7.500  8.500  9.500 10.500
+
+
+Posterior on the grid
+
+p0:   0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.003  0.997
+p :   0.000  0.181  0.806  0.013  0.000  0.000  0.000  0.000  0.000  0.000
+q :   0.000  0.000  0.000  0.001  0.028  0.072  0.073  0.137  0.297  0.391
+ws:   0.125  0.785  0.083  0.006  0.001  0.000  0.000  0.000  0.000  0.000
+
+Time used: 15:23
