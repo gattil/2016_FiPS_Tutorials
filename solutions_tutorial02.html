@@ -27,7 +27,9 @@
 
 <h4 id="1-the-simple-codon-model-with-constant-ω">1. The simple codon model with constant ω</h4>
 
-<p>GOAL: In this exercise we apply the simplest codon model with constant <script type="math/tex" id="MathJax-Element-1291"> \omega </script> parameter over tree branches and MSA sites. We run <code>codeml</code> <strong>twice</strong> since we want to compare the log-likelihood of the model when the parameters are optimised on a fixed tree topology (provided with the exercise) and when the branch lengths are re-estimated using the selected substitution model. </p>
+<p>GOAL: In this exercise we apply the simplest codon model with constant <script type="math/tex" id="MathJax-Element-1348"> \omega </script> parameter over tree branches and MSA sites. We run <code>codeml</code> <strong>twice</strong> since we want to compare the log-likelihood of the model when the parameters are optimised on a fixed tree topology (provided with the exercise) and when the branch lengths are re-estimated using the selected substitution model. </p>
+
+
 
 <h5 id="execution">Execution</h5>
 
@@ -35,19 +37,128 @@
 - <em>bglobin.nuc  (MSA)</em> <br>
 - <em>bglobin.tree (Tree)</em></p>
 
+<p><strong>Run 1 – branch lengths fixed</strong>  <br>
+We create a new control file for <code>codeml</code> using the template provided in PaML folder. Then, we modify the following settings in order to run the analysis according to the exercise requests:</p>
+
+<pre><code>seqfile = /path/to/bglobin.nuc       * sequence data filename
+treefile =/path/to/bglobin.trees     * tree structure file name
+outfile = /path/to/output_m0_fixed   * main result file name
+
+seqtype = 1  * 1:codons; 2:AAs; 3:codons--&gt;AAs
+
+model = 0    * models for codons: 0
+             *  0:one, 1:b, 2:2 or more dN/dS ratios for branches   
+
+NSsites = 0  * 0:one w;1:neutral;2:selection; 3:discrete;4:freqs;
+                * 5:gamma;6:2gamma;7:beta;8:beta&amp;w;9:beta&amp;gamma;
+                * 10:beta&amp;gamma+1; 11:beta&amp;normal&gt;1; 12:0&amp;2normal&gt;1;
+                * 13:3normal&gt;0
+
+fix_blength = 2  * 0: ignore, -1: random, 1: initial, 2: fixed
+</code></pre>
+
+<p><strong>Run 2 – branch lengths re-estimated</strong> </p>
+
+<pre><code>seqfile = /path/to/bglobin.nuc       * sequence data filename
+treefile =/path/to/bglobin.trees     * tree structure file name
+outfile = /path/to/output_m0_ML      * main result file name
+
+seqtype = 1  * 1:codons; 2:AAs; 3:codons--&gt;AAs
+
+model = 0    * models for codons: 0
+             *  0:one, 1:b, 2:2 or more dN/dS ratios for branches   
+
+NSsites = 0  * 0:one w;1:neutral;2:selection; 3:discrete;4:freqs;
+                * 5:gamma;6:2gamma;7:beta;8:beta&amp;w;9:beta&amp;gamma;
+                * 10:beta&amp;gamma+1; 11:beta&amp;normal&gt;1; 12:0&amp;2normal&gt;1;
+                * 13:3normal&gt;0
+
+fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
+</code></pre>
+
+
+
 <h5 id="questions">Questions</h5>
 
-<p><strong>1. Do you observe the codon frequency bias?</strong>  <br>
-<strong>2. Which position displays the most bias? Why?</strong>  <br>
-<strong>3. What is the ML estimate of the transition-transversion ratio κ?</strong>  <br>
-<strong>4. What is the ML estimate of the ω-ratio?</strong>  <br>
-<strong>5. How do you interpret these ML estimates?</strong></p>
+<p><strong>1. Do you observe the codon frequency bias?</strong></p>
+
+<pre><code>Sums of codon usage counts
+------------------------------------------------------------------------------
+Phe F TTT      65 | Ser S TCT      29 | Tyr Y TAT      12 | Cys C TGT      22
+      TTC      68 |       TCC      44 |       TAC      32 |       TGC       6
+Leu L TTA       1 |       TCA       4 | *** * TAA       0 | *** * TGA       0
+      TTG      15 |       TCG       0 |       TAG       0 | Trp W TGG      43
+------------------------------------------------------------------------------
+Leu L CTT      13 | Pro P CCT      40 | His H CAT      48 | Arg R CGT       2
+      CTC      54 |       CCC      24 |       CAC      78 |       CGC      11
+      CTA       6 |       CCA       9 | Gln Q CAA       7 |       CGA       0
+      CTG     203 |       CCG       4 |       CAG      65 |       CGG       1
+------------------------------------------------------------------------------
+Ile I ATT      16 | Thr T ACT      45 | Asn N AAT      49 | Ser S AGT      31
+      ATC      28 |       ACC      46 |       AAC      70 |       AGC      19
+      ATA       3 |       ACA       4 | Lys K AAA      36 | Arg R AGA       2
+Met M ATG      23 |       ACG       1 |       AAG     163 |       AGG      43
+------------------------------------------------------------------------------
+Val V GTT      62 | Ala A GCT     113 | Asp D GAT      57 | Gly G GGT      49
+      GTC      51 |       GCC     132 |       GAC      65 |       GGC     109
+      GTA       4 |       GCA      12 | Glu E GAA      40 |       GGA      17
+      GTG     147 |       GCG       7 |       GAG      81 |       GGG      17
+------------------------------------------------------------------------------
+</code></pre>
+
+<p><strong>2. Which position displays the most bias? Why?</strong> </p>
+
+<pre><code>Codon position x base (3x4) table, overall
+
+position  1:    T:0.13930    C:0.23080    A:0.23652    G:0.39338
+position  2:    T:0.31005    C:0.20997    A:0.32802    G:0.15196
+position  3:    T:0.26675    C:0.34191    A:0.05923    G:0.33211
+Average         T:0.23870    C:0.26089    A:0.20792    G:0.29248
+</code></pre>
+
+<p><strong>3. What is the ML estimate of the transition-transversion ratio κ?</strong> </p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">fixed branch lengths</th>
+  <th align="center">re-estimated branch lengths</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">2.16189</td>
+  <td align="center">2.07049</td>
+</tr>
+</tbody></table>
+
+
+<p><strong>4. What is the ML estimate of the ω-ratio?</strong> </p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">fixed branch lengths</th>
+  <th align="center">re-estimated branch lengths</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">0.20964</td>
+  <td align="center">0.23685</td>
+</tr>
+</tbody></table>
+
+
+<p><strong>5. How do you interpret these ML estimates?</strong></p>
 
 <hr>
+
+
 
 <h4 id="2-branch-models">2. Branch models</h4>
 
 <p>GOAL:</p>
+
+
 
 <h5 id="execution-1">Execution</h5>
 
@@ -63,17 +174,27 @@
 
 <p>GOAL:</p>
 
+
+
 <h5 id="execution-2">Execution</h5>
+
+
 
 <h5 id="questions-2">Questions</h5>
 
 <hr>
 
+
+
 <h4 id="4-branch-site-models-coming-soon">4. Branch-site models <em>(coming soon)</em></h4>
 
 <p>GOAL:</p>
 
+
+
 <h5 id="execution-3">Execution</h5>
+
+
 
 <h5 id="questions-3">Questions</h5>
 
@@ -85,7 +206,11 @@
 
 <p>GOAL:</p>
 
+
+
 <h5 id="execution-4">Execution</h5>
+
+
 
 <h5 id="questions-4">Questions</h5>
 
@@ -97,15 +222,23 @@
 
 <p>GOAL:</p>
 
+
+
 <h5 id="execution-5">Execution</h5>
+
+
 
 <h5 id="questions-5">Questions</h5>
 
 <hr>
 
+
+
 <h4 id="references">References</h4>
 
-<p>1.</p>
+<ol>
+<li><a href="http://abacus.gene.ucl.ac.uk/software/pamlDOC.pdf">PaML documentation</a></li>
+</ol>
 
 <hr>
 
