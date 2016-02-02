@@ -238,6 +238,32 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
 
 <h5 id="execution-2">Execution</h5>
 
+<p>For all the following tasks we are going to use the following settings:</p>
+
+<pre><code>seqfile = /path/to/bglobin.nuc         * sequence data filename
+treefile = /path/to/bglobin.trees      * tree structure file name
+
+seqtype = 1  * 1:codons; 2:AAs; 3:codons--&gt;AAs
+
+fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
+</code></pre>
+
+<p><strong>Fitting model M1 to M8 in one single run</strong></p>
+
+<pre><code>model = 0
+NSsites = 1 2 3 7 8
+
+fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
+    omega = .4 * initial or fixed omega, for codons or codon-based AAs
+</code></pre>
+
+<p><strong>Fitting model M8a</strong></p>
+
+<pre><code>  NSsites = 8
+  fix_omega = 1  * 1: omega or omega_1 fixed, 0: estimate
+  omega = 1      * initial or fixed omega, for codons or codon-based AAs
+</code></pre>
+
 <h5 id="questions-2">Questions</h5>
 
 <p><strong>1. Which models are nested?</strong>  <br>
