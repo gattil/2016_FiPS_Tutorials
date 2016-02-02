@@ -27,7 +27,7 @@
 
 <h4 id="1-the-simple-codon-model-with-constant-ω">1. The simple codon model with constant ω</h4>
 
-<p>GOAL: In this exercise we apply the simplest codon model with constant <script type="math/tex" id="MathJax-Element-1348"> \omega </script> parameter over tree branches and MSA sites. We run <code>codeml</code> <strong>twice</strong> since we want to compare the log-likelihood of the model when the parameters are optimised on a fixed tree topology (provided with the exercise) and when the branch lengths are re-estimated using the selected substitution model. </p>
+<p>GOAL: In this exercise we apply the simplest codon model with constant <script type="math/tex" id="MathJax-Element-1349"> \omega </script> parameter over tree branches and MSA sites. We run <code>codeml</code> <strong>twice</strong> since we want to compare the log-likelihood of the model when the parameters are optimised on a fixed tree topology (provided with the exercise) and when the branch lengths are re-estimated using the selected substitution model. </p>
 
 
 
@@ -156,19 +156,74 @@ Average         T:0.23870    C:0.26089    A:0.20792    G:0.29248
 
 <h4 id="2-branch-models">2. Branch models</h4>
 
-<p>GOAL:</p>
-
-
+<p>GOAL: In this exercise we estimate the <script type="math/tex" id="MathJax-Element-1379"> \omega </script> parameter following several different strategies: a. allowing it to change at each branch on the tree topology, b. fixing it on one single branch (two-categories) c. fixing it on two branches (three-categories).</p>
 
 <h5 id="execution-1">Execution</h5>
 
+<p>For all the following tasks we are going to use the following settings:</p>
 
+<pre><code>seqfile = /path/to/lysozymeSmall.nuc     * sequence data filename
+treefile = /path/to/lysozymeSmall.trees  * tree structure file name
+
+seqtype = 1  * 1:codons; 2:AAs; 3:codons--&gt;AAs
+
+fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
+</code></pre>
+
+<p><strong>a. free-ratio model</strong></p>
+
+<p>In the <em>codeml.ctl</em> file we set the following parameters:</p>
+
+<pre><code>model = 1        * models for codons:
+                 *  0:one, 1:b, 2:2 or more dN/dS ratios for branches
+</code></pre>
+
+<p><strong>b. two dN/dS ratios</strong></p>
+
+<p>In the <em>codeml.ctl</em> file we set the following parameters:</p>
+
+<pre><code>model = 2        * models for codons:
+                 *  0:one, 1:b, 2:2 or more dN/dS ratios for branches
+</code></pre>
+
+<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branch where we think the <script type="math/tex" id="MathJax-Element-1544">\omega </script> parameter differs from the rest of the tree.</p>
+
+<blockquote>
+  <p>PaML (and codeML) accepts only the following label format at branch level: <code>'#1'</code> where <code>1</code> is an integer greater than 0 </p>
+</blockquote>
+
+<pre><code>((Hsa_Human, Hla_gibbon) ,((Cgu/Can_colobus, Pne_langur) '#1', Mmu_rhesus), (Ssc_squirrelM, Cja_marmoset));
+</code></pre>
+
+<p>In this case we labeled the branch leading to the clade [colobus, langur]. We are therefore assuming that only this branch will have a value for <script type="math/tex" id="MathJax-Element-1545"> \omega </script> that differs from the rest of the tree.</p>
+
+<p><strong>c. three dN/dS ratios</strong></p>
+
+<p>In the <em>codeml.ctl</em> file we set the following parameters:</p>
+
+<pre><code>model = 2        * models for codons:
+                 *  0:one, 1:b, 2:2 or more dN/dS ratios for branches
+</code></pre>
+
+<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branches where we think the <script type="math/tex" id="MathJax-Element-1546">\omega </script> parameter differs from the rest of the tree.</p>
+
+<blockquote>
+  <p>PaML (and codeML) accepts only the following label format at branch level: <code>'#1'</code> where <code>1</code> is an integer greater than 0 </p>
+</blockquote>
+
+<pre><code>((Hsa_Human, Hla_gibbon) '#2',((Cgu/Can_colobus, Pne_langur) '#1', Mmu_rhesus), (Ssc_squirrelM, Cja_marmoset));
+</code></pre>
+
+<p>In this case we labeled the branch leading to the clade [colobus, langur] and the branch leading to the human clade [Hsa_Human, Hla_gibbon].  We are therefore assuming that only those branches will have values for <script type="math/tex" id="MathJax-Element-1547"> \omega </script> that differ from the rest of the tree.</p>
 
 <h5 id="questions-1">Questions</h5>
 
+<p><strong>1. Are results consistent with those presented in ref. (2)?</strong>  <br>
+<strong>2. Based on LRTs, what model fits your data the best (among 2-ratio, 3-ratio and free-ratio models)?</strong>  <br>
+<strong>3. What are the degrees of freedoms for each comparison?</strong>  <br>
+<strong>4. What can you tell about the evolution of your gene from the ML estimates under this best model?</strong></p>
+
 <hr>
-
-
 
 <h4 id="3-site-models">3. Site-models</h4>
 
