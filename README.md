@@ -1,2 +1,2 @@
-# 2016_FiPS_Tutorials
-Zurich-Basel Plant Science Center | PhD course "Frontiers in Plant Sciences: Protein-coding Evolution and Detecting Natural Selection" | Tutorials
+# Welcome to Frontiers in Plant Sciences 2016
+## Tutorials in computational molecular evolution
