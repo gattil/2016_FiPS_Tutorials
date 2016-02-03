@@ -236,6 +236,8 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
 
 <p>GOAL: In this exercise we apply different codon models to a protein-coding dataset in order to evaluate which one fits better our dataset w.r.t. natural selection detection. We evaluate alternative evolutionary hypotheses using nested codon models.</p>
 
+
+
 <h5 id="execution-2">Execution</h5>
 
 <p>For all the following tasks we are going to use the following settings:</p>
@@ -264,14 +266,35 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
   omega = 1      * initial or fixed omega, for codons or codon-based AAs
 </code></pre>
 
+
+
 <h5 id="questions-2">Questions</h5>
 
-<p><strong>1. Which models are nested?</strong>  <br>
-<strong>2. How many degrees of freedom do you use each time to test for significance of the LRT statistic?</strong>  <br>
-<strong>3. Do your tests suggest positive selection?</strong>  <br>
-<strong>4. Interpret the ML estimates relevant to selective pressure.</strong>  <br>
-<strong>5. If LRTs suggest positive selection, which sites are inferred by the Bayesian approach to be under positive selection (models M2 and M8)?</strong> <br>
-<strong>6. Do NEB and BEB agree on the sites inferred?</strong>  <br>
+<p><strong>1. Which models are nested?</strong> </p>
+
+<ul>
+<li>M3 vs. M0</li>
+<li>M2 vs. M1</li>
+<li>M8 vs. M7</li>
+<li>M8a vs. M8</li>
+</ul>
+
+<p><strong>2. How many degrees of freedom do you use each time to test for significance of the LRT statistic?</strong> </p>
+
+<ul>
+<li>M3 vs. M0 :  37-33 = 4 degrees of freedom</li>
+<li>M2 vs. M1 : 36-34 = 2 degrees of freedom</li>
+<li>M8 vs. M7 : 36-34 = 2 degrees of freedom</li>
+<li>M8 vs. M8a: 36-35 = 1 degrees of freedom</li>
+</ul>
+
+<p><strong>3. Do your tests suggest positive selection?</strong> </p>
+
+<p><strong>4. Interpret the ML estimates relevant to selective pressure.</strong> </p>
+
+<p><strong>5. If LRTs suggest positive selection, which sites are inferred by the Bayesian approach to be under positive selection (models M2 and M8)?</strong></p>
+
+<p><strong>6. Do NEB and BEB agree on the sites inferred?</strong>  <br>
 <strong>7. Compare results from the LRT comparing M7 vs M8 and the LRT comparing M8a vs M8. Are they both significant (or both non-significant)?</strong>  <br>
 <strong>8. If they are both significant, does the Bayesian approach predict the same sites?</strong></p>
 
@@ -336,7 +359,7 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
 
 <hr>
 
-<p>Document last updated on 02.01.2016</p>
+<p>Document last updated on 03.01.2016</p>
 
 <hr>
 
