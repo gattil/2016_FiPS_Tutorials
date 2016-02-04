@@ -282,11 +282,11 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
 <blockquote>
   <p>We compute the LRT statistic between nested hypothesis using the following relation:</p>
   
-  <p><script type="math/tex" id="MathJax-Element-2285">l_0 = \log[L(H_0)]</script> <br>
-  <script type="math/tex" id="MathJax-Element-2286">l_1 = \log[L(H_1)]</script> <br>
-  <script type="math/tex" id="MathJax-Element-2287">LRT = 2\delta = 2 \log\frac{L(H_1)}{L(H_0)} = 2(l_1 - l_0) </script></p>
+  <p><script type="math/tex" id="MathJax-Element-5434">l_0 = \log[L(H_0)]</script> <br>
+  <script type="math/tex" id="MathJax-Element-5435">l_1 = \log[L(H_1)]</script> <br>
+  <script type="math/tex" id="MathJax-Element-5436">LRT = 2\delta = 2 \log\frac{L(H_1)}{L(H_0)} = 2(l_1 - l_0) </script></p>
   
-  <p>If the <script type="math/tex" id="MathJax-Element-2288">H_0</script> hypothesis is correct, then it is asymptotically distributed as the <script type="math/tex" id="MathJax-Element-2289">\chi^2</script> distribution with <script type="math/tex" id="MathJax-Element-2290">k</script> degrees of freedom (<script type="math/tex" id="MathJax-Element-2291">k</script> is equal to the difference in the number of parameters in <script type="math/tex" id="MathJax-Element-2292">H_0</script> and <script type="math/tex" id="MathJax-Element-2293">H_1</script>. On the other hand, I will discard the simplest model in favour of the most complex one, if the LRT value is greater of the value of the <script type="math/tex" id="MathJax-Element-2294">\chi^2</script> distribution with <script type="math/tex" id="MathJax-Element-2295">k</script> degrees of freedom for the p-value I selected (i.e. p-value = 0.05)</p>
+  <p>If the <script type="math/tex" id="MathJax-Element-5437">H_0</script> hypothesis is correct, then it is asymptotically distributed as the <script type="math/tex" id="MathJax-Element-5438">\chi^2</script> distribution with <script type="math/tex" id="MathJax-Element-5439">k</script> degrees of freedom (<script type="math/tex" id="MathJax-Element-5440">k</script> is equal to the difference in the number of parameters in <script type="math/tex" id="MathJax-Element-5441">H_0</script> and <script type="math/tex" id="MathJax-Element-5442">H_1</script>. On the other hand, I will discard the simplest model in favour of the most complex one, if the LRT value is greater of the value of the <script type="math/tex" id="MathJax-Element-5443">\chi^2</script> distribution with <script type="math/tex" id="MathJax-Element-5444">k</script> degrees of freedom for the p-value I selected (i.e. p-value = 0.05)</p>
 </blockquote>
 
 <table>
@@ -336,48 +336,46 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
 
 <p><strong>3. Do your tests suggest positive selection?</strong> </p>
 
-<p>We tested for positive selection every time we compare the likelihood of two nested models (i.e. M2 vs M1) where one allows for positive selection (it allows <script type="math/tex" id="MathJax-Element-2296">\omega > 1 </script> for portion of sites on the MSA), while the other does not (<script type="math/tex" id="MathJax-Element-2297">\omega \lt 1 </script>).</p>
+<p>We tested for positive selection every time we compare the likelihood of two nested models (i.e. M2 vs M1) where one allows for positive selection (it allows <script type="math/tex" id="MathJax-Element-5445">\omega > 1 </script> for portion of sites on the MSA), while the other does not (<script type="math/tex" id="MathJax-Element-5446">\omega \lt 1 </script>).</p>
 
 <p>M2a vs M1a, M8 vs M7, M8 vs M8a model tests can detect positive selection.</p>
 
 <p><strong>4. Interpret the ML estimates relevant to selective pressure.</strong> </p>
 
-<p>Codon models can identify positive selection monitoring the <script type="math/tex" id="MathJax-Element-2298">\omega</script> parameter (i.e. on the branches or at each site), therefore we can observe the ML estimates of the omega parameter when inferred under different codon models:</p>
+<p>Codon models can identify positive selection monitoring the <script type="math/tex" id="MathJax-Element-5447">\omega</script> parameter (i.e. on the branches or at each site), therefore we can observe the ML estimates of the omega parameter when inferred under different codon models:</p>
 
 <table>
 <thead>
 <tr>
-  <th align="center">model</th>
-  <th align="center"><script type="math/tex" id="MathJax-Element-2299">\omega</script></th>
+  <th align="center">parameter</th>
+  <th align="center">M0</th>
+  <th align="center">M1</th>
+  <th align="center">M2</th>
+  <th align="center">M3</th>
+  <th align="center">M7</th>
+  <th align="center">M8</th>
+  <th align="center">M8a</th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center">M0</td>
-  <td align="center"></td>
+  <td align="center"><script type="math/tex" id="MathJax-Element-5448">\omega</script></td>
+  <td align="center">0.23685</td>
+  <td align="center">0.12  1.00</td>
+  <td align="center">0.12  1.00  2.94</td>
+  <td align="center">0.02  0.30  1.69</td>
+  <td align="center">0.001  0.008  0.03  0.07  0.13  0.21  0.32  0.45  0.63  0.85</td>
+  <td align="center">0.002  0.015  0.038  0.070  0.112  0.165  0.233  0.323  0.446  0.651  2.081</td>
+  <td align="center">0.004  0.022  0.050  0.088  0.139  0.207  0.307  0.491  1.00</td>
 </tr>
 <tr>
-  <td align="center">M3</td>
-  <td align="center"></td>
-</tr>
-<tr>
-  <td align="center">M1</td>
-  <td align="center"></td>
-</tr>
-<tr>
-  <td align="center">M2</td>
-  <td align="center"></td>
-</tr>
-<tr>
-  <td align="center">M7</td>
-  <td align="center"></td>
-</tr>
-<tr>
-  <td align="center">M8</td>
-  <td align="center"></td>
-</tr>
-<tr>
-  <td align="center">M8a</td>
-  <td align="center"></td>
+  <td align="center">proportion</td>
+  <td align="center">1.00</td>
+  <td align="center">0.77  0.23</td>
+  <td align="center">0.76  0.20  0.03</td>
+  <td align="center">0.39  0.54  0.08</td>
+  <td align="center">0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10</td>
+  <td align="center">0.09  0.09  0.09  0.09  0.09  0.09  0.09  0.09  0.09  0.09  0.06</td>
+  <td align="center">0.11  0.11  0.11  0.11  0.11  0.11  0.11  0.11  0.11</td>
 </tr>
 </tbody></table>
 
