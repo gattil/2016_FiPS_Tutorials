@@ -27,7 +27,7 @@
 
 <h4 id="1-the-simple-codon-model-with-constant-ω">1. The simple codon model with constant ω</h4>
 
-<p>GOAL: In this exercise we apply the simplest codon model with constant <script type="math/tex" id="MathJax-Element-1"> \omega </script> parameter over tree branches and MSA sites. We run <code>codeml</code> <strong>twice</strong> since we want to compare the log-likelihood of the model when the parameters are optimised on a fixed tree topology (provided with the exercise) and when the branch lengths are re-estimated using the selected substitution model. </p>
+<p>GOAL: In this exercise we apply the simplest codon model with constant $ \omega $ parameter over tree branches and MSA sites. We run <code>codeml</code> <strong>twice</strong> since we want to compare the log-likelihood of the model when the parameters are optimised on a fixed tree topology (provided with the exercise) and when the branch lengths are re-estimated using the selected substitution model. </p>
 
 
 
@@ -156,7 +156,7 @@ Average         T:0.23870    C:0.26089    A:0.20792    G:0.29248
 
 <h4 id="2-branch-models">2. Branch models</h4>
 
-<p>GOAL: In this exercise we estimate the <script type="math/tex" id="MathJax-Element-2"> \omega </script> parameter following several different strategies: a. allowing it to change at each branch on the tree topology, b. fixing it on one single branch (two-categories) c. fixing it on two branches (three-categories).</p>
+<p>GOAL: In this exercise we estimate the $ \omega $ parameter following several different strategies: a. allowing it to change at each branch on the tree topology, b. fixing it on one single branch (two-categories) c. fixing it on two branches (three-categories).</p>
 
 
 
@@ -188,7 +188,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
                  *  0:one, 1:b, 2:2 or more dN/dS ratios for branches
 </code></pre>
 
-<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branch where we think the <script type="math/tex" id="MathJax-Element-3">\omega </script> parameter differs from the rest of the tree.</p>
+<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branch where we think the $\omega $ parameter differs from the rest of the tree.</p>
 
 <blockquote>
   <p>PaML (and codeML) accepts only the following label format at branch level: <code>'#1'</code> where <code>1</code> is an integer greater than 0 </p>
@@ -197,7 +197,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
 <pre><code>((Hsa_Human, Hla_gibbon) ,((Cgu/Can_colobus, Pne_langur) '#1', Mmu_rhesus), (Ssc_squirrelM, Cja_marmoset));
 </code></pre>
 
-<p>In this case we labeled the branch leading to the clade [colobus, langur]. We are therefore assuming that only this branch will have a value for <script type="math/tex" id="MathJax-Element-4"> \omega </script> that differs from the rest of the tree.</p>
+<p>In this case we labeled the branch leading to the clade [colobus, langur]. We are therefore assuming that only this branch will have a value for $ \omega $ that differs from the rest of the tree.</p>
 
 <p><strong>c. three dN/dS ratios</strong></p>
 
@@ -207,7 +207,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
                  *  0:one, 1:b, 2:2 or more dN/dS ratios for branches
 </code></pre>
 
-<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branches where we think the <script type="math/tex" id="MathJax-Element-5">\omega </script> parameter differs from the rest of the tree.</p>
+<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branches where we think the $\omega $ parameter differs from the rest of the tree.</p>
 
 <blockquote>
   <p>PaML (and codeML) accepts only the following label format at branch level: <code>'#1'</code> where <code>1</code> is an integer greater than 0 </p>
@@ -216,7 +216,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
 <pre><code>((Hsa_Human, Hla_gibbon) '#2',((Cgu/Can_colobus, Pne_langur) '#1', Mmu_rhesus), (Ssc_squirrelM, Cja_marmoset));
 </code></pre>
 
-<p>In this case we labeled the branch leading to the clade [colobus, langur] and the branch leading to the human clade [Hsa_Human, Hla_gibbon].  We are therefore assuming that only those branches will have values for <script type="math/tex" id="MathJax-Element-6"> \omega </script> that differ from the rest of the tree.</p>
+<p>In this case we labeled the branch leading to the clade [colobus, langur] and the branch leading to the human clade [Hsa_Human, Hla_gibbon].  We are therefore assuming that only those branches will have values for $ \omega $ that differ from the rest of the tree.</p>
 
 
 
@@ -282,11 +282,11 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
 <blockquote>
   <p>We compute the LRT statistic between nested hypothesis using the following relation:</p>
   
-  <p><script type="math/tex" id="MathJax-Element-5434">l_0 = \log[L(H_0)]</script> <br>
-  <script type="math/tex" id="MathJax-Element-5435">l_1 = \log[L(H_1)]</script> <br>
-  <script type="math/tex" id="MathJax-Element-5436">LRT = 2\delta = 2 \log\frac{L(H_1)}{L(H_0)} = 2(l_1 - l_0) </script></p>
+  <p>$l_0 = \log[L(H_0)]$ <br>
+  $l_1 = \log[L(H_1)]$ <br>
+  $LRT = 2\delta = 2 \log\frac{L(H_1)}{L(H_0)} = 2(l_1 - l_0) $</p>
   
-  <p>If the <script type="math/tex" id="MathJax-Element-5437">H_0</script> hypothesis is correct, then it is asymptotically distributed as the <script type="math/tex" id="MathJax-Element-5438">\chi^2</script> distribution with <script type="math/tex" id="MathJax-Element-5439">k</script> degrees of freedom (<script type="math/tex" id="MathJax-Element-5440">k</script> is equal to the difference in the number of parameters in <script type="math/tex" id="MathJax-Element-5441">H_0</script> and <script type="math/tex" id="MathJax-Element-5442">H_1</script>. On the other hand, I will discard the simplest model in favour of the most complex one, if the LRT value is greater of the value of the <script type="math/tex" id="MathJax-Element-5443">\chi^2</script> distribution with <script type="math/tex" id="MathJax-Element-5444">k</script> degrees of freedom for the p-value I selected (i.e. p-value = 0.05)</p>
+  <p>If the $H_0$ hypothesis is correct, then it is asymptotically distributed as the $\chi^2$ distribution with $k$ degrees of freedom ($k$ is equal to the difference in the number of parameters in $H_0$ and $H_1$. On the other hand, I will discard the simplest model in favour of the most complex one, if the LRT value is greater of the value of the $\chi^2$ distribution with $k$ degrees of freedom for the p-value I selected (i.e. p-value = 0.05)</p>
 </blockquote>
 
 <table>
@@ -336,13 +336,13 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
 
 <p><strong>3. Do your tests suggest positive selection?</strong> </p>
 
-<p>We tested for positive selection every time we compare the likelihood of two nested models (i.e. M2 vs M1) where one allows for positive selection (it allows <script type="math/tex" id="MathJax-Element-5445">\omega > 1 </script> for portion of sites on the MSA), while the other does not (<script type="math/tex" id="MathJax-Element-5446">\omega \lt 1 </script>).</p>
+<p>We tested for positive selection every time we compare the likelihood of two nested models (i.e. M2 vs M1) where one allows for positive selection (it allows $\omega &gt; 1 $ for portion of sites on the MSA), while the other does not ($\omega \lt 1 $).</p>
 
 <p>M2a vs M1a, M8 vs M7, M8 vs M8a model tests can detect positive selection.</p>
 
 <p><strong>4. Interpret the ML estimates relevant to selective pressure.</strong> </p>
 
-<p>Codon models can identify positive selection monitoring the <script type="math/tex" id="MathJax-Element-5447">\omega</script> parameter (i.e. on the branches or at each site), therefore we can observe the ML estimates of the omega parameter when inferred under different codon models:</p>
+<p>Codon models can identify positive selection monitoring the $\omega$ parameter (i.e. on the branches or at each site), therefore we can observe the ML estimates of the omega parameter when inferred under different codon models:</p>
 
 <table>
 <thead>
@@ -358,27 +358,39 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center"><script type="math/tex" id="MathJax-Element-5448">\omega</script></td>
+  <td align="center">$\omega$</td>
   <td align="center">0.23685</td>
-  <td align="center">0.12  1.00</td>
-  <td align="center">0.12  1.00  2.94</td>
-  <td align="center">0.02  0.30  1.69</td>
-  <td align="center">0.001  0.008  0.03  0.07  0.13  0.21  0.32  0.45  0.63  0.85</td>
-  <td align="center">0.002  0.015  0.038  0.070  0.112  0.165  0.233  0.323  0.446  0.651  2.081</td>
-  <td align="center">0.004  0.022  0.050  0.088  0.139  0.207  0.307  0.491  1.00</td>
+  <td align="center">0.12 <br>  1.00</td>
+  <td align="center">0.12 <br> 1.00 <br> 2.94</td>
+  <td align="center">0.02 <br> 0.30 <br> 1.69</td>
+  <td align="center">0.001 <br> 0.008 <br>  0.03 <br> 0.07 <br> 0.13 <br>  0.21 <br> 0.32 <br> 0.45 <br> 0.63 <br> 0.85</td>
+  <td align="center">0.002 <br> 0.015 <br> 0.038 <br> 0.070 <br> 0.112 <br> 0.165 <br> 0.233 <br> 0.323 <br> 0.446 <br> 0.651 <br> 2.081</td>
+  <td align="center">0.004 <br> 0.022 <br> 0.050 <br> 0.088 <br> 0.139 <br> 0.207 <br> 0.307 <br> 0.491 <br> 1.00</td>
 </tr>
 <tr>
   <td align="center">proportion</td>
   <td align="center">1.00</td>
-  <td align="center">0.77  0.23</td>
-  <td align="center">0.76  0.20  0.03</td>
-  <td align="center">0.39  0.54  0.08</td>
-  <td align="center">0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10</td>
-  <td align="center">0.09  0.09  0.09  0.09  0.09  0.09  0.09  0.09  0.09  0.09  0.06</td>
-  <td align="center">0.11  0.11  0.11  0.11  0.11  0.11  0.11  0.11  0.11</td>
+  <td align="center">0.77 <br> 0.23</td>
+  <td align="center">0.76 <br> 0.20 <br> 0.03</td>
+  <td align="center">0.39 <br> 0.54 <br> 0.08</td>
+  <td align="center">0.10 <br> 0.10 <br> 0.10 <br> 0.10 <br> 0.10 <br> 0.10 <br> 0.10 <br> 0.10 <br> 0.10 <br> 0.10</td>
+  <td align="center">0.09 <br> 0.09 <br> 0.09 <br> 0.09 <br> 0.09 <br> 0.09 <br> 0.09 <br> 0.09 <br> 0.09 <br> 0.09 <br> 0.06</td>
+  <td align="center">0.11 <br> 0.11 <br> 0.11 <br> 0.11 <br> 0.11 <br> 0.11 <br> 0.11 <br> 0.11 <br> 0.11</td>
 </tr>
 </tbody></table>
 
+
+<p><strong>M0: ConstantOmega</strong>: The $\omega$ ML estimates inferred using the M0 model provide a rough average value distributed over the MSA sites. M0 does not allow for distinct $\omega$ classes, therefore we will not retrieve any information regards positive selection. </p>
+
+<p><strong>M1: NearlyNeutral (2 categories)</strong>: This model allows for two different $\omega$ value classes ($\omega =1 , \omega &lt; 1$).  We observe that the 77% of sites shows an $\omega = 0.12$, while 23% of sites shows an $\omega = 1.00$. If this model is selected by LRT,  one can then discuss about a nearly neutral selection that acted on the dataset. </p>
+
+<p><strong>M2: PositiveSelection (3 categories)</strong>: This model allows for three different classes of $\omega$ (negative selection, neutral selection, positive selection). We observe the following that the majority (76%) of sites are under negative selection, 20% of sites is neutrally selected and only the 3% of sites is positively selected (with an $\omega$ value = 2.94). The LRT test comparing M2 and M1 selected M1 in favour of M2 with a significance cutoff of 1%.</p>
+
+<p><strong>M3: discrete (3 categories)</strong>:  This model estimates the $\omega$ value without forcing it to belong to the conventional classes (i.e. negative, neutral, positive). The ML estimation estimates 3 distinct averaged values for the omega parameter from 3 distinct site proportions. As matter of fact, here we retrieved 2/3 of $\omega$ values which indicate negative selection ($\omega &lt; 1$). The centre of mass of the sites is located in the negative selection region of the $\omega$ value distribution.</p>
+
+<p><strong>M7: beta (10 categories)</strong>: This model infers the $\omega$ parameter values using a Beta distribution with parameters p and q. The ML routine optimises these parameters and cuts the distribution in 10 equal classes. We can observe that all the sites of our MSA are equally distributed across the inferred $\omega$ values, without bias. This model does not account for a specific omega class which can indicate positive selection. </p>
+
+<p><strong>M8: beta&amp;w&gt;1 (11 categories)</strong>: M8 model is a direct extension of M7 model since it accounts for a distinct $\omega $class for positive selected sites.  </p>
 
 <p><strong>5. If LRTs suggest positive selection, which sites are inferred by the Bayesian approach to be under positive selection (models M2 and M8)?</strong></p>
 
