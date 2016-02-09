@@ -27,7 +27,7 @@
 
 <h4 id="1-the-simple-codon-model-with-constant-ω">1. The simple codon model with constant ω</h4>
 
-<p>GOAL: In this exercise we apply the simplest codon model with constant <script type="math/tex" id="MathJax-Element-1"> \omega </script> parameter over tree branches and MSA sites. We run <code>codeml</code> <strong>twice</strong> since we want to compare the log-likelihood of the model when the parameters are optimised on a fixed tree topology (provided with the exercise) and when the branch lengths are re-estimated using the selected substitution model. </p>
+<p>GOAL: In this exercise we apply the simplest codon model with constant $ \omega $ parameter over tree branches and MSA sites. We run <code>codeml</code> <strong>twice</strong> since we want to compare the log-likelihood of the model when the parameters are optimised on a fixed tree topology (provided with the exercise) and when the branch lengths are re-estimated using the selected substitution model. </p>
 
 
 
@@ -150,13 +150,14 @@ Average         T:0.23870    C:0.26089    A:0.20792    G:0.29248
 
 <p><strong>5. How do you interpret these ML estimates?</strong></p>
 
+<p>The estimates obtained performing a branch length optimisation are tuned on the codon substitution model selected. This procedure optimises the parameters values together with the topology. However, this does not indicate the correctness of the values inferred since this procedure does not perform tree topology rearrangements.  <br>
+One can also avoid this procedure disabling the optimisation of the branch lengths. Then, the codon substitution model parameters are optimised at best on the topology provided. </p>
+
 <hr>
-
-
 
 <h4 id="2-branch-models">2. Branch models</h4>
 
-<p>GOAL: In this exercise we estimate the <script type="math/tex" id="MathJax-Element-2"> \omega </script> parameter following several different strategies: a. allowing it to change at each branch on the tree topology, b. fixing it on one single branch (two-categories) c. fixing it on two branches (three-categories).</p>
+<p>GOAL: In this exercise we estimate the $ \omega $ parameter following several different strategies: a. allowing it to change at each branch on the tree topology, b. fixing it on one single branch (two-categories) c. fixing it on two branches (three-categories).</p>
 
 
 
@@ -188,7 +189,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
                  *  0:one, 1:b, 2:2 or more dN/dS ratios for branches
 </code></pre>
 
-<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branch where we think the <script type="math/tex" id="MathJax-Element-3">\omega </script> parameter differs from the rest of the tree.</p>
+<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branch where we think the $\omega $ parameter differs from the rest of the tree.</p>
 
 <blockquote>
   <p>PaML (and codeML) accepts only the following label format at branch level: <code>'#1'</code> where <code>1</code> is an integer greater than 0 </p>
@@ -197,7 +198,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
 <pre><code>((Hsa_Human, Hla_gibbon) ,((Cgu/Can_colobus, Pne_langur) '#1', Mmu_rhesus), (Ssc_squirrelM, Cja_marmoset));
 </code></pre>
 
-<p>In this case we labeled the branch leading to the clade [colobus, langur]. We are therefore assuming that only this branch will have a value for <script type="math/tex" id="MathJax-Element-4"> \omega </script> that differs from the rest of the tree.</p>
+<p>In this case we labeled the branch leading to the clade [colobus, langur]. We are therefore assuming that only this branch will have a value for $ \omega $ that differs from the rest of the tree.</p>
 
 <p><strong>c. three dN/dS ratios</strong></p>
 
@@ -207,7 +208,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
                  *  0:one, 1:b, 2:2 or more dN/dS ratios for branches
 </code></pre>
 
-<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branches where we think the <script type="math/tex" id="MathJax-Element-5">\omega </script> parameter differs from the rest of the tree.</p>
+<p>In the tree file <em>lysozymeSmall.trees</em> we must specify the branches where we think the $\omega $ parameter differs from the rest of the tree.</p>
 
 <blockquote>
   <p>PaML (and codeML) accepts only the following label format at branch level: <code>'#1'</code> where <code>1</code> is an integer greater than 0 </p>
@@ -216,7 +217,7 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
 <pre><code>((Hsa_Human, Hla_gibbon) '#2',((Cgu/Can_colobus, Pne_langur) '#1', Mmu_rhesus), (Ssc_squirrelM, Cja_marmoset));
 </code></pre>
 
-<p>In this case we labeled the branch leading to the clade [colobus, langur] and the branch leading to the human clade [Hsa_Human, Hla_gibbon].  We are therefore assuming that only those branches will have values for <script type="math/tex" id="MathJax-Element-6"> \omega </script> that differ from the rest of the tree.</p>
+<p>In this case we labeled the branch leading to the clade [colobus, langur] and the branch leading to the human clade [Hsa_Human, Hla_gibbon].  We are therefore assuming that only those branches will have values for $ \omega $ that differ from the rest of the tree.</p>
 
 
 
@@ -224,9 +225,11 @@ fix_blength = 1  * 0: ignore, -1: random, 1: initial, 2: fixed
 
 <p><strong>1. Are results consistent with those presented in ref. (2)?</strong> </p>
 
-<p><strong>2. Based on LRTs, what model fits your data the best (among 2-ratio, 3-ratio and free-ratio models)?</strong>  <br>
-<strong>3. What are the degrees of freedoms for each comparison?</strong>  <br>
-<strong>4. What can you tell about the evolution of your gene from the ML estimates under this best model?</strong></p>
+<p><strong>2. Based on LRTs, what model fits your data the best (among 2-ratio, 3-ratio and free-ratio models)?</strong> </p>
+
+<p><strong>3. What are the degrees of freedoms for each comparison?</strong> </p>
+
+<p><strong>4. What can you tell about the evolution of your gene from the ML estimates under this best model?</strong></p>
 
 <hr>
 
@@ -282,11 +285,11 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
 <blockquote>
   <p>We compute the LRT statistic between nested hypothesis using the following relation:</p>
   
-  <p><script type="math/tex" id="MathJax-Element-4860">l_0 = \log[L(H_0)]</script> <br>
-  <script type="math/tex" id="MathJax-Element-4861">l_1 = \log[L(H_1)]</script> <br>
-  <script type="math/tex" id="MathJax-Element-4862">LRT = 2\delta = 2 \log\frac{L(H_1)}{L(H_0)} = 2(l_1 - l_0) </script></p>
+  <p>$l_0 = \log[L(H_0)]$ <br>
+  $l_1 = \log[L(H_1)]$ <br>
+  $LRT = 2\delta = 2 \log\frac{L(H_1)}{L(H_0)} = 2(l_1 - l_0) $</p>
   
-  <p>If the <script type="math/tex" id="MathJax-Element-4863">H_0</script> hypothesis is correct, then it is asymptotically distributed as the <script type="math/tex" id="MathJax-Element-4864">\chi^2</script> distribution with <script type="math/tex" id="MathJax-Element-4865">k</script> degrees of freedom (<script type="math/tex" id="MathJax-Element-4866">k</script> is equal to the difference in the number of parameters in <script type="math/tex" id="MathJax-Element-4867">H_0</script> and <script type="math/tex" id="MathJax-Element-4868">H_1</script>. On the other hand, I will discard the simplest model in favour of the most complex one, if the LRT value is greater of the value of the <script type="math/tex" id="MathJax-Element-4869">\chi^2</script> distribution with <script type="math/tex" id="MathJax-Element-4870">k</script> degrees of freedom for the p-value I selected (i.e. p-value = 0.05)</p>
+  <p>If the $H_0$ hypothesis is correct, then it is asymptotically distributed as the $\chi^2$ distribution with $k$ degrees of freedom ($k$ is equal to the difference in the number of parameters in $H_0$ and $H_1$. On the other hand, I will discard the simplest model in favour of the most complex one, if the LRT value is greater of the value of the $\chi^2$ distribution with $k$ degrees of freedom for the p-value I selected (i.e. p-value = 0.05)</p>
 </blockquote>
 
 <table>
@@ -336,13 +339,13 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
 
 <p><strong>3. Do your tests suggest positive selection?</strong> </p>
 
-<p>We tested for positive selection every time we compare the likelihood of two nested models (i.e. M2 vs M1) where one allows for positive selection (it allows <script type="math/tex" id="MathJax-Element-4871">\omega > 1 </script> for portion of sites on the MSA), while the other does not (<script type="math/tex" id="MathJax-Element-4872">\omega \lt 1 </script>).</p>
+<p>We tested for positive selection every time we compare the likelihood of two nested models (i.e. M2 vs M1) where one allows for positive selection (it allows $\omega &gt; 1 $ for portion of sites on the MSA), while the other does not ($\omega \lt 1 $).</p>
 
 <p>M2a vs M1a, M8 vs M7, M8 vs M8a model tests can detect positive selection.</p>
 
 <p><strong>4. Interpret the ML estimates relevant to selective pressure.</strong> </p>
 
-<p>Codon models can identify positive selection monitoring the <script type="math/tex" id="MathJax-Element-4873">\omega</script> parameter (i.e. on the branches or at each site), therefore we can observe the ML estimates of the omega parameter when inferred under different codon models:</p>
+<p>Codon models can identify positive selection monitoring the $\omega$ parameter (i.e. on the branches or at each site), therefore we can observe the ML estimates of the omega parameter when inferred under different codon models:</p>
 
 <table>
 <thead>
@@ -358,7 +361,7 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center"><script type="math/tex" id="MathJax-Element-4874">\omega</script></td>
+  <td align="center">$\omega$</td>
   <td align="center">0.23685</td>
   <td align="center">0.12 <br>  1.00</td>
   <td align="center">0.12 <br> 1.00 <br> 2.94</td>
@@ -380,19 +383,19 @@ fix_omega = 0  * 1: omega or omega_1 fixed, 0: estimate
 </tbody></table>
 
 
-<p><strong>M0: ConstantOmega</strong>: The <script type="math/tex" id="MathJax-Element-4875">\omega</script> ML estimates inferred using the M0 model provide a rough average value distributed over the MSA sites. M0 does not allow for distinct <script type="math/tex" id="MathJax-Element-4876">\omega</script> classes, therefore we will not retrieve any information regards positive selection. </p>
+<p><strong>M0: ConstantOmega</strong>: The $\omega$ ML estimates inferred using the M0 model provide a rough average value distributed over the MSA sites. M0 does not allow for distinct $\omega$ classes, therefore we will not retrieve any information regards positive selection. </p>
 
-<p><strong>M1: NearlyNeutral (2 categories)</strong>: This model allows for two different <script type="math/tex" id="MathJax-Element-4877">\omega</script> value classes (<script type="math/tex" id="MathJax-Element-4878">\omega =1 , \omega < 1</script>).  We observe that the 77% of sites shows an <script type="math/tex" id="MathJax-Element-4879">\omega = 0.12</script>, while 23% of sites shows an <script type="math/tex" id="MathJax-Element-4880">\omega = 1.00</script>. If this model is selected by LRT,  one can then discuss about a nearly neutral selection that acted on the dataset. </p>
+<p><strong>M1: NearlyNeutral (2 categories)</strong>: This model allows for two different $\omega$ value classes ($\omega =1 , \omega &lt; 1$).  We observe that the 77% of sites shows an $\omega = 0.12$, while 23% of sites shows an $\omega = 1.00$. If this model is selected by LRT,  one can then discuss about a nearly neutral selection that acted on the dataset. </p>
 
-<p><strong>M2: PositiveSelection (3 categories)</strong>: This model allows for three different classes of <script type="math/tex" id="MathJax-Element-4881">\omega</script> (negative selection, neutral selection, positive selection). We observe the following that the majority (76%) of sites are under negative selection, 20% of sites is neutrally selected and only the 3% of sites is positively selected (with an <script type="math/tex" id="MathJax-Element-4882">\omega</script> value = 2.94). The LRT test comparing M2 and M1 selected M1 in favour of M2 with a significance cutoff of 1%.</p>
+<p><strong>M2: PositiveSelection (3 categories)</strong>: This model allows for three different classes of $\omega$ (negative selection, neutral selection, positive selection). We observe the following that the majority (76%) of sites are under negative selection, 20% of sites is neutrally selected and only the 3% of sites is positively selected (with an $\omega$ value = 2.94). The LRT test comparing M2 and M1 selected M1 in favour of M2 with a significance cutoff of 1%.</p>
 
-<p><strong>M3: discrete (3 categories)</strong>:  This model estimates the <script type="math/tex" id="MathJax-Element-4883">\omega</script> value without forcing it to belong to the conventional classes (i.e. negative, neutral, positive). The ML estimation estimates 3 distinct averaged values for the omega parameter from 3 distinct site proportions. As matter of fact, here we retrieved 2/3 of <script type="math/tex" id="MathJax-Element-4884">\omega</script> values which indicate negative selection (<script type="math/tex" id="MathJax-Element-4885">\omega < 1</script>). The centre of mass of the sites is located in the negative selection region of the <script type="math/tex" id="MathJax-Element-4886">\omega</script> value distribution.</p>
+<p><strong>M3: discrete (3 categories)</strong>:  This model estimates the $\omega$ value without forcing it to belong to the conventional classes (i.e. negative, neutral, positive). The ML estimation estimates 3 distinct averaged values for the omega parameter from 3 distinct site proportions. As matter of fact, here we retrieved 2/3 of $\omega$ values which indicate negative selection ($\omega &lt; 1$). The centre of mass of the sites is located in the negative selection region of the $\omega$ value distribution.</p>
 
-<p><strong>M7: beta (10 categories)</strong>: This model infers the <script type="math/tex" id="MathJax-Element-4887">\omega</script> parameter values using a Beta distribution with parameters p and q. The ML routine optimises these parameters and cuts the distribution in 10 equal classes. We can observe that all the sites of our MSA are equally distributed across the inferred <script type="math/tex" id="MathJax-Element-4888">\omega</script> values, without bias. This model does not account for a specific omega class which can indicate positive selection. </p>
+<p><strong>M7: beta (10 categories)</strong>: This model infers the $\omega$ parameter values using a Beta distribution with parameters p and q. The ML routine optimises these parameters and cuts the distribution in 10 equal classes. We can observe that all the sites of our MSA are equally distributed across the inferred $\omega$ values, without bias. This model does not account for a specific omega class which can indicate positive selection. </p>
 
-<p><strong>M8: beta&amp;w&gt;1 (11 categories)</strong>: M8 model is a direct extension of M7 model since it accounts for an additional <script type="math/tex" id="MathJax-Element-4889">\omega</script> class for positive selected sites. We observe an homogeneous distribution of the sites among the omega classes describing neutral or negative selection, while a small proportion is shown to be under strict positive selection.  From LRT comparison, we select the model M8 over its alternative M7, confirming the presence of a portion of sites under positive selection.</p>
+<p><strong>M8: beta&amp;w&gt;1 (11 categories)</strong>: M8 model is a direct extension of M7 model since it accounts for an additional $\omega$ class for positive selected sites. We observe an homogeneous distribution of the sites among the omega classes describing neutral or negative selection, while a small proportion is shown to be under strict positive selection.  From LRT comparison, we select the model M8 over its alternative M7, confirming the presence of a portion of sites under positive selection.</p>
 
-<p><strong>M8a: beta&amp;w=1 (11 categories)</strong>: This variation of the M8 model fixes the upper boundary of the <script type="math/tex" id="MathJax-Element-4890">\omega</script> parameter to assume (at maximum) a neutral value <script type="math/tex" id="MathJax-Element-4891">\omega = 1</script>. Despite we observe an equal distribution of the sites among the <script type="math/tex" id="MathJax-Element-4892">\omega</script> classes, the hypothesis assumed by this model is discarded in favour of the M8 model allowing for positive selection.  </p>
+<p><strong>M8a: beta&amp;w=1 (11 categories)</strong>: This variation of the M8 model fixes the upper boundary of the $\omega$ parameter to assume (at maximum) a neutral value $\omega = 1$. Despite we observe an equal distribution of the sites among the $\omega$ classes, the hypothesis assumed by this model is discarded in favour of the M8 model allowing for positive selection.  </p>
 
 <p><strong>5. If LRTs suggest positive selection, which sites are inferred by the Bayesian approach to be under positive selection (models M2 and M8)?</strong></p>
 
@@ -460,11 +463,13 @@ Positively selected sites (*: P&gt;95%; **: P&gt;99%)
 
 <p>Both the methods agree on the sites inferred, however they compute different significance values. </p>
 
-<p><strong>7. Compare results from the LRT comparing M7 vs M8 and the LRT comparing M8a vs M8. Are they both significant (or both non-significant)?</strong> </p>
+<p><strong>7. Compare results from the LRT comparing M7 vs M8 and the LRT comparing M8a vs M8. Are they both significant (or both non-significant)?  If they are both significant, does the Bayesian approach predict the same sites?</strong> </p>
 
-<p><strong>8. If they are both significant, does the Bayesian approach predict the same sites?</strong></p>
+<p>The LRT statistics selects M8 over M7 and M8 over M8a. </p>
 
 <hr>
+
+
 
 <h4 id="4-branch-site-models-coming-soon">4. Branch-site models <em>(coming soon)</em></h4>
 
