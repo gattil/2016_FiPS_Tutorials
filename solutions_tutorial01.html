@@ -21,6 +21,8 @@
 
 <hr>
 
+
+
 <h3 id="ml-with-dna-data-the-primate-dna-dataset">ML with DNA data (the primate DNA dataset)</h3>
 
 <p>Dataset file: <em>primates-nt.phy</em></p>
@@ -31,17 +33,20 @@
 
 <p>GOAL: In this exercise you are asked to run PhyML <strong>twice</strong> in order to compare the effect of estimating nucleotide frequencies from the used dataset vs. optimising them with a maximum likelihood (ML) approach.</p>
 
+
+
 <h5 id="execution">Execution</h5>
 
 <p><strong>1. First run</strong></p>
 
 <ul>
 <li>Nucleotide substitution model = <em>HKY85 + Gamma</em></li>
-<li>Estimating <em>transition/transversion</em> ratio ( <script type="math/tex" id="MathJax-Element-55">\kappa</script> parameter of HKY85 model)</li>
-<li>Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-56">\alpha = \beta</script>  for gamma distributions used in phylogenetics)</li>
-<li>Estimating <em>nucleotide frequencies</em> <strong>with ML</strong> <br>
-Here is the list of the parameters to change:</li>
+<li>Estimating <em>transition/transversion</em> ratio ( <script type="math/tex" id="MathJax-Element-1">\kappa</script> parameter of HKY85 model)</li>
+<li>Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-2">\alpha = \beta</script>  for gamma distributions used in phylogenetics)</li>
+<li>Estimating <em>nucleotide frequencies</em> <strong>with ML</strong></li>
 </ul>
+
+<p>Here is the list of the parameters to change:</p>
 
 <p>From 2<sup>nd</sup> menu</p>
 
@@ -57,11 +62,12 @@ Here is the list of the parameters to change:</li>
 
 <ul>
 <li>Nucleotide substitution model = <em>HKY85 + Gamma</em></li>
-<li>Estimating <em>transition/transversion</em> ratio ( <script type="math/tex" id="MathJax-Element-57">\kappa</script> parameter of HKY85 model)</li>
-<li>Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-58">\alpha = \beta</script> for gamma distributions used in phylogenetics)</li>
-<li>Estimating <em>nucleotide frequencies</em> <strong>empirically</strong> from the data <br>
-Here is the list of the parameters to change:</li>
+<li>Estimating <em>transition/transversion</em> ratio ( <script type="math/tex" id="MathJax-Element-3">\kappa</script> parameter of HKY85 model)</li>
+<li>Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-4">\alpha = \beta</script> for gamma distributions used in phylogenetics)</li>
+<li>Estimating <em>nucleotide frequencies</em> <strong>empirically</strong> from the data</li>
 </ul>
+
+<p>Here is the list of the parameters to change:</p>
 
 <p>From 2<sup>nd</sup> menu</p>
 
@@ -73,12 +79,13 @@ Here is the list of the parameters to change:</li>
 [A] ... Gamma distribution parameter (fixed/estimated)  estimated
 </code></pre>
 
+
+
 <h5 id="questions">Questions</h5>
 
 <p><strong>1. Do you see much difference in the tree?</strong></p>
 
-<p>The topology does not change, however we can observe a change in the <br>
-computed branch lengths.</p>
+<p>The topology does not change, however we can observe a change in the computed branch lengths.</p>
 
 <table>
 <thead>
@@ -96,11 +103,7 @@ computed branch lengths.</p>
 
 <p><strong>2. In the likelihood value (stat file)?</strong></p>
 
-<p>The likelihood value of the tree inferred using the nucleotide <br>
-frequencies estimated empirically from the dataset is lower than the <br>
-likelihood value of the tree inferred using the nucleotide frequencies <br>
-estimated via ML. This is due to dataset dimensions (the number of the <br>
-sequences used).</p>
+<p>The likelihood value of the tree inferred using the nucleotide frequencies estimated empirically from the dataset is lower than the likelihood value of the tree inferred using the nucleotide frequencies estimated via ML. This is due to dataset dimensions (the number of the sequences used).</p>
 
 <pre><code>    run 1: -6172.58045
     run 2: -6173.49655
@@ -108,14 +111,13 @@ sequences used).</p>
 
 <p><strong>3. Which option is best and why do you think so?</strong></p>
 
-<p>The best option in this case is to use the ML approach since the ML optimisation technique provides better estimates for the nucleotide frequencies, which, in turn, affect the likelihood of the inferred tree. <br>
-This is due to the nucleotide frequencies which are used in the calculation of the likelihood of each site of the alignment (<script type="math/tex" id="MathJax-Element-218">\pi Q = 0</script>, where <script type="math/tex" id="MathJax-Element-219">\pi</script> is the vector of the nucleotide frequencies and <script type="math/tex" id="MathJax-Element-220">Q</script> the rate matrix).</p>
+<p>The best option in this case is to use the ML approach since the ML optimisation technique provides better estimates for the nucleotide frequencies, which, in turn, affect the likelihood of the inferred tree. This is due to the nucleotide frequencies which are used in the calculation of the likelihood of each site of the alignment (<script type="math/tex" id="MathJax-Element-5">\pi Q = 0</script>, where <script type="math/tex" id="MathJax-Element-6">\pi</script> is the vector of the nucleotide frequencies and <script type="math/tex" id="MathJax-Element-7">Q</script> the rate matrix).</p>
+
+
 
 <h4 id="exercise-2">Exercise 2</h4>
 
-<p>GOAL: In this exercise you are asked to optimise the tree topology on <br>
-the substitution parameters obtained using ML performing a tree search <br>
-(i.e. NNI, SPR, TBR) on the initial tree topology.</p>
+<p>GOAL: In this exercise you are asked to optimise the tree topology on the substitution parameters obtained using ML performing a tree search (i.e. NNI, SPR, TBR) on the initial tree topology.</p>
 
 
 
@@ -125,12 +127,13 @@ the substitution parameters obtained using ML performing a tree search <br>
 
 <ul>
 <li>Nucleotide substitution model = <em>HKY85 + Gamma</em></li>
-<li>Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-59">\kappa</script> parameter of HKY85 model)</li>
-<li>Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-60">\alpha = \beta</script> for gamma distributions used in phylogenetics)</li>
+<li>Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-8">\kappa</script> parameter of HKY85 model)</li>
+<li>Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-9">\alpha = \beta</script> for gamma distributions used in phylogenetics)</li>
 <li>Estimating <em>nucleotide frequencies</em> <strong>with ML</strong></li>
-<li>No <em>tree search</em> (tree optimisation) <br>
-Here is the list of the parameters to change from the PhyML menu:</li>
+<li>No <em>tree search</em> (tree optimisation)</li>
 </ul>
+
+<p>Here is the list of the parameters to change from the PhyML menu:</p>
 
 <p>From 2<sup>nd</sup> menu</p>
 
@@ -147,13 +150,13 @@ Here is the list of the parameters to change from the PhyML menu:</li>
 <pre><code>[O] ........................... Optimise tree topoLOGy  no
 </code></pre>
 
+
+
 <h5 id="questions-1">Questions</h5>
 
 <p><strong>1. Compare the trees obtained with and without tree-search. What do you observe and why?</strong></p>
 
-<p>The topology inferred without tree search presents a variation in the <br>
-internal node attribution for the clades (DLangur, Colobus) and (Saki, <br>
-Titi).</p>
+<p>The topology inferred without tree search presents a variation in the internal node attribution for the clades (DLangur, Colobus) and (Saki,Titi).</p>
 
 <table>
 <thead>
@@ -171,24 +174,21 @@ Titi).</p>
 
 <p><strong>2. Compare the model estimates with and without tree-search. What do you observe and why?</strong></p>
 
-<p>The transition/transversion ratio differs slightly between the two runs. <br>
-As the matter of fact, <script type="math/tex" id="MathJax-Element-211">k</script> parameter appears to have a higher value when tree-search is not performed.</p>
+<p>The transition/transversion ratio differs slightly between the two runs. As the matter of fact, <script type="math/tex" id="MathJax-Element-10">k</script> parameter appears to have a higher value when tree-search is not performed.</p>
 
 <p><strong>3. Compare the likelihood of the ML and NJ trees. What do you observe and why?</strong></p>
 
-<p>The likelihood value obtained without tree-search is lower than the <br>
-value obtain performing the topology optimisation. This value is <br>
-expected since the substitution parameters are optimised over the first <br>
-inferred tree topology which did not undergo any refinement.</p>
+<p>The likelihood value obtained without tree-search is lower than the value obtain performing the topology optimisation. This value is expected since the substitution parameters are optimised over the first inferred tree topology which did not undergo any refinement.</p>
 
 <pre><code>    with tree-search: -6172.58045
     without tree-search: -6173.00555
 </code></pre>
 
+
+
 <h4 id="exercise-3">Exercise 3</h4>
 
-<p>GOAL: In this exercise you are asked to compare different substitution <br>
-models (and their variations) on the same dataset.</p>
+<p>GOAL: In this exercise you are asked to compare different substitution models (and their variations) on the same dataset.</p>
 
 
 
@@ -282,7 +282,7 @@ models (and their variations) on the same dataset.</p>
 tree:</p>
 
 <blockquote>
-  <p><script type="math/tex" id="MathJax-Element-206">k = (2 \ast \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script></p>
+  <p><script type="math/tex" id="MathJax-Element-11">k = (2 \ast \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script></p>
   
   <p>substitution models: JC = 0 parameters | HKY = 4 parameters | GTR = 8 <br>
   parameters <br>
@@ -293,8 +293,10 @@ tree:</p>
 <p>We compute the AIC value as follows:</p>
 
 <blockquote>
-  <p><script type="math/tex" id="MathJax-Element-207">AIC = 2(k) - \log(L)</script></p>
+  <p><script type="math/tex" id="MathJax-Element-12">AIC = 2(k) - \log(L)</script></p>
 </blockquote>
+
+
 
 <h5 id="questions-2">Questions</h5>
 
@@ -348,8 +350,7 @@ tree:</p>
 
 <h5 id="execution-3">Execution</h5>
 
-<p>We are going to run PhyML twice: once using the non parametric bootstrap <br>
-and the second time using the SH-aLRT method.</p>
+<p>We are going to run PhyML twice: once using the non parametric bootstrap and the second time using the SH-aLRT method.</p>
 
 <p><strong>1. First run</strong></p>
 
@@ -389,10 +390,7 @@ and the second time using the SH-aLRT method.</p>
 
 <p><strong>1. Are the results compatible?</strong></p>
 
-<p>Both the methods used to infer the branch support appear to agree on the <br>
-support provided by long branches, however they do not agree for short <br>
-ones. These two methods infer branch support using completely different <br>
-strategies.</p>
+<p>Both the methods used to infer the branch support appear to agree on the support provided by long branches, however they do not agree for short ones. These two methods infer branch support using completely different strategies.</p>
 
 <table>
 <thead>
@@ -406,6 +404,8 @@ strategies.</p>
   <td><img src="./images/ex4_tree_sh_aLRT.png" alt="" title=""></td>
 </tr>
 </tbody></table>
+
+
 
 
 <h4 id="exercise-5">Exercise 5</h4>
@@ -604,7 +604,7 @@ SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b 
 <p>The number of parameters are computed in the following way for a rooted tree:</p>
 
 <blockquote>
-  <p><script type="math/tex" id="MathJax-Element-130">k = (2 \ast \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
+  <p><script type="math/tex" id="MathJax-Element-13">k = (2 \ast \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
   substitution models: LG = 0 parameters | WAG = 0 parameters | GTR = 8 <br>
   parameters | GY = 2 | M0 = 2 | M5 = 2 <br>
   gamma rates = +1 parameter</p>
@@ -613,7 +613,7 @@ SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b 
 <p>We compute the AIC value as follows:</p>
 
 <blockquote>
-  <p><script type="math/tex" id="MathJax-Element-131">AIC = 2(k) - \log(L)</script></p>
+  <p><script type="math/tex" id="MathJax-Element-14">AIC = 2(k) - \log(L)</script></p>
 </blockquote>
 
 <table>
@@ -676,6 +676,8 @@ SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b 
 </tbody></table>
 
 
+
+
 <h5 id="questions-4">Questions</h5>
 
 <p><strong>1. Based on AIC, which model fits your dataset best?</strong></p>
@@ -703,10 +705,11 @@ SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b 
 
 
 <p><strong>3. Are they different to the tree inferred using the DNA model?</strong> <br>
-Yes, they are also different to the tree inferred using the GTR+Gamma <br>
-model.</p>
+Yes, they are also different to the tree inferred using the GTR+Gamma model.</p>
 
 <hr>
+
+
 
 <h3 id="ml-with-protein-data">ML with protein data</h3>
 
@@ -714,9 +717,9 @@ model.</p>
 
 <h4 id="with-primate-dataset">With primate dataset</h4>
 
-<p>GOAL: Testing different amino acids substitution models on a protein <br>
-dataset <br>
-Dataset: <strong>primates-aa.phy</strong></p>
+<p>GOAL: Testing different amino acids substitution models on a protein dataset</p>
+
+<p>Dataset: <strong>primates-aa.phy</strong></p>
 
 
 
@@ -775,14 +778,13 @@ settings accordingly to the requests:</p>
 
 <p>You can find the results in the file <em>ex7/prottest_analysis.txt</em></p>
 
+
+
 <h5 id="questions-5">Questions</h5>
 
 <p><strong>1. Which is the best model based on AIC criterion? What about using invariant sites?</strong></p>
 
-<p>We selected the <strong>LG + Gamma</strong> model according to the AIC criterion. <br>
-Using the invariant sites does not influence the model selection. Adding <br>
-a proportion of invariant sites increases the number of parameters, <br>
-therefore the AIC penalises the inferred log-likelihood value.</p>
+<p>We selected the <strong>LG + Gamma</strong> model according to the AIC criterion. Using the invariant sites does not influence the model selection. Adding a proportion of invariant sites increases the number of parameters, therefore the AIC penalises the inferred log-likelihood value.</p>
 
 <p><strong>2. Compare the trees, likelihood and AIC values to those of LG+Gamma.</strong></p>
 
@@ -812,10 +814,11 @@ therefore the AIC penalises the inferred log-likelihood value.</p>
 </tbody></table>
 
 
+
+
 <h4 id="with-protein-data-sets-from-lerat-et-al-2003">With protein data sets from Lerat et al. (2003)</h4>
 
-<p>GOAL: Inferring a phylogenetic tree on a protein dataset using an <br>
-appropriate substitution model and detect an event of HGT.</p>
+<p>GOAL: Inferring a phylogenetic tree on a protein dataset using an appropriate substitution model and detect an event of HGT.</p>
 
 
 
@@ -823,8 +826,7 @@ appropriate substitution model and detect an event of HGT.</p>
 
 <p><strong>1. Using PhyML</strong></p>
 
-<p>We used a selection of candidate substitution models (JTT, LG, WAG) that <br>
-are suitable for the protein datasets.</p>
+<p>We used a selection of candidate substitution models (JTT, LG, WAG) that are suitable for the protein datasets.</p>
 
 <p>dataset: <strong>Prot_biob.phy</strong></p>
 
@@ -866,6 +868,8 @@ are suitable for the protein datasets.</p>
 
 <p>The best model in output from the model selection analysis is <strong>WAG+G+F</strong></p>
 
+
+
 <h5 id="questions-6">Questions</h5>
 
 <p><strong>1. What can you tell based on the ML estimates?</strong></p>
@@ -896,8 +900,7 @@ are suitable for the protein datasets.</p>
 </tbody></table>
 
 
-<p>When <em>LG+G+I</em> model is used, the alpha parameter of the gamma <br>
-distribution is skewed towards <script type="math/tex" id="MathJax-Element-81">\alpha = 1</script> which in turns indicate that the rate variability is centred on one category.</p>
+<p>When <em>LG+G+I</em> model is used, the alpha parameter of the gamma distribution is skewed towards <script type="math/tex" id="MathJax-Element-15">\alpha = 1</script> which in turns indicate that the rate variability is centred on one category.</p>
 
 <p><strong>2. Display trees</strong></p>
 
@@ -920,6 +923,8 @@ distribution is skewed towards <script type="math/tex" id="MathJax-Element-81">\
 <p><strong>3. Are you able to recover the HGT (horizontal gene transfer) published by Lerat et al.?</strong></p>
 
 <hr>
+
+
 
 <h4 id="references">References</h4>
 
