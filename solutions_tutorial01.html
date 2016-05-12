@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>psc_solutions_tutorial01</title>
+<title>Title2</title>
 <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
-<body><div class="container"><p><a href="index.html">Home</a> | <a href="https://github.com/gattil/2016_FiPS_Tutorials/zipball/master">Download repository</a> </p>
+<body><div class="container"><p><a href="index.html">Home</a> | <a href="https://github.com/gattil/2016_FiPS_Tutorials/zipball/master">Download repository</a></p>
 
 <hr>
 
@@ -15,7 +15,9 @@
 
 <h2 id="tutorial-1-inferring-phylogenies-using-maximum-likelihood"><strong>Tutorial 1</strong>: Inferring phylogenies using maximum likelihood</h2>
 
-<p>In this tutorial you will be guided in using PhyML and its extension, CodonPhyML,  to solve common phylogenetic problems. For some of the following exercises there might be more than one single solution. </p>
+<p>In this tutorial you will be guided in using PhyML and its extension, <br>
+CodonPhyML, to solve common phylogenetic problems. For some of the <br>
+following exercises there might be more than one single solution.</p>
 
 <p><em>These exercises were prepared by Maria Anisimova</em></p>
 
@@ -31,19 +33,23 @@
 
 <h4 id="exercise-1">Exercise 1</h4>
 
-<p>GOAL: In this exercise you are asked to run PhyML <strong>twice</strong> in order to compare the effect of estimating nucleotide frequencies from the used dataset vs. optimising them with a maximum likelihood (ML) approach. </p>
+<p>GOAL: In this exercise you are asked to run PhyML <strong>twice</strong> in order to <br>
+compare the effect of estimating nucleotide frequencies from the used <br>
+dataset vs. optimising them with a maximum likelihood (ML) approach.</p>
 
 
 
 <h5 id="execution">Execution</h5>
 
-<p><strong>1. First run</strong> <br>
-        - Nucleotide substitution model =  <em>HKY85 + Gamma</em> <br>
-        - Estimating <em>transition/transversion</em> ratio (<span class="MathJax_SVG" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>&amp;#x03BA;</mi></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.339ex" height="1.383ex" viewBox="0 -495 576.5 595.6" role="img" focusable="false" style="vertical-align: -0.234ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3BA" x="0" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>κ</mi></math></span></span><script type="math/tex" id="MathJax-Element-1">\kappa</script> parameter of HKY85 model) <br>
-        - Estimating <em>alpha</em> parameter (remember <span class="MathJax_SVG" id="MathJax-Element-2-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>&amp;#x03B1;</mi><mo>=</mo><mi>&amp;#x03B2;</mi></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.918ex" height="2.414ex" viewBox="0 -790.8 2548.1 1039.3" role="img" focusable="false" style="vertical-align: -0.577ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3B1" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-3D" x="918" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3B2" x="1974" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mi>β</mi></math></span></span><script type="math/tex" id="MathJax-Element-2">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
-        - Estimating <em>nucleotide frequencies</em> <strong>with ML</strong></p>
+<p><strong>1. First run</strong></p>
 
-<p>Here is the list of the parameters to change:</p>
+<ul>
+<li>Nucleotide substitution model = <em>HKY85 + Gamma</em></li>
+<li>Estimating <em>transition/transversion</em> ratio ( <script type="math/tex" id="MathJax-Element-55">\kappa</script> parameter of HKY85 model)</li>
+<li>Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-56">\alpha = \beta</script>  for gamma distributions used in phylogenetics)</li>
+<li>Estimating <em>nucleotide frequencies</em> <strong>with ML</strong> <br>
+Here is the list of the parameters to change:</li>
+</ul>
 
 <p>From 2<sup>nd</sup> menu</p>
 
@@ -55,13 +61,15 @@
 [A] ... Gamma distribution parameter (fixed/estimated)  estimated
 </code></pre>
 
-<p><strong>2. Second run</strong> <br>
-        - Nucleotide substitution model =  <em>HKY85 + Gamma</em> <br>
-        - Estimating <em>transition/transversion</em> ratio (<span class="MathJax_SVG" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>&amp;#x03BA;</mi></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.339ex" height="1.383ex" viewBox="0 -495 576.5 595.6" role="img" focusable="false" style="vertical-align: -0.234ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3BA" x="0" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>κ</mi></math></span></span><script type="math/tex" id="MathJax-Element-3">\kappa</script> parameter of HKY85 model) <br>
-        - Estimating <em>alpha</em> parameter (remember <span class="MathJax_SVG" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>&amp;#x03B1;</mi><mo>=</mo><mi>&amp;#x03B2;</mi></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.918ex" height="2.414ex" viewBox="0 -790.8 2548.1 1039.3" role="img" focusable="false" style="vertical-align: -0.577ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3B1" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-3D" x="918" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3B2" x="1974" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mi>β</mi></math></span></span><script type="math/tex" id="MathJax-Element-4">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
-        - Estimating <em>nucleotide frequencies</em> <strong>empirically</strong> from the data</p>
+<p><strong>2. Second run</strong></p>
 
-<p>Here is the list of the parameters to change:</p>
+<ul>
+<li>Nucleotide substitution model = <em>HKY85 + Gamma</em></li>
+<li>Estimating <em>transition/transversion</em> ratio ( <script type="math/tex" id="MathJax-Element-57">\kappa</script> parameter of HKY85 model)</li>
+<li>Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-58">\alpha = \beta</script> for gamma distributions used in phylogenetics)</li>
+<li>Estimating <em>nucleotide frequencies</em> <strong>empirically</strong> from the data <br>
+Here is the list of the parameters to change:</li>
+</ul>
 
 <p>From 2<sup>nd</sup> menu</p>
 
@@ -73,55 +81,64 @@
 [A] ... Gamma distribution parameter (fixed/estimated)  estimated
 </code></pre>
 
-
-
 <h5 id="questions">Questions</h5>
 
-<p><strong>1. Do you see much difference in the tree?</strong> <br>
-         The topology does not change, however we can observe a change in the computed branch lengths. </p>
+<p><strong>1. Do you see much difference in the tree?</strong></p>
+
+<p>The topology does not change, however we can observe a change in the <br>
+computed branch lengths.</p>
 
 <table>
 <thead>
 <tr>
-  <th align="center">Nt-frequencies optimised</th>
-  <th align="center">Nt-frequencies estimated</th>
+  <th>Nt-frequencies optimised</th>
+  <th>Nt-frequencies estimated</th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center"><img src="./images/ex1_tree1.png" alt="" title=""></td>
-  <td align="center"><img src="./images/ex1_tree2.png" alt="" title=""></td>
+  <td><img src="./images/ex1_tree1.png" alt="" title=""></td>
+  <td><img src="./images/ex1_tree2.png" alt="" title=""></td>
 </tr>
 </tbody></table>
 
 
-<p><strong>2. In the likelihood value (stat file)?</strong> <br>
-     The likelihood value of the tree inferred using the nucleotide frequencies estimated empirically from the dataset is lower than the likelihood value of the tree inferred using the nucleotide frequencies estimated via ML. This is due to dataset dimensions (the number of the sequences used). </p>
+<p><strong>2. In the likelihood value (stat file)?</strong></p>
+
+<p>The likelihood value of the tree inferred using the nucleotide <br>
+frequencies estimated empirically from the dataset is lower than the <br>
+likelihood value of the tree inferred using the nucleotide frequencies <br>
+estimated via ML. This is due to dataset dimensions (the number of the <br>
+sequences used).</p>
 
 <pre><code>    run 1: -6172.58045
     run 2: -6173.49655
 </code></pre>
 
-<p><strong>3. Which option is best and why do you think so?</strong> <br>
-        The best option in this case is to use the ML approach since the ML optimisation technique provides better estimates for the nucleotide frequencies, which, in turn, affect the likelihood of the inferred tree. This is due to the nucleotide frequencies which are used in the calculation of the likelihood of each site of the alignment (<span class="MathJax_SVG" id="MathJax-Element-5-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>&amp;#x03C0;</mi><mi>Q</mi><mo>=</mo><mn>0</mn></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.431ex" height="2.414ex" viewBox="0 -790.8 3199.6 1039.3" role="img" focusable="false" style="vertical-align: -0.577ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3C0" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-51" x="573" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-3D" x="1642" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-30" x="2699" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>π</mi><mi>Q</mi><mo>=</mo><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-5">\pi Q = 0</script>, where <span class="MathJax_SVG" id="MathJax-Element-6-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>&amp;#x03C0;</mi></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.332ex" height="1.383ex" viewBox="0 -495 573.5 595.6" role="img" focusable="false" style="vertical-align: -0.234ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3C0" x="0" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>π</mi></math></span></span><script type="math/tex" id="MathJax-Element-6">\pi</script> is the vector of the nucleotide frequencies and <span class="MathJax_SVG" id="MathJax-Element-7-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>Q</mi></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.838ex" height="2.414ex" viewBox="0 -790.8 791.5 1039.3" role="img" focusable="false" style="vertical-align: -0.577ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-51" x="0" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Q</mi></math></span></span><script type="math/tex" id="MathJax-Element-7">Q</script> the rate matrix). </p>
+<p><strong>3. Which option is best and why do you think so?</strong></p>
 
-
+<p>The best option in this case is to use the ML approach since the ML optimisation technique provides better estimates for the nucleotide frequencies, which, in turn, affect the likelihood of the inferred tree. <br>
+This is due to the nucleotide frequencies which are used in the calculation of the likelihood of each site of the alignment (<script type="math/tex" id="MathJax-Element-218">\pi Q = 0</script>, where <script type="math/tex" id="MathJax-Element-219">\pi</script> is the vector of the nucleotide frequencies and <script type="math/tex" id="MathJax-Element-220">Q</script> the rate matrix).</p>
 
 <h4 id="exercise-2">Exercise 2</h4>
 
-<p>GOAL: In this exercise you are asked to optimise the tree topology on the substitution parameters obtained using ML performing a tree search (i.e. NNI, SPR, TBR) on the initial tree topology.</p>
+<p>GOAL: In this exercise you are asked to optimise the tree topology on <br>
+the substitution parameters obtained using ML performing a tree search <br>
+(i.e. NNI, SPR, TBR) on the initial tree topology.</p>
 
 
 
 <h5 id="execution-1">Execution</h5>
 
-<p><strong>1. Run</strong> <br>
-        - Nucleotide substitution model =  <em>HKY85 + Gamma</em> <br>
-        - Estimating <em>transition/transversion</em> ratio (<span class="MathJax_SVG" id="MathJax-Element-8-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>&amp;#x03BA;</mi></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.339ex" height="1.383ex" viewBox="0 -495 576.5 595.6" role="img" focusable="false" style="vertical-align: -0.234ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3BA" x="0" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>κ</mi></math></span></span><script type="math/tex" id="MathJax-Element-8">\kappa</script> parameter of HKY85 model) <br>
-        - Estimating <em>alpha</em> parameter (remember <span class="MathJax_SVG" id="MathJax-Element-9-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>&amp;#x03B1;</mi><mo>=</mo><mi>&amp;#x03B2;</mi></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.918ex" height="2.414ex" viewBox="0 -790.8 2548.1 1039.3" role="img" focusable="false" style="vertical-align: -0.577ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3B1" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-3D" x="918" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3B2" x="1974" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mi>β</mi></math></span></span><script type="math/tex" id="MathJax-Element-9">\alpha = \beta </script> for gamma distributions used in phylogenetics) <br>
-        - Estimating <em>nucleotide frequencies</em> <strong>with ML</strong> <br>
-        - No <em>tree search</em> (tree optimisation)</p>
+<p><strong>1. Run</strong></p>
 
-<p>Here is the list of the parameters to change from the PhyML menu:</p>
+<ul>
+<li>Nucleotide substitution model = <em>HKY85 + Gamma</em></li>
+<li>Estimating <em>transition/transversion</em> ratio (<script type="math/tex" id="MathJax-Element-59">\kappa</script> parameter of HKY85 model)</li>
+<li>Estimating <em>alpha</em> parameter (remember <script type="math/tex" id="MathJax-Element-60">\alpha = \beta</script> for gamma distributions used in phylogenetics)</li>
+<li>Estimating <em>nucleotide frequencies</em> <strong>with ML</strong></li>
+<li>No <em>tree search</em> (tree optimisation) <br>
+Here is the list of the parameters to change from the PhyML menu:</li>
+</ul>
 
 <p>From 2<sup>nd</sup> menu</p>
 
@@ -138,42 +155,48 @@
 <pre><code>[O] ........................... Optimise tree topoLOGy  no
 </code></pre>
 
-
-
 <h5 id="questions-1">Questions</h5>
 
-<p><strong>1. Compare the trees obtained with and without tree-search. What do you observe and why?</strong> <br>
-The topology inferred without tree search presents a variation in the internal node attribution for the clades (DLangur, Colobus) and (Saki, Titi). </p>
+<p><strong>1. Compare the trees obtained with and without tree-search. What do you observe and why?</strong></p>
+
+<p>The topology inferred without tree search presents a variation in the <br>
+internal node attribution for the clades (DLangur, Colobus) and (Saki, <br>
+Titi).</p>
 
 <table>
 <thead>
 <tr>
-  <th align="center">With <em>tree-search</em></th>
-  <th align="center">Without <em>tree-search</em></th>
+  <th>With <em>tree-search</em></th>
+  <th>Without <em>tree-search</em></th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center"><img src="./images/ex1_tree1.png" alt="" title=""></td>
-  <td align="center"><img src="./images/ex2_tree1.png" alt="" title=""></td>
+  <td><img src="./images/ex1_tree1.png" alt="" title=""></td>
+  <td><img src="./images/ex2_tree1.png" alt="" title=""></td>
 </tr>
 </tbody></table>
 
 
-<p><em>* 2.  Compare the model estimates with and without tree-search. What do you observe and why?*</em> <br>
-The transition/transversion ratio differs slightly between the two runs. As the matter of fact, <span class="MathJax_SVG" id="MathJax-Element-10-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>k</mi></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.211ex" height="2.07ex" viewBox="0 -790.8 521.5 891.4" role="img" focusable="false" style="vertical-align: -0.234ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-6B" x="0" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math></span></span><script type="math/tex" id="MathJax-Element-10"> k </script> parameter appears to have a higher value when tree-search is not performed. </p>
+<p><strong>2. Compare the model estimates with and without tree-search. What do you observe and why?</strong></p>
 
-<p><strong>3. Compare the likelihood of the ML and NJ trees. What do you observe and why?</strong> <br>
-The likelihood value obtained without tree-search is lower than the value obtain performing the topology optimisation. This value is expected since the substitution parameters are optimised over the first inferred tree topology which did not undergo any refinement. </p>
+<p>The transition/transversion ratio differs slightly between the two runs. <br>
+As the matter of fact, <script type="math/tex" id="MathJax-Element-211">k</script> parameter appears to have a higher value when tree-search is not performed.</p>
+
+<p><strong>3. Compare the likelihood of the ML and NJ trees. What do you observe and why?</strong></p>
+
+<p>The likelihood value obtained without tree-search is lower than the <br>
+value obtain performing the topology optimisation. This value is <br>
+expected since the substitution parameters are optimised over the first <br>
+inferred tree topology which did not undergo any refinement.</p>
 
 <pre><code>    with tree-search: -6172.58045
     without tree-search: -6173.00555
 </code></pre>
 
-
-
 <h4 id="exercise-3">Exercise 3</h4>
 
-<p>GOAL: In this exercise you are asked to compare different substitution models (and their variations) on the same dataset.</p>
+<p>GOAL: In this exercise you are asked to compare different substitution <br>
+models (and their variations) on the same dataset.</p>
 
 
 
@@ -182,92 +205,95 @@ The likelihood value obtained without tree-search is lower than the value obtain
 <table>
 <thead>
 <tr>
-  <th align="center">Model</th>
-  <th align="center">Log-likelihood</th>
-  <th align="center">Parameters</th>
-  <th align="center">AIC</th>
+  <th>Model</th>
+  <th>Log-likelihood</th>
+  <th>Parameters</th>
+  <th>AIC</th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center">JC</td>
-  <td align="center">-6379.66383</td>
-  <td align="center">38</td>
-  <td align="center">12835.32766</td>
+  <td>JC</td>
+  <td>-6379.66383</td>
+  <td>38</td>
+  <td>12835.32766</td>
 </tr>
 <tr>
-  <td align="center">JC_I</td>
-  <td align="center">-6311.41650</td>
-  <td align="center">39</td>
-  <td align="center">12700.833</td>
+  <td>JC_I</td>
+  <td>-6311.41650</td>
+  <td>39</td>
+  <td>12700.833</td>
 </tr>
 <tr>
-  <td align="center">JC_G</td>
-  <td align="center">-6304.38084</td>
-  <td align="center">39</td>
-  <td align="center">12686.76168</td>
+  <td>JC_G</td>
+  <td>-6304.38084</td>
+  <td>39</td>
+  <td>12686.76168</td>
 </tr>
 <tr>
-  <td align="center">JC_G_I</td>
-  <td align="center">-6304.35263</td>
-  <td align="center">40</td>
-  <td align="center">12688.70526</td>
+  <td>JC_G_I</td>
+  <td>-6304.35263</td>
+  <td>40</td>
+  <td>12688.70526</td>
 </tr>
 <tr>
-  <td align="center">HKY</td>
-  <td align="center">-6251.43051</td>
-  <td align="center">42</td>
-  <td align="center">12586.86102</td>
+  <td>HKY</td>
+  <td>-6251.43051</td>
+  <td>42</td>
+  <td>12586.86102</td>
 </tr>
 <tr>
-  <td align="center">HKY_I</td>
-  <td align="center">-6180.09689</td>
-  <td align="center">43</td>
-  <td align="center">12446.19378</td>
+  <td>HKY_I</td>
+  <td>-6180.09689</td>
+  <td>43</td>
+  <td>12446.19378</td>
 </tr>
 <tr>
-  <td align="center">HKY_G</td>
-  <td align="center">-6172.58045</td>
-  <td align="center">43</td>
-  <td align="center">12431.1609</td>
+  <td>HKY_G</td>
+  <td>-6172.58045</td>
+  <td>43</td>
+  <td>12431.1609</td>
 </tr>
 <tr>
-  <td align="center">HKY_G_I</td>
-  <td align="center">-6172.52896</td>
-  <td align="center">44</td>
-  <td align="center">12433.05792</td>
+  <td>HKY_G_I</td>
+  <td>-6172.52896</td>
+  <td>44</td>
+  <td>12433.05792</td>
 </tr>
 <tr>
-  <td align="center">GTR</td>
-  <td align="center">-6241.48788</td>
-  <td align="center">46</td>
-  <td align="center">12574.97576</td>
+  <td>GTR</td>
+  <td>-6241.48788</td>
+  <td>46</td>
+  <td>12574.97576</td>
 </tr>
 <tr>
-  <td align="center">GTR_I</td>
-  <td align="center">-6171.17472</td>
-  <td align="center">47</td>
-  <td align="center">12436.34944</td>
+  <td>GTR_I</td>
+  <td>-6171.17472</td>
+  <td>47</td>
+  <td>12436.34944</td>
 </tr>
 <tr>
-  <td align="center">GTR_G</td>
-  <td align="center">-6163.87291</td>
-  <td align="center">47</td>
-  <td align="center">12421.74582</td>
+  <td>GTR_G</td>
+  <td>-6163.87291</td>
+  <td>47</td>
+  <td>12421.74582</td>
 </tr>
 <tr>
-  <td align="center">GTR_G_I</td>
-  <td align="center">-6172.52896</td>
-  <td align="center">48</td>
-  <td align="center">12441.05792</td>
+  <td>GTR_G_I</td>
+  <td>-6172.52896</td>
+  <td>48</td>
+  <td>12441.05792</td>
 </tr>
 </tbody></table>
 
 
-<p>The number of parameters are computed in the following way for a rooted tree:</p>
+<p>The number of parameters are computed in the following way for a rooted <br>
+tree:</p>
 
 <blockquote>
-  <p><span class="MathJax_SVG" id="MathJax-Element-11-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>k</mi><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mn>2</mn><mo>&amp;#x2217;</mo><mtext>no. taxa</mtext><mo>&amp;#x2212;</mo><mn>2</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mtext>no. parameters in substitution model</mtext><mo>+</mo><mtext>extra parameters</mtext></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="81.25ex" height="2.789ex" viewBox="0 -849.8 34982.3 1200.9" role="img" focusable="false" style="vertical-align: -0.815ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-6B" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-3D" x="799" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-28" x="1855" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-32" x="2245" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2217" x="2967" y="0"></use><g transform="translate(3690,0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6E"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6F" x="556" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2E" x="1057" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="1585" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="1975" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-78" x="2475" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="3004" y="0"></use></g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2212" x="7417" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-32" x="8417" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-29" x="8918" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2B" x="9530" y="0"></use><g transform="translate(10530,0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6E"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6F" x="556" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2E" x="1057" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-70" x="1585" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="2142" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-72" x="2642" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="3035" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6D" x="3535" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65" x="4369" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="4813" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65" x="5203" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-72" x="5647" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-73" x="6040" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-69" x="6684" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6E" x="6963" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-73" x="7769" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-75" x="8164" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-62" x="8720" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-73" x="9277" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="9671" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-69" x="10061" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="10339" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-75" x="10729" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="11285" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-69" x="11675" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6F" x="11953" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6E" x="12454" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6D" x="13260" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6F" x="14094" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-64" x="14594" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65" x="15151" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6C" x="15595" y="0"></use></g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2B" x="26627" y="0"></use><g transform="translate(27627,0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-78" x="444" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="973" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-72" x="1362" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="1755" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-70" x="2505" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="3062" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-72" x="3562" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="3955" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6D" x="4455" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65" x="5289" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="5733" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65" x="6123" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-72" x="6567" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-73" x="6960" y="0"></use></g></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi><mo>=</mo><mo stretchy="false">(</mo><mn>2</mn><mo>∗</mo><mtext>no. taxa</mtext><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mtext>no. parameters in substitution model</mtext><mo>+</mo><mtext>extra parameters</mtext></math></span></span><script type="math/tex" id="MathJax-Element-11">k = (2* \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
-  substitution models:  JC = 0 parameters | HKY = 4 parameters | GTR = 8 parameters <br>
+  <p><script type="math/tex" id="MathJax-Element-206">k = (2 \ast \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script></p>
+  
+  <p>substitution models: JC = 0 parameters | HKY = 4 parameters | GTR = 8 <br>
+  parameters <br>
   invariant sites = +1 parameter <br>
   gamma rates = +1 parameter</p>
 </blockquote>
@@ -275,19 +301,18 @@ The likelihood value obtained without tree-search is lower than the value obtain
 <p>We compute the AIC value as follows:</p>
 
 <blockquote>
-  <p><span class="MathJax_SVG" id="MathJax-Element-12-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>A</mi><mi>I</mi><mi>C</mi><mo>=</mo><mn>2</mn><mo stretchy=&quot;false&quot;>(</mo><mi>k</mi><mo stretchy=&quot;false&quot;>)</mo><mo>&amp;#x2212;</mo><mi>log</mi><mo>&amp;#x2061;</mo><mo stretchy=&quot;false&quot;>(</mo><mi>L</mi><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="21.167ex" height="2.789ex" viewBox="0 -849.8 9113.5 1200.9" role="img" focusable="false" style="vertical-align: -0.815ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-41" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-49" x="750" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-43" x="1255" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-3D" x="2293" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-32" x="3349" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-28" x="3850" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-6B" x="4239" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-29" x="4761" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2212" x="5372" y="0"></use><g transform="translate(6373,0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6C"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6F" x="278" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-67" x="779" y="0"></use></g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-28" x="7653" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-4C" x="8042" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-29" x="8724" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mi>I</mi><mi>C</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-12">AIC = 2(k) - \log(L)</script></p>
+  <p><script type="math/tex" id="MathJax-Element-207">AIC = 2(k) - \log(L)</script></p>
 </blockquote>
-
-
 
 <h5 id="questions-2">Questions</h5>
 
-<p><strong>1. Which model is the best (including HKY+Gamma), based on the AIC criterion?</strong> <br>
-We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma</strong></p>
+<p><strong>1. Which model is the best (including HKY+Gamma), based on the AIC criterion?</strong></p>
+
+<p>We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma</strong></p>
 
 <hr>
 
-<p>This exercise can also be solved using <a href="https://github.com/ddarriba/jmodeltest2">jmodeltest</a> which performs automatically phylogenetic tree reconstructions with every model and extra parameters (i.e. invariant sites,  gamma).</p>
+<p>This exercise can also be solved using <a href="https://github.com/ddarriba/jmodeltest2">jmodeltest</a> which performs automatically phylogenetic tree reconstructions with every model and extra parameters (i.e. invariant sites, gamma).</p>
 
 
 
@@ -331,7 +356,8 @@ We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma
 
 <h5 id="execution-3">Execution</h5>
 
-<p>We are going to run PhyML twice: once using the non parametric bootstrap and the second time using the SH-aLRT method. </p>
+<p>We are going to run PhyML twice: once using the non parametric bootstrap <br>
+and the second time using the SH-aLRT method.</p>
 
 <p><strong>1. First run</strong></p>
 
@@ -339,7 +365,7 @@ We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma
 [A] ................ Approximate likelihood ratio test  no
 </code></pre>
 
-<p>We perform a bootstrap analysis using 100 replicates (4<sup>th</sup> menu).</p>
+<p>We perform a bootstrap analysis using 100 replicates (4^th^ menu).</p>
 
 <blockquote>
   <p><strong>Bootstrap</strong> analysis assumes that: <br>
@@ -356,12 +382,12 @@ We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma
   [A] ................ Approximate likelihood ratio test  yes / aLRT statistics
 </code></pre>
 
-<p>We perform an sh-aLRT analysis (4<sup>th</sup> menu).</p>
+<p>We perform an sh-aLRT analysis (4^th^ menu).</p>
 
 <blockquote>
   <p><strong>SH-aLRT</strong> method assumes that: <br>
   - the branch being studied provides a significant likelihood gain. <br>
-  - per each branch two alternative hypotheses are tested: a null hypothesis where the branch is collapsed and the rest of the topology is maintained vs. an alternative hypothesis where the branch length is kept and the topology is intact.  <br>
+  - per each branch two alternative hypotheses are tested: a null hypothesis where the branch is collapsed and the rest of the topology is maintained vs. an alternative hypothesis where the branch length is kept and the topology is intact. <br>
   - aLRT is much faster than bootstrap</p>
 </blockquote>
 
@@ -371,28 +397,30 @@ We select the model with the lowest AIC value. In this case, <strong>GTR + Gamma
 
 <p><strong>1. Are the results compatible?</strong></p>
 
-<p>Both the methods used to infer the branch support appear to agree on the support provided by long branches, however they do not agree for short ones. These two methods infer branch support using completely different strategies. </p>
+<p>Both the methods used to infer the branch support appear to agree on the <br>
+support provided by long branches, however they do not agree for short <br>
+ones. These two methods infer branch support using completely different <br>
+strategies.</p>
 
 <table>
 <thead>
 <tr>
-  <th align="center">With <em>bootstrap</em> support</th>
-  <th align="center">With <em>sh-aLRT</em> support</th>
+  <th>With <em>bootstrap</em> support</th>
+  <th>With <em>sh-aLRT</em> support</th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center"><img src="./images/ex4_tree_bootstrap.png" alt="" title=""></td>
-  <td align="center"><img src="./images/ex4_tree_sh_aLRT.png" alt="" title=""></td>
+  <td><img src="./images/ex4_tree_bootstrap.png" alt="" title=""></td>
+  <td><img src="./images/ex4_tree_sh_aLRT.png" alt="" title=""></td>
 </tr>
 </tbody></table>
 
 
-
-
 <h4 id="exercise-5">Exercise 5</h4>
 
-<p>For linux/Mac Os X <br>
-We assume <em>PhyML</em> binary is included in the user <strong>PATH</strong> variable and it can be called with <em>phyml</em></p>
+<p>For linux/Mac Os X</p>
+
+<p>We assume <em>PhyML</em> binary is included in the user <strong>PATH</strong> variable and it can be called with <em>phyml</em></p>
 
 <p>Positioning in the directory containing the dataset:</p>
 
@@ -401,7 +429,7 @@ We assume <em>PhyML</em> binary is included in the user <strong>PATH</strong> va
 
 <p><strong>ex. 1</strong></p>
 
-<pre><code>run1&gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'm'
+<pre><code>run1&gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e'  f 'm'
 run2&gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' 
 </code></pre>
 
@@ -446,7 +474,7 @@ SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b 
 
 <p><strong>Preprocessing</strong></p>
 
-<p>The dataset should not include any stop codon, therefore we modify the dataset deleting the last 3 columns (the last codon) from the MSA. In order to do so, you can open <em>primates-nt.phy</em> with <strong>AliView</strong> and after selecting the last 3 columns press <em>delete</em> on the keyboard. Save the new file as <em>Phylip</em> with the following name <em>primates-nt-nostop.phy</em>. </p>
+<p>The dataset should not include any stop codon, therefore we modify the dataset deleting the last 3 columns (the last codon) from the MSA. In order to do so, you can open <em>primates-nt.phy</em> with <strong>AliView</strong> and after selecting the last 3 columns press <em>delete</em> on the keyboard. Save the new file as <em>Phylip</em> with the following name <em>primates-nt-nostop.phy</em>.</p>
 
 <p><strong>For models M0, M0+Gamma and M5</strong></p>
 
@@ -584,107 +612,109 @@ SH-aLRT        &gt; phyml -i primates-nt.phy -m 'HKY85' -t 'e' -a 'e' -f 'e' -b 
 <p>The number of parameters are computed in the following way for a rooted tree:</p>
 
 <blockquote>
-  <p><span class="MathJax_SVG" id="MathJax-Element-13-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>k</mi><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mn>2</mn><mo>&amp;#x2217;</mo><mtext>no. taxa</mtext><mo>&amp;#x2212;</mo><mn>2</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mtext>no. parameters in substitution model</mtext><mo>+</mo><mtext>extra parameters</mtext></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="81.25ex" height="2.789ex" viewBox="0 -849.8 34982.3 1200.9" role="img" focusable="false" style="vertical-align: -0.815ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-6B" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-3D" x="799" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-28" x="1855" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-32" x="2245" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2217" x="2967" y="0"></use><g transform="translate(3690,0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6E"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6F" x="556" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2E" x="1057" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="1585" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="1975" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-78" x="2475" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="3004" y="0"></use></g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2212" x="7417" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-32" x="8417" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-29" x="8918" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2B" x="9530" y="0"></use><g transform="translate(10530,0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6E"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6F" x="556" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2E" x="1057" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-70" x="1585" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="2142" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-72" x="2642" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="3035" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6D" x="3535" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65" x="4369" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="4813" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65" x="5203" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-72" x="5647" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-73" x="6040" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-69" x="6684" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6E" x="6963" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-73" x="7769" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-75" x="8164" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-62" x="8720" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-73" x="9277" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="9671" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-69" x="10061" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="10339" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-75" x="10729" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="11285" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-69" x="11675" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6F" x="11953" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6E" x="12454" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6D" x="13260" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6F" x="14094" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-64" x="14594" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65" x="15151" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6C" x="15595" y="0"></use></g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2B" x="26627" y="0"></use><g transform="translate(27627,0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-78" x="444" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="973" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-72" x="1362" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="1755" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-70" x="2505" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="3062" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-72" x="3562" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-61" x="3955" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6D" x="4455" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65" x="5289" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-74" x="5733" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-65" x="6123" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-72" x="6567" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-73" x="6960" y="0"></use></g></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi><mo>=</mo><mo stretchy="false">(</mo><mn>2</mn><mo>∗</mo><mtext>no. taxa</mtext><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mtext>no. parameters in substitution model</mtext><mo>+</mo><mtext>extra parameters</mtext></math></span></span><script type="math/tex" id="MathJax-Element-13">k = (2* \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
-  substitution models:  LG = 0 parameters | WAG = 0 parameters | GTR = 8 parameters | GY = 2 | M0 = 2 | M5 = 2  <br>
+  <p><script type="math/tex" id="MathJax-Element-130">k = (2 \ast \text{no. taxa} - 2) + \text{no. parameters in substitution model} + \text{extra parameters}</script> <br>
+  substitution models: LG = 0 parameters | WAG = 0 parameters | GTR = 8 <br>
+  parameters | GY = 2 | M0 = 2 | M5 = 2 <br>
   gamma rates = +1 parameter</p>
 </blockquote>
 
 <p>We compute the AIC value as follows:</p>
 
 <blockquote>
-  <p><span class="MathJax_SVG" id="MathJax-Element-14-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>A</mi><mi>I</mi><mi>C</mi><mo>=</mo><mn>2</mn><mo stretchy=&quot;false&quot;>(</mo><mi>k</mi><mo stretchy=&quot;false&quot;>)</mo><mo>&amp;#x2212;</mo><mi>log</mi><mo>&amp;#x2061;</mo><mo stretchy=&quot;false&quot;>(</mo><mi>L</mi><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="21.167ex" height="2.789ex" viewBox="0 -849.8 9113.5 1200.9" role="img" focusable="false" style="vertical-align: -0.815ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-41" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-49" x="750" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-43" x="1255" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-3D" x="2293" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-32" x="3349" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-28" x="3850" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-6B" x="4239" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-29" x="4761" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-2212" x="5372" y="0"></use><g transform="translate(6373,0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6C"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-6F" x="278" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-67" x="779" y="0"></use></g><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-28" x="7653" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-4C" x="8042" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-29" x="8724" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mi>I</mi><mi>C</mi><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-14">AIC = 2(k) - \log(L)</script></p>
+  <p><script type="math/tex" id="MathJax-Element-131">AIC = 2(k) - \log(L)</script></p>
 </blockquote>
 
 <table>
 <thead>
 <tr>
-  <th align="center">Model</th>
-  <th align="center">Log-likelihood</th>
-  <th align="center">Parameters</th>
-  <th align="center">AIC</th>
+  <th>Model</th>
+  <th>Log-likelihood</th>
+  <th>Parameters</th>
+  <th>AIC</th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center">GTR_G</td>
-  <td align="center">-6158.95</td>
-  <td align="center">47</td>
-  <td align="center">12411.90</td>
+  <td>GTR_G</td>
+  <td>-6158.95</td>
+  <td>47</td>
+  <td>12411.90</td>
 </tr>
 <tr>
-  <td align="center">LG</td>
-  <td align="center">-4826.14</td>
-  <td align="center">38</td>
-  <td align="center">9728.28</td>
+  <td>LG</td>
+  <td>-4826.14</td>
+  <td>38</td>
+  <td>9728.28</td>
 </tr>
 <tr>
-  <td align="center">LG_G</td>
-  <td align="center">-4735.17</td>
-  <td align="center">39</td>
-  <td align="center">9548.34</td>
+  <td>LG_G</td>
+  <td>-4735.17</td>
+  <td>39</td>
+  <td>9548.34</td>
 </tr>
 <tr>
-  <td align="center">M0</td>
-  <td align="center">-6163.53</td>
-  <td align="center">40</td>
-  <td align="center">12407.06</td>
+  <td>M0</td>
+  <td>-6163.53</td>
+  <td>40</td>
+  <td>12407.06</td>
 </tr>
 <tr>
-  <td align="center">M0_G</td>
-  <td align="center">-6075.69</td>
-  <td align="center">41</td>
-  <td align="center">12233.38</td>
+  <td>M0_G</td>
+  <td>-6075.69</td>
+  <td>41</td>
+  <td>12233.38</td>
 </tr>
 <tr>
-  <td align="center">M5</td>
-  <td align="center">-6057.39</td>
-  <td align="center">40</td>
-  <td align="center">12194.78</td>
+  <td>M5</td>
+  <td>-6057.39</td>
+  <td>40</td>
+  <td>12194.78</td>
 </tr>
 <tr>
-  <td align="center">WAG</td>
-  <td align="center">-4785.42</td>
-  <td align="center">38</td>
-  <td align="center">9646.84</td>
+  <td>WAG</td>
+  <td>-4785.42</td>
+  <td>38</td>
+  <td>9646.84</td>
 </tr>
 <tr>
-  <td align="center">WAG_G</td>
-  <td align="center">-4702.97</td>
-  <td align="center">39</td>
-  <td align="center">9483.94</td>
+  <td>WAG_G</td>
+  <td>-4702.97</td>
+  <td>39</td>
+  <td>9483.94</td>
 </tr>
 </tbody></table>
 
 
-
-
 <h5 id="questions-4">Questions</h5>
 
-<p><strong>1. Based on AIC, which model fits your dataset best?</strong>  <br>
-    WAG + Gamma</p>
+<p><strong>1. Based on AIC, which model fits your dataset best?</strong></p>
 
-<p><strong>2. Are the trees inferred using the best AA and best codon model different?</strong>  <br>
-According to the AIC ranking, the best codon model should be <strong>M5</strong>.  Herewith the two trees.</p>
+<p>WAG + Gamma</p>
+
+<p><strong>2. Are the trees inferred using the best AA and best codon model different?</strong></p>
+
+<p>According to the AIC ranking, the best codon model should be <strong>M5</strong>.</p>
+
+<p>Herewith the two trees.</p>
 
 <table>
 <thead>
 <tr>
-  <th align="center">Using <em>codon</em> model</th>
-  <th align="center">Using <em>AA</em> model</th>
+  <th>Using <em>codon</em> model</th>
+  <th>Using <em>AA</em> model</th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center"><img src="./images/ex6_tree_M5.png" alt="" title=""></td>
-  <td align="center"><img src="./images/ex6_tree_WAG_G.png" alt="" title=""></td>
+  <td><img src="./images/ex6_tree_M5.png" alt="" title=""></td>
+  <td><img src="./images/ex6_tree_WAG_G.png" alt="" title=""></td>
 </tr>
 </tbody></table>
 
 
 <p><strong>3. Are they different to the tree inferred using the DNA model?</strong> <br>
-Yes, they are also different to the tree inferred using the GTR+Gamma model. </p>
+Yes, they are also different to the tree inferred using the GTR+Gamma <br>
+model.</p>
 
 <hr>
-
-
 
 <h3 id="ml-with-protein-data">ML with protein data</h3>
 
@@ -692,16 +722,18 @@ Yes, they are also different to the tree inferred using the GTR+Gamma model. </p
 
 <h4 id="with-primate-dataset">With primate dataset</h4>
 
-<p>GOAL: Testing different amino acids substitution models on a protein dataset <br>
+<p>GOAL: Testing different amino acids substitution models on a protein <br>
+dataset <br>
 Dataset: <strong>primates-aa.phy</strong></p>
 
 
 
 <h5 id="execution-5">Execution</h5>
 
-<p><strong>1. Using PhyML</strong> </p>
+<p><strong>1. Using PhyML</strong></p>
 
-<p>We performed the analyses using PhyML and combining the following settings accordingly to the requests:</p>
+<p>We performed the analyses using PhyML and combining the following <br>
+settings accordingly to the requests:</p>
 
 <pre><code>[M] ................ Model of amino-acids substitution  LG
 [F] . Amino acid frequencies (empirical/model defined)  model
@@ -709,136 +741,138 @@ Dataset: <strong>primates-aa.phy</strong></p>
 [R] ....... One category of substitution rate (yes/no)  yes
 </code></pre>
 
+<p>From the analyses we retrieved:</p>
+
 <table>
 <thead>
 <tr>
-  <th align="center">Model</th>
-  <th align="center">Log-likelihood</th>
-  <th align="center">Parameters</th>
-  <th align="center">AIC</th>
+  <th>Model</th>
+  <th>Log-likelihood</th>
+  <th>Parameters</th>
+  <th>AIC</th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center">LG_G</td>
-  <td align="center">-5199.88631</td>
-  <td align="center">39</td>
-  <td align="center">10477.77262</td>
+  <td>LG_G</td>
+  <td>-5199.88631</td>
+  <td>39</td>
+  <td>10477.77262</td>
 </tr>
 <tr>
-  <td align="center">LG_G_I</td>
-  <td align="center">-5199.55701</td>
-  <td align="center">40</td>
-  <td align="center">10479.11402</td>
+  <td>LG_G_I</td>
+  <td>-5199.55701</td>
+  <td>40</td>
+  <td>10479.11402</td>
 </tr>
 <tr>
-  <td align="center">LG_G_F</td>
-  <td align="center">-5230.44821</td>
-  <td align="center">58</td>
-  <td align="center">10576.89642</td>
+  <td>LG_G_F</td>
+  <td>-5230.44821</td>
+  <td>58</td>
+  <td>10576.89642</td>
 </tr>
 <tr>
-  <td align="center">LG_G_F_I</td>
-  <td align="center">-5230.08104</td>
-  <td align="center">59</td>
-  <td align="center">10578.16208</td>
+  <td>LG_G_F_I</td>
+  <td>-5230.08104</td>
+  <td>59</td>
+  <td>10578.16208</td>
 </tr>
 </tbody></table>
 
 
-<p><strong>2. Using ProtTest webservice</strong> </p>
+<p><strong>2. Using ProtTest webservice</strong></p>
 
 <p>You can find the results in the file <em>ex7/prottest_analysis.txt</em></p>
 
-
-
 <h5 id="questions-5">Questions</h5>
 
-<p><strong>1. Which is the best model based on AIC criterion? What about using invariant sites?</strong> <br>
-We selected the <strong>LG + Gamma</strong> model according to the AIC criterion. Using the invariant sites does not influence the model selection. Adding a proportion of invariant sites increases the number of parameters, therefore the AIC penalises the inferred log-likelihood value. </p>
+<p><strong>1. Which is the best model based on AIC criterion? What about using invariant sites?</strong></p>
+
+<p>We selected the <strong>LG + Gamma</strong> model according to the AIC criterion. <br>
+Using the invariant sites does not influence the model selection. Adding <br>
+a proportion of invariant sites increases the number of parameters, <br>
+therefore the AIC penalises the inferred log-likelihood value.</p>
 
 <p><strong>2. Compare the trees, likelihood and AIC values to those of LG+Gamma.</strong></p>
 
 <table>
 <thead>
 <tr>
-  <th align="right">Value</th>
-  <th align="center">Tree estimated with <em>LG+Gamma</em></th>
-  <th align="center">Tree estimated with <em>HIVw+G+F</em></th>
+  <th>Value</th>
+  <th>Tree estimated with <em>LG+Gamma</em></th>
+  <th>Tree estimated with <em>HIVw+G+F</em></th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="right">Log-Likelihood:</td>
-  <td align="center">-5199.89</td>
-  <td align="center">-5013.50</td>
+  <td>Log-Likelihood:</td>
+  <td>-5199.89</td>
+  <td>-5013.50</td>
 </tr>
 <tr>
-  <td align="right">AIC:</td>
-  <td align="center">10477.77</td>
-  <td align="center">10141.01</td>
+  <td>AIC:</td>
+  <td>10477.77</td>
+  <td>10141.01</td>
 </tr>
 <tr>
-  <td align="right">Tree</td>
-  <td align="center"><img src="./images/ex7_BestTree_PhyML.png" alt="" title=""></td>
-  <td align="center"><img src="./images/ex7_BestTree_ProTest.png" alt="" title=""></td>
+  <td>Tree</td>
+  <td><img src="./images/ex7_BestTree_PhyML.png" alt="" title=""></td>
+  <td><img src="./images/ex7_BestTree_ProTest.png" alt="" title=""></td>
 </tr>
 </tbody></table>
 
 
-
-
 <h4 id="with-protein-data-sets-from-lerat-et-al-2003">With protein data sets from Lerat et al. (2003)</h4>
 
-<p>GOAL: Inferring a phylogenetic tree on a protein dataset using an appropriate substitution model and detect an event of HGT.</p>
+<p>GOAL: Inferring a phylogenetic tree on a protein dataset using an <br>
+appropriate substitution model and detect an event of HGT.</p>
 
 
 
 <h5 id="execution-6">Execution</h5>
 
-<p><strong>1. Using PhyML</strong> </p>
+<p><strong>1. Using PhyML</strong></p>
 
-<p>We used a selection of candidate substitution models (JTT, LG, WAG) that are suitable for the protein datasets.</p>
+<p>We used a selection of candidate substitution models (JTT, LG, WAG) that <br>
+are suitable for the protein datasets.</p>
 
 <p>dataset: <strong>Prot_biob.phy</strong></p>
 
 <table>
 <thead>
 <tr>
-  <th align="center">Model</th>
-  <th align="center">Log-likelihood</th>
-  <th align="center">Parameters</th>
-  <th align="center">AIC</th>
+  <th>Model</th>
+  <th>Log-likelihood</th>
+  <th>Parameters</th>
+  <th>AIC</th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center">JTT_G_I</td>
-  <td align="center">-4593.61928</td>
-  <td align="center">40</td>
-  <td align="center">9267.23856</td>
+  <td>JTT_G_I</td>
+  <td>-4593.61928</td>
+  <td>40</td>
+  <td>9267.23856</td>
 </tr>
 <tr>
-  <td align="center">LG_G_I</td>
-  <td align="center">-4546.51747</td>
-  <td align="center">40</td>
-  <td align="center">9173.03494</td>
+  <td>LG_G_I</td>
+  <td>-4546.51747</td>
+  <td>40</td>
+  <td>9173.03494</td>
 </tr>
 <tr>
-  <td align="center">WAG_G_I</td>
-  <td align="center">-4564.41245</td>
-  <td align="center">40</td>
-  <td align="center">9208.8249</td>
+  <td>WAG_G_I</td>
+  <td>-4564.41245</td>
+  <td>40</td>
+  <td>9208.8249</td>
 </tr>
 </tbody></table>
 
 
-<p>We ranked the tested models according to the AIC statistics and we selected the <strong>LG+G+I</strong> model which best fits our dataset</p>
+<p>We ranked the tested models according to the AIC statistics and we selected the <strong>LG+G+I</strong> model which best fits our dataset.</p>
 
-<p><strong>2. Using ProtTest webservice</strong> </p>
+<p><strong>2. Using ProtTest webservice</strong></p>
 
 <p>You can find the results in the file <em>ex8/prottest_analysis.txt</em></p>
 
 <p>The best model in output from the model selection analysis is <strong>WAG+G+F</strong></p>
-
-
 
 <h5 id="questions-6">Questions</h5>
 
@@ -847,45 +881,46 @@ We selected the <strong>LG + Gamma</strong> model according to the AIC criterion
 <table>
 <thead>
 <tr>
-  <th align="center">Parameter</th>
-  <th align="center">Using <em>LG+G+I</em> model</th>
-  <th align="center">Using <em>WAG+G+F</em> model</th>
+  <th>Parameter</th>
+  <th>Using <em>LG+G+I</em> model</th>
+  <th>Using <em>WAG+G+F</em> model</th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center">Log-likelihood:</td>
-  <td align="center">-4546.52</td>
-  <td align="center">-4542.71</td>
+  <td>Log-likelihood:</td>
+  <td>-4546.52</td>
+  <td>-4542.71</td>
 </tr>
 <tr>
-  <td align="center">Gamma shape parameter:</td>
-  <td align="center">0.953</td>
-  <td align="center">0.633</td>
+  <td>Gamma shape parameter:</td>
+  <td>0.953</td>
+  <td>0.633</td>
 </tr>
 <tr>
-  <td align="center">Proportion of invariant:</td>
-  <td align="center">0.182</td>
-  <td align="center">0</td>
+  <td>Proportion of invariant:</td>
+  <td>0.182</td>
+  <td>0</td>
 </tr>
 </tbody></table>
 
 
-<p>When <em>LG+G+I</em> model is used, the alpha parameter of the gamma distribution is skewed towards <span class="MathJax_SVG" id="MathJax-Element-15-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>&amp;#x03B1;</mi><mo>=</mo><mn>1</mn></math>" role="presentation" style="font-size: 100%; display: inline-block; position: relative;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.749ex" height="1.956ex" viewBox="0 -741.5 2475.1 842.1" role="img" focusable="false" style="vertical-align: -0.234ex;" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMATHI-3B1" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-3D" x="918" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MJMAIN-31" x="1974" y="0"></use></g></svg><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-15"> \alpha = 1 </script> which in turns indicate that the rate variability is centred on one category. </p>
+<p>When <em>LG+G+I</em> model is used, the alpha parameter of the gamma <br>
+distribution is skewed towards <script type="math/tex" id="MathJax-Element-81">\alpha = 1</script> which in turns indicate that the rate variability is centred on one category.</p>
 
 <p><strong>2. Display trees</strong></p>
 
-<p>We coloured the branches according to their support (blue = 1, red=0). </p>
+<p>We coloured the branches according to their support (blue = 1, red=0).</p>
 
 <table>
 <thead>
 <tr>
-  <th align="center">Using <em>LG+G+I</em> model</th>
-  <th align="center">Using <em>WAG+G+F</em> model</th>
+  <th>Using <em>LG+G+I</em> model</th>
+  <th>Using <em>WAG+G+F</em> model</th>
 </tr>
 </thead>
 <tbody><tr>
-  <td align="center"><img src="./images/ex8_biob-LGGI.png" alt="" title=""></td>
-  <td align="center"><img src="./images/ex8_biob-WAG_G_F.png" alt="" title=""></td>
+  <td><img src="./images/ex8_biob-LGGI.png" alt="" title=""></td>
+  <td><img src="./images/ex8_biob-WAG_G_F.png" alt="" title=""></td>
 </tr>
 </tbody></table>
 
@@ -894,15 +929,20 @@ We selected the <strong>LG + Gamma</strong> model according to the AIC criterion
 
 <hr>
 
-
-
 <h4 id="references">References</h4>
 
 <ol>
-<li>Darriba D, Taboada GL, Doallo R, Posada D. 2012. jModelTest 2: more models, new heuristics and parallel computing. Nature Methods 9(8), 772. <a href="http://dx.doi.org/10.1038/nmeth.2109">http://dx.doi.org/10.1038/nmeth.2109</a></li>
-<li>Guindon S and Gascuel O (2003). A simple, fast and accurate method to estimate large phylogenies by maximum-likelihood”. Systematic Biology 52: 696-704. <a href="http://sysbio.oxfordjournals.org/content/52/5/696.long">DOI: 10.1080/10635150390235520</a></li>
+<li>Darriba D, Taboada GL, Doallo R, Posada D. 2012. jModelTest 2: more <br>
+models, new heuristics and parallel computing. Nature Methods <br>
+9(8), 772. <a href="http://dx.doi.org/10.1038/nmeth.2109">http://dx.doi.org/10.1038/nmeth.2109</a></li>
+<li>Guindon S and Gascuel O (2003). A simple, fast and accurate method <br>
+to estimate large phylogenies by maximum-likelihood”. Systematic <br>
+Biology 52: 696-704. <a href="http://sysbio.oxfordjournals.org/content/52/5/696.long">DOI: <br>
+10.1080/10635150390235520</a></li>
 <li><a href="http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf">http://darwin.uvigo.es/download/papers/b04.modelPhylHandbook03.pdf</a></li>
-<li>Lerat E, Daubin V, Moran NA (2003) From Gene Trees to Organismal Phylogeny in Prokaryotes:The Case of the γ-Proteobacteria. PLoS Biol 1(1): e19. <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0000019">doi: 10.1371/journal.pbio.0000019</a></li>
+<li>Lerat E, Daubin V, Moran NA (2003) From Gene Trees to Organismal <br>
+Phylogeny in Prokaryotes:The Case of the γ-Proteobacteria. PLoS Biol <br>
+1(1): e19. <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0000019">doi: 10.1371/journal.pbio.0000019</a></li>
 </ol>
 
 <hr>
@@ -911,5 +951,6 @@ We selected the <strong>LG + Gamma</strong> model according to the AIC criterion
 
 <hr>
 
-<p>© 2016 Lorenzo Gatti – Applied Computational Genomic Team (ACGT) @ Institute of Applied Simulations (ZHAW) | Wädenswil | Zürich</p></div></body>
+<p>© 2016 Lorenzo Gatti – Applied Computational Genomic Team (ACGT) @ <br>
+Institute of Applied Simulations (ZHAW) | Wädenswil | Zürich</p></div></body>
 </html>
